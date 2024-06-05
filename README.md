@@ -24,3 +24,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 
 Team:
 -Sushko Taras
+-Hofner Oleksandr
