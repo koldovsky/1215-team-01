@@ -27,4 +27,5 @@ Team:
 -Hofner Oleksandr
 -Andrii Gumeniuk
 -Tebrii Anastasia
+-Khrystyna Shvachko
 
