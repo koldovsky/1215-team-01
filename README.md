@@ -26,3 +26,5 @@ Team:
 -Sushko Taras
 -Hofner Oleksandr
 -Andrii Gumeniuk
+-Tebrii Anastasia
+
