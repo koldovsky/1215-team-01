@@ -31,3 +31,5 @@ Team:
 -Hospodinina Oleksandra
 -Arsentiev Artur 
 -Ischenko Elvira
+-Yura Shubin
+
