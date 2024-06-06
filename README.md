@@ -33,4 +33,5 @@ Team:
 -Ischenko Elvira
 -Yura Shubin
 -Oleksandr Kornilenko
+-Ivan Dovhosheia
 
