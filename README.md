@@ -29,4 +29,4 @@ Team:
 -Tebrii Anastasia
 -Khrystyna Shvachko
 -Hospodinina Oleksandra
--Arsentiev Artur
+-Arsentiev Artur 
