@@ -35,3 +35,4 @@ Team:
 -Oleksandr Kornilenko
 -Kozlovska Mariia
 -Vitalii Iordan
+-Dobrovolskyi Pavlo
