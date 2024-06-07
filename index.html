@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Winery</title>
     <link
       rel="shortcut icon"
       href="https://placekitten.com/96/139"
@@ -17,7 +17,14 @@
     ></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="contacts.html#distribution">Distribution</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <!-- Start Sections Hofner Oleksandr -->
       <section
@@ -42,10 +49,15 @@
         data-hx-get="index.collection.partial.html"
       ></section>
       <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.testing.conditions.partial.html"
-      ></section> 
+       data-hx-trigger="load"
+       data-hx-swap="outerHTML"
+       data-hx-get="index.testing.conditions.partial.html"
+    ></section> 
+    <section
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.guided-tour.partial.html"
+    ></section>
     </main>
     <footer class="footer">
       <div class="footer__container">
