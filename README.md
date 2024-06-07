@@ -34,3 +34,5 @@ Team:
 -Yura Shubin
 -Oleksandr Kornilenko
 -Kozlovska Mariia
+-Vitalii Iordan
+-Dobrovolskyi Pavlo
