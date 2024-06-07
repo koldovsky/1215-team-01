@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Winery</title>
     <link
       rel="shortcut icon"
       href="https://placekitten.com/96/139"
@@ -17,6 +17,14 @@
     ></script>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="contacts.html#distribution">Distribution</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <!-- Start Sections Hofner Oleksandr -->
       <section
@@ -33,11 +41,6 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.distribution.partial.html"
-      ></section>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
         data-hx-get="index.collection.partial.html"
       ></section>
       <section
@@ -45,6 +48,49 @@
         data-hx-swap="outerHTML"
         data-hx-get="index.testing.conditions.partial.html"
       ></section>
+      <!--Start Section Mariia Kozlovska-->
+      <section 
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.about-us-part3.partial.html">
+        </section>
+        <!--End Section Mariia Kozlovska-->
+       
+       <!--data-hx-trigger="load"
+       data-hx-swap="outerHTML"
+       data-hx-get="index.testing.conditions.partial.html"--> 
+    ></section> 
+    <section
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.guided-tour.partial.html"
+    ></section>
     </main>
+    <footer class="footer">
+      <div class="footer__container">
+          <div class="footer__contacts" data-proofer-ignore>
+              <p class="footer__contact-item">
+              Write Us: <a class="footer__contact-link" href="mailto:info@example.com">pinotnoir@example.com</a> 
+              </p>  
+              
+              <p class="footer__contact-item">
+                  Call Us: <a class="footer__contact-link" href="tel:+12345678900">+1 (234) 567 89 00</a> 
+              </p>
+          </div>
+          <div class="footer__menu">
+            <img class="footer__menu-item" src="img/footer/logo-footer.svg" alt="image-logo-wine">
+            <p class="footer__contact-item">Our artisan winery located in Austin, Texas is committed to producing delicious, interesting, well-balanced wines with the complexity of flavors. Come and join our tastings or order delvery.</p>
+            <hr class="footer__contact-item">
+            <ul class="footer__menu-list">
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="index.html">Main</a> </li>
+                  <!--<li class="footer__menu-item"><a class="footer__menu-link" href="about.html">About Us</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="collection.html">Collection</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="contacts.html">Contacts</a></li> -->
+              </ul>
+        </div>
+      </div>
+      <p class="footer__text">© 2024 Your Company. All rights reserved.</p>
+  </footer>
+  
   </body>
 </html>
