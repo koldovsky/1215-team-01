@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,28 +17,19 @@
     ></script>
   </head>
   <body>
-    <header class="header">
-      <nav>
-        <ul>
-          <li><a href="contacts.html#distribution">Distribution</a></li>
-        </ul>
-      </nav>
-    </header>
     <main class="main">
       <section class="visit-us__form">
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="contacts.visit-us.partial.html"
-    </section>
-<section class="guided-tour">
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="contacts.guided-tour.partial.html"
-  </section>
-  <section class="distribution">
-  data-hx-swap="outerHTML"
-  data-hx-get="contacts.distribution.partial.html id="distributions"
-</section>
+        data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="contacts.visit-us.partial.html"
+      </section>
+      <section class="guided-tour">
+        data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="contacts.guided-tour.partial.html"
+      </section>
+      <section class="distribution">
+        data-hx-swap="outerHTML" data-hx-get="contacts.distribution.partial.html
+        id="distributions"
+      </section>
     </main>
     <footer></footer>
   </body>
