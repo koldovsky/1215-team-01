@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Collection Page | Winery</title>
+    <title>Document</title>
     <link
       rel="shortcut icon"
       href="https://placekitten.com/96/139"
@@ -18,25 +18,18 @@
     ></script>
   </head>
   <body>
-    <section
-      class="collection-wine__list"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="collection.list-wine.partial.html"
-    ></section>
-    <section
-      class="collection-wine__menu"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="collection.menu.partial.html"
-    ></section>
-    <section
-      class="collection-tasting-menu"
-      id="menu"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="collection.tasting-menu.partial.html"
-    ></section>
+    <main>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="wine-club.how-it-works.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="wine-club.private-events.partial.html"
+      ></section>
+    </main>
     <footer>
       <nav
         data-hx-trigger="load"
