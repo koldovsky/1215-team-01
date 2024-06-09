@@ -42,6 +42,28 @@
     margin-top: 10px;
     padding: 10px;
   }
+  
   .h-text-content {
-    font-family: 'Spectral', serif;
+    font-family: "Cormorant Infant", serif;
+    font-size: 36px;
+    font-feature-settings: normal;
+    font-weight: normal;
+  }
+
+  .guided-tour__paragraph {
+    font-family: "Cormorant Infant", serif;
+    font-size: 17px;
+    font-feature-settings: normal;
+    font-weight: 400;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-stretch: 100%;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-east-asian: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
   }
