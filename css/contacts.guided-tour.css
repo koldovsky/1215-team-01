@@ -1,0 +1,189 @@
+  :root {
+    --color-paragraph-text: #868076;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #faf8f2;
+  }
+
+  ul {
+    list-style-type: none; /* Прибираємо маркери зі списку */
+    padding: 0; /* Прибираємо відступи списку */
+    margin: 0; /* Прибираємо відступи списку */
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 20px;
+  }
+  
+  .column:first-child {
+    margin-right: 20px;
+  }
+  
+  .h-text-content {
+    font-family: "Cormorant Infant", serif;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-size: 36px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    font-weight: 500;
+    height: auto;
+    letter-spacing: normal;
+    line-height: 43.2px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    overflow-wrap: break-word;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-transform: none;
+    vertical-align: baseline;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .guided-tour__paragraph {
+    font-family: "Cormorant Infant", serif;
+    font-size: 17px;
+    font-feature-settings: normal;
+    font-weight: 400;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-stretch: 100%;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-east-asian: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    color: var(--color-paragraph-text);
+    margin-bottom: 30px;
+  }
+  .text-in {
+    font-family: "Cormorant Infant", serif;
+    font-size: 28px;
+    font-feature-settings: normal;
+    font-weight: 400;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-style: italic;
+    font-stretch: 100%;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-east-asian: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    margin: 0; 
+  }
+
+  .wine-experience-header {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .wine-experience-header img {
+    margin-right: 10px; /* Відстань між зображенням та заголовком */
+  }
+  .additional-text-header {
+    font-family: "Spectral", serif;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-size: 19px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    font-weight: 500;
+    height: auto;
+    letter-spacing: normal;
+    line-height: 28.5px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    overflow-wrap: break-word;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-transform: none;
+    vertical-align: baseline;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #544e4d;
+
+  }
+/* випадаюче меню */
+
+.toggle-label {
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  margin-right: auto; /* Відстань між плюсом і текстом */
+  font-size: 24px; /* Розмір символу */
+}
+
+.additional-text {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+}
+.question-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Приховування чекбоксу */
+.toggle-checkbox {
+  display: none;
+  justify-content: space-between;
+}
+
+.toggle-checkbox:checked + .additional-text {
+  display: block;
+}
+

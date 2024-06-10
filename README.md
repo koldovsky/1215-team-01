@@ -36,4 +36,5 @@ Team:
 -Kozlovska Mariia
 -Vitalii Iordan
 -Dobrovolskyi Pavlo
+-Hubskyi Robert
 -Ivan Dovhosheia
