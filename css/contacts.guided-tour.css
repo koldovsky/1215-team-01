@@ -24,16 +24,13 @@
   
   .column {
     flex: 1;
-    margin: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
     padding: 20px;
   }
   
   .column:first-child {
     margin-right: 20px;
-  }
-  
-  .toggleCheckbox {
-    display: none;
   }
   
   .h-text-content {
@@ -88,6 +85,7 @@
     font-variant-position: normal;
     font-variation-settings: normal;
     color: var(--color-paragraph-text);
+    margin-bottom: 30px;
   }
   .text-in {
     font-family: "Cormorant Infant", serif;
@@ -155,40 +153,64 @@
     width: auto;
     -webkit-font-smoothing: antialiased;
     color: #544e4d;
+
   }
 /* випадаюче меню */
 
-  .drop-text-container {
-    display: flex;
-    align-items: center;
-  }
+.drop-text-container {
+  display: flex;
+  align-items: center;
+}
 
-  .toggle-label {
-    cursor: pointer;
-    font-size: 24px;
-    margin-left: 10px;
-    display: flex;
-    margin-right: 10px; /* Відстань між плюсом і текстом */
-    font-size: 24px; /* Розмір символу */
-  }
-  
-  .additional-text {
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
-  }
-  .question-container {
-    display: flex;
-    align-items: center;
-  }
+.toggle-label {
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 10px;
+  display: flex;
+  margin-right: 10px; /* Відстань між плюсом і текстом */
+  font-size: 24px; /* Розмір символу */
+}
+
+.additional-text {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+}
+.question-container {
+  display: flex;
+  align-items: center;
+}
 
 /* Приховування чекбоксу */
-  .toggle-checkbox {
-    display: none;
-  }
+.toggle-checkbox {
+  display: none;
+}
 
-  .toggle-checkbox:checked + .additional-text {
-    display: block;
-  }
+.toggle-checkbox:checked + .additional-text {
+  display: block;
+}
 
-  
+
+/* border line */
+
+  .border-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 50px;
+  }
+  .question-container::after {
+    content: ""; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 1px; 
+    background-color: #000; 
+}
+
+/* для відступу між лінією та текстом */
+  .question-container {
+    margin-bottom: 20px; /* Налаштуйте відступ за потребою */
+}
