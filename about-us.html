@@ -9,14 +9,18 @@
 
   <body>
     <header>
-      <h1>~ Welcome ~</h1>
+      <!-- <h1>~ Welcome ~</h1>
       <h2>Come Visit Us to <i>Taste & Enjoy.</i></h2>
       <p>Tasting in atmospheric wine cellars;</p>
       <p>Possibility to buy the best wines at the best price.</p>
       <p>Come visit us to enjoy wines and relax sipping a divine drink.</p>
-      <button>Learn More</button>
+      <button>Learn More</button> -->
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
     </header>
-
     <section>
       <div id="adout-us">
         <img

@@ -18,26 +18,35 @@
     ></script>
   </head>
   <body>
-    <section
-      class="visit-us"
-      id="contacts"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="contacts.visit-us.partial.html"
-    ></section>
-    <section
-      class="guide"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="contacts.guided-tour.partial.html"
-    ></section>
-    <section
-      id="distribution"
-      hx-get="contacts.distribution.partial.html"
-      hx-trigger="load"
-      hx-swap="outerHTML"
-    ></section>
-    <footer>
+    <header>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+    </header>
+    <main>
+      <section
+        class="visit-us"
+        id="contacts"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="contacts.visit-us.partial.html"
+      ></section>
+      <section
+        class="guide"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="contacts.guided-tour.partial.html"
+      ></section>
+      <section
+        id="distribution"
+        hx-get="contacts.distribution.partial.html"
+        hx-trigger="load"
+        hx-swap="outerHTML"
+      ></section>
+    </main>
+      <footer>
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
