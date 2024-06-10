@@ -89,7 +89,7 @@
     font-variation-settings: normal;
     color: var(--color-paragraph-text);
   }
-  h3 {
+  .text-in {
     font-family: "Cormorant Infant", serif;
     font-size: 28px;
     font-feature-settings: normal;
