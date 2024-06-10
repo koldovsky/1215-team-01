@@ -78,3 +78,30 @@
     font-variant-position: normal;
     font-variation-settings: normal;
   }
+  .wine-expirience-text {
+    font-family: "Cormorant Infant", serif;
+    font-size: 28px;
+    font-feature-settings: normal;
+    font-weight: 400;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-style: italic;
+    font-stretch: 100%;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-east-asian: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    margin: 0; 
+  }
+
+  .wine-experience-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .wine-experience-header img {
+    margin-right: 10px; /* Відстань між зображенням та заголовком */
+  }
