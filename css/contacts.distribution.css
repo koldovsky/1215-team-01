@@ -1,0 +1,31 @@
+h3.distribution__subtitle {
+  color: #bc6e44;
+  font-family: Spectral, serif;
+  font-feature-settings: normal;
+  font-size: 12px;
+}
+h2.distribution__title {
+  color: #2a2824;
+  font-family: "Cormorant Infant", serif;
+  font-size: 52px;
+  font-style: normal;
+}
+h3.distribution__description {
+  color: #837d71;
+  font-family: Spectral, serif;
+  font-size: 19px;
+  font-style: normal;
+}
+p.distribution__item-location {
+  color: #bc6e44;
+  font-style: italic;
+}
+h3.distribution__description {
+  color: #544e4c;
+}
+a.distribution__item-link {
+  color: #544e4c;
+}
+p.distribution__item-title {
+  color: #544e4c;
+}
