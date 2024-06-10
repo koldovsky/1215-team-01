@@ -17,19 +17,24 @@
     ></script>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" href="img/icon-title.png" type="image/png" />
-
   </head>
   <body>
     <header>
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.header-hero.partial."
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header-hero.partial.html"
       ></nav>
     </header>
     <main>
       <section
         class="about us"
+        id="gourmand-choice"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.about-us.partial.html"
@@ -52,6 +57,7 @@
         data-hx-get="index.categories.partial.html"
       ></section>
       <section
+        id="vineyard"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.our-vineyards.partial.html"
