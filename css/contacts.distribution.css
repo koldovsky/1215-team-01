@@ -4,17 +4,12 @@
   padding: 0;
 }
 
-body {
-  font-family: "Spectral", serif;
-}
-
 .distributors {
   background-image: url("../img/distribution/background.svg");
   background-size: cover;
   background-position: center;
   overflow-wrap: break-word;
-  border: 0.125rem solid rgba(0, 0, 0, 0); /* Прозора рамка */
-  padding: 5.625rem 0;
+  border: 0.125rem solid rgba(0, 0, 0, 0); 
   position: relative;
   display: flex;
   align-items: center;
@@ -30,15 +25,20 @@ body {
   max-width: 1200px;
   padding-left: 24px;
   padding-right: 24px;
+  font-weight: 400;
+line-height: 1.594rem;
+padding-top: 5.625rem;
+padding-bottom: 5.625rem;
+z-index: 1;
 }
 
 .distribution__header {
   font-size: 1.063rem;
   font-weight: 400;
   line-height: 1.594rem;
-  padding: 0 0.938rem;
-  margin-bottom: 1.25rem;
   text-align: center;
+  padding-left: 0.939rem;
+padding-right: 0.938rem;
 }
 
 .distribution__subtitle {
@@ -47,6 +47,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
+
 }
 
 .distribution__title {
@@ -65,11 +66,16 @@ body {
 }
 
 .distribution__list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.25rem;
-  padding: 1.25rem 0;
-  width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.25rem;
+    width: 100%;
+    line-height: 1.594rem;
+    text-align: center;
+    padding-left: 0.938rem;
+  padding-right: 0.938rem;
+  margin-top: 3.125rem;
+  }
 }
 
 .distribution__item {
@@ -108,11 +114,27 @@ body {
 .distribution__item-link:focus {
   text-decoration: underline;
 }
+.distribution__note {
+font-size: 1.063rem;
+line-height: 1.594rem;
+padding-left: 0.938rem;
+padding-right: 0.935rem;
 
-.distribution__note-text,
-.distribution__note-warning {
+}
+
+.distribution__note-text {
   color: rgb(131, 125, 113);
   font-size: 1.063rem;
+  font-weight: 400;
+  line-height: 1.594rem;
+  text-align: left;
+  width: 100%;
+  
+}
+.distribution__note-warning {
+  color: rgb(131, 125, 113);
+  font-size: 0.875rem;
+  font-style: italic;
   font-weight: 400;
   line-height: 1.594rem;
   text-align: left;
@@ -120,7 +142,7 @@ body {
 }
 .specific-symbol {
   color: rgb(188, 110, 68);
-  font-size: 3.25rem;
+  font-size: 3.375rem;
   font-family: "Cormorant Infant", serif;
 }
 .warning-symbol {
@@ -146,5 +168,11 @@ body {
     max-width: 100%;
     padding-left: calc((100% - 1200px) / 2 + 24px);
     padding-right: calc((100% - 1200px) / 2 + 24px);
+  }
+}
+@media (max-width: 1200px) {
+  .distributors {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
