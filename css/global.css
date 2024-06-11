@@ -3,3 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --footer-bg-color: #2a2824;
+    --footer-logo-width: 85px;
+    --footer-logo-height: 68.7px;
+    --footer-description-color: #ffffffb0;
+    --footer-menu-link-color: #ffffffb0;
+    --footer-menu-link-hover-color: #ffffff;
+    --footer-contact-link-color: #ffffff;
+    --footer-contact-link-hover-color: #ffffff;
+    --footer-contact-item-color: #bc6e44;
+    --footer-text-color: #ffffffb0;
+  }

@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Winery Page</title>
+    <title>About us Page | Winery</title>
     <link rel="stylesheet" href="css/index.css" />
+<<<<<<< HEAD
   </head>
 
   <body>
@@ -384,12 +385,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us | Winery</title>
+=======
+    <link rel="icon" href="img/icon-title.png" type="image/png" />
+>>>>>>> e85a306802388ab78fb28a73a9b202ac2be192a7
     <link
       rel="shortcut icon"
       href="https://placekitten.com/96/139"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="css/index.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -397,9 +400,22 @@
     ></script>
   </head>
   <body>
+    <header>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us.header-nav.partial.html"
+      ></nav>
+    </header>
     <main class="main">
       <section
         class="history"
+        id="about-us"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="about-us.history.partial.html"
@@ -411,7 +427,7 @@
         data-hx-get="about-us.wine-and-our-team.partial.html"
       ></section>
     </main>
-    <footer>
+    <footer class="footer">
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
