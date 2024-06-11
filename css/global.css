@@ -25,7 +25,7 @@
   --paragraph-content-text-color: #837d71;
   --link-text-color: #544e4c;
   --section-text-font-family: "Spectral", serif; 
-  --paragraph-text-family: "Cormorant Infant", serif;
+  --paragraph-text-font-family: "Cormorant Infant", serif;
   scroll-behavior: smooth;
 }
 
