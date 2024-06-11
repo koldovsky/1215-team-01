@@ -1,0 +1,140 @@
+body {
+    font-family: "Cormorant Infant", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/visit-us/background-visit-us.png");
+  }
+  
+  .visit-us {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .visit-us__content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .visit-us__form {
+    flex: 1;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    background-color: #faf8f2;
+  }
+  
+  .visit-us h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #bc6e44;
+    text-align: left;
+  }
+  
+  .visit-us h3 {
+    font-family: "Spectral", serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 28.5px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .visit-us p {
+    margin-bottom: 15px;
+  }
+  
+  .visit-us__links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .visit-us__links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .visit-us__links a:hover {
+    color: #007BFF;
+  }
+  
+  .visit-us__section--terms,
+  .visit-us__section--privacy {
+    margin-bottom: 20px;
+  }
+  
+  .visit-us__list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .visit-us__list-item {
+    margin-bottom: 10px;
+  }
+  
+  .visit-us__form-group {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .visit-us__label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 0 5px;
+    color: #999;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s;
+  }
+  
+  .visit-us__input:focus + .visit-us__label,
+  .visit-us__input:not(:placeholder-shown) + .visit-us__label,
+  .visit-us__textarea:focus + .visit-us__label,
+  .visit-us__textarea:not(:placeholder-shown) + .visit-us__label {
+    top: -10px;
+    font-size: 0.75em;
+    color: #bc6e44;
+  }
+  
+  .visit-us__input,
+  .visit-us__textarea {
+    width: 100%;
+    padding: 20px 10px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .visit-us__textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .visit-us__submit {
+    display: inline-block;
+    background-color: #bc6e44;
+    color: #faf8f2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .visit-us__submit:hover {
+    background-color: #a55a34;
+  }
+  
+  .visit-us__full-width-section {
+    flex: 1 100%;
+    margin-top: 20px;
+  }
+  
