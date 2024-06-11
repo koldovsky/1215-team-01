@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px;
   }
 
   .guided-tour__paragraph {
@@ -73,3 +72,12 @@
   display: block;
 }
 
+@media (min-width:1200px) {
+  .guided-tour__container{
+    max-width: 100%;
+    padding-left: calc(100%-1200px)/2 + 24px;
+    padding-right:calc(100%-1200px)/2 + 24px;
+  
+  }
+  
+}
