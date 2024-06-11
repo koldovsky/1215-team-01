@@ -24,19 +24,14 @@
   --paragraph-section-text-color: #2a2824;
   --paragraph-content-text-color: #837d71;
   --link-text-color: #544e4c;
-  --section-text-font-family: "Spectral", serif;
+  --section-text-font-family: "Spectral", serif; 
   --paragraph-text-font-family: "Cormorant Infant", serif;
   scroll-behavior: smooth;
 }
 
-/*img {
+img {
   display: block;
-<<<<<<< HEAD
-  width: 20%;
 }
-=======
-  width: 100%;*/
->>>>>>> df6baad6083a956af2fefd99bb8f33f54c766262
 
 ul {
   list-style-type: none; /* Прибираємо маркери зі списку */
@@ -44,7 +39,7 @@ ul {
   margin: 0; /* Прибираємо відступи списку */
 }
 
-/*  визначає гнучкий елемент, що має рівний розподіл простору
+/*  визначає гнучкий елемент, що має рівний розподіл простору 
      *по людськи то розбивання на колонки */
 .column {
   flex: 1;
