@@ -7,20 +7,31 @@
 body {
   font-family: "Spectral", serif;
 }
-.distributors__list {
+
+.distributors {
   background-image: url("../img/distribution/background.svg");
   background-size: cover;
   background-position: center;
-  min-height: 1166px;
-  min-width: 320px;
   overflow-wrap: break-word;
-  background-position: center;
-  border: 0.125rem solid rgb(42, 40, 36);
+  border: 0.125rem solid rgba(0, 0, 0, 0); /* Прозора рамка */
   padding: 5.625rem 0;
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   box-sizing: border-box;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1200px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
+
 .distribution__header {
   font-size: 1.063rem;
   font-weight: 400;
@@ -29,6 +40,7 @@ body {
   margin-bottom: 1.25rem;
   text-align: center;
 }
+
 .distribution__subtitle {
   color: rgb(188, 110, 68);
   font-size: 0.75rem;
@@ -36,6 +48,7 @@ body {
   letter-spacing: 0.15rem;
   text-transform: uppercase;
 }
+
 .distribution__title {
   color: rgb(42, 40, 36);
   font-family: "Cormorant Infant", serif;
@@ -43,6 +56,7 @@ body {
   font-weight: 500;
   line-height: 2.615rem;
 }
+
 .distribution__description {
   color: rgb(131, 125, 113);
   font-size: 1.188rem;
@@ -54,8 +68,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.25rem;
-  justify-content: center;
-  padding: 1.25rem;
+  padding: 1.25rem 0;
+  width: 100%;
 }
 
 .distribution__item {
@@ -89,6 +103,7 @@ body {
   cursor: pointer;
   text-decoration: none !important;
 }
+
 .distribution__item-link:hover,
 .distribution__item-link:focus {
   text-decoration: underline;
@@ -101,6 +116,17 @@ body {
   font-weight: 400;
   line-height: 1.594rem;
   text-align: left;
+  width: 100%;
+}
+.specific-symbol {
+  color: rgb(188, 110, 68);
+  font-size: 3.25rem;
+  font-family: "Cormorant Infant", serif;
+}
+.warning-symbol {
+  color: rgb(188, 110, 68);
+  font-size: 0.938rem;
+  font-style: italic;
 }
 
 @media (min-width: 768px) {
@@ -112,5 +138,13 @@ body {
 @media (min-width: 992px) {
   .distribution__list {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .distributors {
+    max-width: 100%;
+    padding-left: calc((100% - 1200px) / 2 + 24px);
+    padding-right: calc((100% - 1200px) / 2 + 24px);
   }
 }

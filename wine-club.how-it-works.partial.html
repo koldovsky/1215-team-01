@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="css/wine-club.how-it-works.partial.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
@@ -19,15 +24,15 @@
   <body>
     <section class="how-works">
       <div class="how-works__header">
-        <h4 class="how-works__header-label">~ HOW IT WORKS ~</h4>
-        <h2 class="how-works__header-title">How Our Club Works.</h2>
-        <span class="how-works__header-subtitle"
+        <h2 class="how-works__header-title">~ HOW IT WORKS ~</h2>
+        <p class="how-works__header-subtitle">How Our Club Works.</p>
+        <span class="how-works__header-description"
           >Join our club and get the best wines shipped to your doorstep.
         </span>
       </div>
       <div class="how-works__body">
         <div class="how-works__item">
-          <h4 class="how-works__body__item-title">Shipping</h4>
+          <p class="how-works__body__item-title">Shipping</p>
           <span class="how-works__body__item-text"
             >The shipping is $1.00 for a Vintage Club member and $10.00 per
             package for a Luxury Club member. We ship our products via the Fed
@@ -44,14 +49,14 @@
           >
         </div>
         <div class="how-works__item">
-          <h4 class="how-works__body__item-title">Billing</h4>
+          <p class="how-works__body__item-title">Billing</p>
           <span class="how-works__body__item-text"
             >You don't have to pay any membership fees for Pinot Noir's wine
             club. You have to pay only for the club orders. Your credit card on
             file will be billed 2 weeks in advance of every wine club
             delivery.</span
           >
-          <h4 class="how-works__body__item-title">Cancellation</h4>
+          <p class="how-works__body__item-title">Cancellation</p>
           <span class="how-works__body__item-text"
             >After the year of membership, you can cancel at any time you want
             for free. If you want to cancel before receiving your club shipments
@@ -62,11 +67,11 @@
       <div class="how-works__gallery">
         <div class="how-works__gallery-item">
           <img
-            src="img/vineclub/wine-club_gallery-1.jpg"
+            src="img/wine-club/wine-club_gallery-1.jpg"
             alt="Group of people tasting wine in a vineyard"
             class="how-works__gallery__item-icon"
           />
-          <h4 class="how-works__body__item-title">Signature Club</h4>
+          <p class="how-works__body__item-title">Signature Club</p>
           <span class="how-works__body__item-text"
             >Shipments: March & October.
           </span>
@@ -78,11 +83,11 @@
         </div>
         <div class="how-works__gallery-item">
           <img
-            src="img/vineclub/wine-club_gallery-2.jpg"
+            src="img/wine-club/wine-club_gallery-2.jpg"
             alt="Red wine being poured into a glass with wine barrels in the background"
             class="how-works__gallery__item-icon"
           />
-          <h4 class="how-works__body__item-title">Tasting Club</h4>
+          <p class="how-works__body__item-title">Tasting Club</p>
           <span class="how-works__body__item-text"
             >Shipments: February, April, June, August.
           </span>
@@ -94,11 +99,11 @@
         </div>
         <div class="how-works__gallery-item">
           <img
-            src="/img/vineclub/wine-club_gallery-3.jpg"
+            src="/img/wine-club/wine-club_gallery-3.jpg"
             alt="Two men tasting wine in a wine cellar"
             class="how-works__gallery__item-icon"
           />
-          <h4 class="how-works__body__item-title">Vintage Club</h4>
+          <p class="how-works__body__item-title">Vintage Club</p>
           <span class="how-works__body__item-text"
             >Shipments: March & October.
           </span>
@@ -111,10 +116,15 @@
       </div>
     </section>
     <section class="membership-benefits">
+      <img
+        class="membership-benefits__icon"
+        src="img/wine-club/wine-club-benefits.jpg"
+        alt="A scenic view of a house amidst a vineyard under a clear sky"
+      />
       <div class="membership-benefits__item">
-        <h4 class="membership-benefits__item-label">~ BENEFITS ~</h4>
-        <h2 class="membership-benefits__item-title">Membership Benefits.</h2>
-        <span class="membership-benefits__item-subtitle"
+        <h2 class="membership-benefits__item-title">~ BENEFITS ~</h2>
+        <p class="membership-benefits__item-subtitle">Membership Benefits.</p>
+        <span class="membership-benefits__item-description"
           >Learn more about the benefits you get with us.
         </span>
         <span class="membership-benefits__item-text"
@@ -123,27 +133,52 @@
         >
         <ul class="membership-benefits__item-list">
           <li class="membership-benefits__item__list-item">
-            <span class="membership-benefits__item__list__item__text"
+            <img
+              class="membership-benefits__item__list__item-icon"
+              src="img/wine-club/wine-club-member_benefits__icon.png"
+              alt="Orange circle with a white check mark inside"
+            />
+            <span class="membership-benefits__item__list__item-text"
               >20% - 25% off on all wine purchases, including new releases;
             </span>
           </li>
           <li class="membership-benefits__item__list-item">
-            <span class="membership-benefits__item__list__item__text"
+            <img
+              class="membership-benefits__item__list__item-icon"
+              src="img/wine-club/wine-club-member_benefits__icon.png"
+              alt="Orange circle with a white check mark inside"
+            />
+            <span class="membership-benefits__item__list__item-text"
               >Access to limited production wines;
             </span>
           </li>
           <li class="membership-benefits__item__list-item">
-            <span class="membership-benefits__item__list__item__text"
+            <img
+              class="membership-benefits__item__list__item-icon"
+              src="img/wine-club/wine-club-member_benefits__icon.png"
+              alt="Orange circle with a white check mark inside"
+            />
+            <span class="membership-benefits__item__list__item-text"
               >Free Pinot Noir winery events participation;
             </span>
           </li>
           <li class="membership-benefits__item__list-item">
-            <span class="membership-benefits__item__list__item__text"
+            <img
+              class="membership-benefits__item__list__item-icon"
+              src="img/wine-club/wine-club-member_benefits__icon.png"
+              alt="Orange circle with a white check mark inside"
+            />
+            <span class="membership-benefits__item__list__item-text"
               >Six complimentary individual wine tastings per year;
             </span>
           </li>
           <li class="membership-benefits__item__list-item">
-            <span class="membership-benefits__item__list__item__text"
+            <img
+              class="membership-benefits__item__list__item-icon"
+              src="img/wine-club/wine-club-member_benefits__icon.png"
+              alt="Orange circle with a white check mark inside"
+            />
+            <span class="membership-benefits__item__list__item-text"
               >Up to 50% off anniversary discount.
             </span>
           </li>
@@ -157,7 +192,7 @@
       </div>
     </section>
     <section class="become-member">
-      <h2 class="become-member__title">Become a Club Member!</h2>
+      <p class="become-member__title">Become a Club Member!</p>
       <span class="become-member__text">
         Contact us to become a member of our wine lovers club! Our managers will
         tell you more about the possble options.</span
