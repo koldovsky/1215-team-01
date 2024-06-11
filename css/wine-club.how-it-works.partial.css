@@ -1,0 +1,43 @@
+.how-works {
+    background-image: url(../img/wine-club/wine-club-how-it-works__background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.how-works__header {
+    display: flex;
+    flex-direction: column;
+}
+
+.how-works__body {
+    display: flex;
+    flex-direction: row;
+}
+
+.how-works__gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.how-works__gallery-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.how-works__gallery__item-icon {
+    width: 360px;
+    height: 230px;
+}
+
+.membership-benefits {
+    display: flex;
+    flex-direction: row;
+}
+
+.become-member {
+    display: flex;
+    flex-direction: row;
+}
