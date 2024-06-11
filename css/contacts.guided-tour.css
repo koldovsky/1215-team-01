@@ -9,38 +9,15 @@
   .guided-tour__paragraph {
     font-family: "Cormorant Infant", serif;
     font-size: 17px;
-    font-feature-settings: normal;
     font-weight: 400;
-    font-kerning: auto;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-stretch: 100%;
-    font-variant-alternates: normal;
-    font-variant-caps: normal;
-    font-variant-ligatures: normal;
-    font-variant-east-asian: normal;
-    font-variant-numeric: normal;
-    font-variant-position: normal;
-    font-variation-settings: normal;
     color: var(--color-paragraph-text);
     margin-bottom: 30px;
   }
-  .text-in {
+  .guided-tour_title {
     font-family: "Cormorant Infant", serif;
     font-size: 28px;
-    font-feature-settings: normal;
     font-weight: 400;
-    font-kerning: auto;
-    font-optical-sizing: auto;
     font-style: italic;
-    font-stretch: 100%;
-    font-variant-alternates: normal;
-    font-variant-caps: normal;
-    font-variant-ligatures: normal;
-    font-variant-east-asian: normal;
-    font-variant-numeric: normal;
-    font-variant-position: normal;
-    font-variation-settings: normal;
     margin: 0; 
   }
 
@@ -53,44 +30,15 @@
 
   .wine-experience-header img {
     margin-right: 10px; /* Відстань між зображенням та заголовком */
+    margin-bottom: 30px;
   }
   .additional-text-header {
     font-family: "Spectral", serif;
-    font-feature-settings: normal;
-    font-kerning: auto;
-    font-optical-sizing: auto;
     font-size: 19px;
-    font-stretch: 100%;
-    font-style: normal;
-    font-variant-alternates: normal;
-    font-variant-caps: normal;
-    font-variant-east-asian: normal;
-    font-variant-ligatures: normal;
-    font-variant-numeric: normal;
-    font-variant-position: normal;
-    font-variation-settings: normal;
     font-weight: 500;
-    height: auto;
-    letter-spacing: normal;
     line-height: 28.5px;
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none;
     margin-bottom: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    overflow-wrap: break-word;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    text-align: left;
-    text-transform: none;
-    vertical-align: baseline;
-    width: auto;
-    -webkit-font-smoothing: antialiased;
-    color: #544e4d;
+    color: var(--color-additional-text);
 
   }
 /* випадаюче меню */

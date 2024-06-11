@@ -15,7 +15,8 @@
     --footer-contact-link-hover-color: #ffffff;
     --footer-contact-item-color: #bc6e44;
     --footer-text-color: #ffffffb0;
-    --color-paragraph-text: #868076
+    --color-paragraph-text: #868076;
+    --color-additional-text: #544e4d;
   }
 
 ul {
@@ -24,7 +25,8 @@ ul {
     margin: 0; /* Прибираємо відступи списку */
   }
 
-/*  визначає гнучкий елемент, що має рівний розподіл простору */
+/*  визначає гнучкий елемент, що має рівний розподіл простору 
+     *по людськи то розбивання на колонки */
 .column { 
     flex: 1;
     margin-left: 80px;
@@ -36,7 +38,7 @@ ul {
     margin-right: 20px;
     }
 
-/*Щрифт для заголовків*/
+/*Щрифт для заголовків в мому випадку Guided Tours*/
 .h-text-content {
     font-family: "Cormorant Infant", serif;
     font-size: 36px;
