@@ -7,12 +7,20 @@ body {
 }
 
 img {
-    display: block;
     max-width: 100%;
 }
 
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 div.benefits__text {
-    width: 260px;
+    background-image: url(../img/benefits/benefits-background-image.png);
+    background-size: cover;
+    background-repeat: repeat;
+    max-width: 100%;
     padding: 90px 30px 70px;
     
     .benefits__title {
@@ -30,4 +38,14 @@ div.benefits__text {
         font-size: 19px;
         
     }
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0px;
+    }
+    
+    
 }
