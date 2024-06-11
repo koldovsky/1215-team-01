@@ -29,8 +29,8 @@ ul {
      *по людськи то розбивання на колонки */
 .column { 
     flex: 1;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 0;
+    margin-right: 0;
     padding: 20px;
     }
       
