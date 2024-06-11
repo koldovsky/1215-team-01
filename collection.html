@@ -11,6 +11,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="img/icon-title.png" type="image/png" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -18,25 +19,39 @@
     ></script>
   </head>
   <body>
-    <section
-      class="collection-wine__list"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="collection.list-wine.partial.html"
-    ></section>
-    <section
-      class="collection-wine__menu"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="collection.menu.partial.html"
-    ></section>
-    <section
-      class="collection-tasting-menu"
-      id="menu"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="collection.tasting-menu.partial.html"
-    ></section>
+    <header>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="collection.header-nav.partial.html"
+      ></nav>
+    </header>
+    <main>
+      <section
+        class="collection-wine__list"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="collection.list-wine.partial.html"
+      ></section>
+      <section
+        class="collection-wine__menu"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="collection.menu.partial.html"
+      ></section>
+      <section
+        class="collection-tasting-menu"
+        id="menu"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="collection.tasting-menu.partial.html"
+      ></section>
+    </main>
     <footer>
       <nav
         data-hx-trigger="load"
