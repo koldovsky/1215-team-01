@@ -1,51 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&family=Spectral:wght@400;500;700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --footer-bg-color: #2a2824;
-    --footer-logo-width: 85px;
-    --footer-logo-height: 68.7px;
-    --footer-description-color: #ffffffb0;
-    --footer-menu-link-color: #ffffffb0;
-    --footer-menu-link-hover-color: #ffffff;
-    --footer-contact-link-color: #ffffff;
-    --footer-contact-link-hover-color: #ffffff;
-    --footer-contact-item-color: #bc6e44;
-    --footer-text-color: #ffffffb0;
-    --color-paragraph-text: #868076;
-    --color-additional-text: #544e4d;
-  }
+  --footer-bg-color: #2a2824;
+  --footer-logo-width: 85px;
+  --footer-logo-height: 68.7px;
+  --footer-description-color: #ffffffb0;
+  --footer-menu-link-color: #ffffffb0;
+  --footer-menu-link-hover-color: #ffffff;
+  --footer-contact-link-color: #ffffff;
+  --footer-contact-link-hover-color: #ffffff;
+  --footer-contact-item-color: #bc6e44;
+  --footer-text-color: #ffffffb0;
+  --color-paragraph-text: #868076;
+  --color-additional-text: #544e4d;
+
+  --heading-section-text-color: #bc6e44;
+  --paragraph-section-text-color: #2a2824;
+  --paragraph-content-text-color: #837d71;
+  --link-text-color: #544e4c;
+  --section-text-font-family: "Spectral", serif; 
+  --paragraph-text-family: "Cormorant Infant", serif;
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
 
 ul {
-    list-style-type: none; /* Прибираємо маркери зі списку */
-    padding: 0; /* Прибираємо відступи списку */
-    margin: 0; /* Прибираємо відступи списку */
-  }
+  list-style-type: none; /* Прибираємо маркери зі списку */
+  padding: 0; /* Прибираємо відступи списку */
+  margin: 0; /* Прибираємо відступи списку */
+}
 
 /*  визначає гнучкий елемент, що має рівний розподіл простору 
      *по людськи то розбивання на колонки */
-.column { 
-    flex: 1;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 20px;
-    }
-      
+.column {
+  flex: 1;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px;
+}
+
 .column:first-child {
-    margin-right: 20px;
-    }
+  margin-right: 20px;
+}
 
 /*Щрифт для заголовків в мому випадку Guided Tours*/
 .h-text-content {
-    font-family: "Cormorant Infant", serif;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 43.2px;
-    overflow-wrap: break-word;
-    -webkit-font-smoothing: antialiased;
-    }
-
-
+  font-family: "Cormorant Infant", serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43.2px;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
