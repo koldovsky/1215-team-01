@@ -24,8 +24,8 @@
   --paragraph-section-text-color: #2a2824;
   --paragraph-content-text-color: #837d71;
   --link-text-color: #544e4c;
-  --link-font-family: "Spectral", serif; 
-  font-family: "Cormorant Infant", serif;
+  --section-text-font-family: "Spectral", serif; 
+  --paragraph-text-family: "Cormorant Infant", serif;
   scroll-behavior: smooth;
 }
 
