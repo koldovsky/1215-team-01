@@ -1,71 +1,9 @@
-  :root {
-    --color-paragraph-text: #868076;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #faf8f2;
-  }
-
-  ul {
-    list-style-type: none; /* Прибираємо маркери зі списку */
-    padding: 0; /* Прибираємо відступи списку */
-    margin: 0; /* Прибираємо відступи списку */
-  }
-  
-  .container {
+ 
+  .guided-tour__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px;
-  }
-  
-  .column {
-    flex: 1;
-    margin-left: 80px;
-    margin-right: 80px;
-    padding: 20px;
-  }
-  
-  .column:first-child {
-    margin-right: 20px;
-  }
-  
-  .h-text-content {
-    font-family: "Cormorant Infant", serif;
-    font-feature-settings: normal;
-    font-kerning: auto;
-    font-optical-sizing: auto;
-    font-size: 36px;
-    font-stretch: 100%;
-    font-style: normal;
-    font-variant-alternates: normal;
-    font-variant-caps: normal;
-    font-variant-east-asian: normal;
-    font-variant-ligatures: normal;
-    font-variant-numeric: normal;
-    font-variant-position: normal;
-    font-variation-settings: normal;
-    font-weight: 500;
-    height: auto;
-    letter-spacing: normal;
-    line-height: 43.2px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    overflow-wrap: break-word;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    text-align: left;
-    text-transform: none;
-    vertical-align: baseline;
-    width: auto;
-    -webkit-font-smoothing: antialiased;
   }
 
   .guided-tour__paragraph {

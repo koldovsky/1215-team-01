@@ -15,4 +15,33 @@
     --footer-contact-link-hover-color: #ffffff;
     --footer-contact-item-color: #bc6e44;
     --footer-text-color: #ffffffb0;
+    --color-paragraph-text: #868076
   }
+
+ul {
+    list-style-type: none; /* Прибираємо маркери зі списку */
+    padding: 0; /* Прибираємо відступи списку */
+    margin: 0; /* Прибираємо відступи списку */
+  }
+
+/*  визначає гнучкий елемент, що має рівний розподіл простору */
+.column { 
+    flex: 1;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 20px;
+    }
+      
+.column:first-child {
+    margin-right: 20px;
+    }
+
+/*Щрифт для заголовків*/
+.h-text-content {
+    font-family: "Cormorant Infant", serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43.2px;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    }
