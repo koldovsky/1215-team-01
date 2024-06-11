@@ -1,5 +1,6 @@
  
   .guided-tour__container {
+    background-image: url("../img/guided-tour/background-guided-tour.png");
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
