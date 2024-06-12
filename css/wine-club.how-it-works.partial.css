@@ -9,6 +9,7 @@
 .how-works__header {
   display: flex;
   flex-direction: column;
+  
 }
 
 .how-works__body {

@@ -1,7 +1,7 @@
 div.benefits__image img {
   background-image: url(../img/benefits/man-working.jpg);
 }
-.container {
+/* .container {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
@@ -17,7 +17,7 @@ li {
   align-items: center;
   gap: 10px;
 }
-div.benefits__text {
+/* div.benefits__text {
   background-image: url(../img/benefits/benefits-background-image.png);
   background-size: cover;
   background-repeat: repeat;
