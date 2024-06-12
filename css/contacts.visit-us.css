@@ -1,12 +1,3 @@
-
-/*body {
-    font-family: "Cormorant Infant", serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-image: url("../img/visit-us/background-visit-us.png");
-  } */
-/* Додав ці файли */
   .visit-us__container {
     max-width: 1200px;
     margin: 0 20px;
@@ -21,15 +12,6 @@
     display: flex;
     justify-content: center;
   }
-  /*
-  .visit-us {
-    background-image: url("../img/visit-us/background-visit-us.png");
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-  }*/
   
   .visit-us__content {
     flex: 1;
