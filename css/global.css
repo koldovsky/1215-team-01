@@ -30,6 +30,8 @@
   --section-text-font-family: "Spectral", serif;
   --paragraph-text-font-family: "Cormorant Infant", serif;
   scroll-behavior: smooth;
+  --wine-club-how-works-title-color: #bc6e44;
+  --wine-club-how-works-subtitle: #28242A;
 }
 
 body {
@@ -66,6 +68,8 @@ ul {
 .column:first-child {
   margin-right: 20px;
 }
+
+
 
 /*Щрифт для заголовків в мому випадку Guided Tours*/
 .h-text-content {
