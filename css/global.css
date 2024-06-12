@@ -19,7 +19,6 @@
   --footer-text-color: #ffffffb0;
   --color-paragraph-text: #868076;
   --color-additional-text: #544e4d;
-
   --heading-section-text-color: #bc6e44;
   --paragraph-section-text-color: #2a2824;
   --paragraph-content-text-color: #837d71;
@@ -27,7 +26,7 @@
   --background-color-signup: #bc6e44;
   --text-color-signup: #fff;
   --text-color-content-signup: #eddcd2;
-  --section-text-font-family: "Spectral", serif; 
+  --section-text-font-family: "Spectral", serif;
   --paragraph-text-font-family: "Cormorant Infant", serif;
   scroll-behavior: smooth;
 }
