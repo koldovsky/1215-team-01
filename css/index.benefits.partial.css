@@ -1,9 +1,10 @@
-body {
-  margin: 0;
+div.benefits__image {
+  background-image: url(../img/benefits/man-working.jpg);
 }
 .container {
   display: flex;
   flex-flow: column wrap;
+  justify-content: space-between;
 }
 
 img {
@@ -20,21 +21,20 @@ div.benefits__text {
   background-image: url(../img/benefits/benefits-background-image.png);
   background-size: cover;
   background-repeat: repeat;
-  max-width: 100%;
   padding: 90px 30px 70px;
 
   .benefits__title {
-    color: #bc6e44;
+    color: var(--heading-section-text-color);
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 700;
   }
   .benefits__intro {
-    color: #2a2824;
+    color: var(--paragraph-section-text-color);
     font-size: 38px;
   }
   .benefits__paragraph {
-    color: #837d87;
+    color: var(--paragraph-content-text-color);
     font-size: 19px;
   }
 }
