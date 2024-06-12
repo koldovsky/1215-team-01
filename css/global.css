@@ -19,26 +19,38 @@
   --footer-text-color: #ffffffb0;
   --color-paragraph-text: #868076;
   --color-additional-text: #544e4d;
-
   --heading-section-text-color: #bc6e44;
   --paragraph-section-text-color: #2a2824;
   --paragraph-content-text-color: #837d71;
   --link-text-color: #544e4c;
+  --background-color-signup: #bc6e44;
+  --text-color-signup: #fff;
+  --text-color-content-signup: #eddcd2;
   --section-text-font-family: "Spectral", serif;
   --paragraph-text-font-family: "Cormorant Infant", serif;
   scroll-behavior: smooth;
 }
 
-/*img {
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+img {
   display: block;
-  width: 20%;
 }
 
 ul {
   list-style-type: none; /* Прибираємо маркери зі списку */
-   /* padding: 0; /* Прибираємо відступи списку */
-  /* margin: 0; /* Прибираємо відступи списку
-  } */
+  padding: 0; /* Прибираємо відступи списку */
+  margin: 0; /* Прибираємо відступи списку */
+}
 
 /*  визначає гнучкий елемент, що має рівний розподіл простору
      *по людськи то розбивання на колонки */

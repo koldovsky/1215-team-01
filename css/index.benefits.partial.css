@@ -1,33 +1,47 @@
-body {
-    margin: 0;
+div.benefits__image {
+  background-image: url(../img/benefits/man-working.jpg);
 }
 .container {
-    display: flex;
-    flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  max-width: 100%;
 }
 
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 div.benefits__text {
-    width: 260px;
-    padding: 90px 30px 70px;
-    
-    .benefits__title {
-        color: #bc6e44;
-        font-size: 12px;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
-    .benefits__intro {
-        color: #2a2824;
-        font-size: 38px;
-    }
-    .benefits__paragraph{
-        color: #837d87;
-        font-size: 19px;
-        
-    }
+  background-image: url(../img/benefits/benefits-background-image.png);
+  background-size: cover;
+  background-repeat: repeat;
+  padding: 90px 30px 70px;
+
+  .benefits__title {
+    color: var(--heading-section-text-color);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .benefits__intro {
+    color: var(--paragraph-section-text-color);
+    font-size: 38px;
+  }
+  .benefits__paragraph {
+    color: var(--paragraph-content-text-color);
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

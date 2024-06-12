@@ -1,0 +1,34 @@
+section.benefits-signup {
+  background-color: var(--background-color-signup);
+}
+div.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 25px;
+
+  font-weight: 500;
+  .benefits-signup__intro {
+    font-size: 30px;
+    color: var(--text-color-signup);
+  }
+  .benefits-signup__paragraph {
+    font-size: 19px;
+    padding: 30px 0;
+    color: var(--text-color-content-signup);
+  }
+  a.benefits-signup__link {
+    width: 160px;
+    margin: auto;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--text-color-signup);
+    border: 1.6px solid var(--text-color-signup);
+    padding: 10px 5px;
+  }
+  a.benefits-signup__link:hover {
+    background-color: var(--text-color-signup);
+    color: var(--link-text-color);
+  }
+}

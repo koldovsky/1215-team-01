@@ -4,17 +4,12 @@
   padding: 0;
 }
 
-body {
-  font-family: "Spectral", serif;
-}
-
 .distributors {
   background-image: url("../img/distribution/background.svg");
   background-size: cover;
   background-position: center;
   overflow-wrap: break-word;
-  border: 0.125rem solid rgba(0, 0, 0, 0); /* Прозора рамка */
-  padding: 5.625rem 0;
+  border: 0.125rem solid rgba(0, 0, 0, 0); 
   position: relative;
   display: flex;
   align-items: center;
@@ -30,15 +25,20 @@ body {
   max-width: 1200px;
   padding-left: 24px;
   padding-right: 24px;
+  font-weight: 400;
+line-height: 1.594rem;
+padding-top: 5.625rem;
+padding-bottom: 5.625rem;
+z-index: 1;
 }
 
 .distribution__header {
   font-size: 1.063rem;
   font-weight: 400;
   line-height: 1.594rem;
-  padding: 0 0.938rem;
-  margin-bottom: 1.25rem;
   text-align: center;
+  padding-left: 0.939rem;
+padding-right: 0.938rem;
 }
 
 .distribution__subtitle {
@@ -47,6 +47,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
+
 }
 
 .distribution__title {
@@ -68,9 +69,13 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.25rem;
-  padding: 1.25rem 0;
   width: 100%;
-}
+  line-height: 1.594rem;
+  text-align: center;
+  padding-left: 0.938rem;
+  padding-right: 0.938rem;
+  margin-top: 3.125rem;
+  }
 
 .distribution__item {
   border: 1px solid #ccc;
@@ -108,11 +113,27 @@ body {
 .distribution__item-link:focus {
   text-decoration: underline;
 }
+.distribution__note {
+font-size: 1.063rem;
+line-height: 1.594rem;
+padding-left: 0.938rem;
+padding-right: 0.935rem;
 
-.distribution__note-text,
-.distribution__note-warning {
+}
+
+.distribution__note-text {
   color: rgb(131, 125, 113);
   font-size: 1.063rem;
+  font-weight: 400;
+  line-height: 1.594rem;
+  text-align: left;
+  width: 100%;
+  
+}
+.distribution__note-warning {
+  color: rgb(131, 125, 113);
+  font-size: 0.875rem;
+  font-style: italic;
   font-weight: 400;
   line-height: 1.594rem;
   text-align: left;
@@ -120,7 +141,7 @@ body {
 }
 .specific-symbol {
   color: rgb(188, 110, 68);
-  font-size: 3.25rem;
+  font-size: 3.375rem;
   font-family: "Cormorant Infant", serif;
 }
 .warning-symbol {
@@ -146,5 +167,90 @@ body {
     max-width: 100%;
     padding-left: calc((100% - 1200px) / 2 + 24px);
     padding-right: calc((100% - 1200px) / 2 + 24px);
+  }
+}
+@media (max-width: 1200px) {
+  .distributors {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* додаємо карту */
+
+.distribution__map {
+  width: 100%;
+}
+
+.map__container {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Встановлюємо висоту карти */
+}
+
+.map__iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map__address-box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Виводить адресний блок над iframe */
+}
+
+.map__close-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.map__working-hours {
+  position: absolute;
+  top: 50%; /* Позиціювання по вертикалі на 50% */
+  left: 70%; /* Позиціювання по горизонталі на 50% */
+  transform: translate(-100%, -50%); /* Зміщення блоку вліво і вверх */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  width: auto;
+  height: 222px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  z-index: 1; /* Виводить блок з робочими годинами над iframe */
+}
+
+.map__working-hours h2 {
+  margin-top: 0;
+}
+
+/* Додаткові стилі для адаптивності */
+@media (max-width: 320px) {
+  .map__container {
+    flex-direction: column; /* Вертикальне розташування елементів на малих екранах */
+    align-items: center; /* Вирівнювання елементів по центру */
+  }
+
+  .map__working-hours {
+    position: static; /* Статичне позиціонування для адаптивності */
+    width: auto;
+    margin: 10px 0;
+    align-items: center;
+  }
+
+  .map__address-box {
+    position: static; /* Статичне позиціонування для адаптивності */
+    margin: 10px 0;
   }
 }
