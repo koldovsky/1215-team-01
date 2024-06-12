@@ -29,5 +29,6 @@ div.container {
   }
   a.benefits-signup__link:hover {
     background-color: var(--text-color-signup);
+    color: var(--link-text-color);
   }
 }
