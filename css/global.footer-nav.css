@@ -26,7 +26,7 @@
 @media (min-width: 830px) {
   .footer__content {
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: flex-start;
   }
 }
@@ -190,7 +190,6 @@
 .footer__list-item {
   margin: 10px 5px;
 }
-
 
 .footer__item-wrapper {
   max-width: 100%;

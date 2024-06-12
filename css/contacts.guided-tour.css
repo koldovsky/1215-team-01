@@ -1,61 +1,57 @@
- 
+.guided-tour__container {
+  background-image: url("../img/guided-tour/background-guided-tour.png");
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 1200px) {
   .guided-tour__container {
-    background-image: url("../img/guided-tour/background-guided-tour.png");
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    max-width: 100%;
+    padding-left: calc((100% - 1200px) / 2 + 12px);
+    padding-right: calc((100% - 1200px) / 2 + 12px);
   }
+}
+.guided-tour__paragraph {
+  font-family: "Cormorant Infant", serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--color-paragraph-text);
+  margin-bottom: 30px;
+}
 
-  @media (min-width: 1200px) {
-    .guided-tour__container {
-      max-width: 100%;
-      padding-left: calc((100% - 1200px) / 2 + 12px);
-      padding-right: calc((100% - 1200px) / 2 + 12px);
-    }
-    
-  }
-  .guided-tour__paragraph {
-    font-family: "Cormorant Infant", serif;
-    font-size: 17px;
-    font-weight: 400;
-    color: var(--color-paragraph-text);
-    margin-bottom: 30px;
-  }
+.wine-experience {
+  display: flex;
+  justify-content: left;
+}
+.guided-tour_title {
+  font-family: "Cormorant Infant", serif;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+}
 
-  .wine-experience {
-    display: flex;
-    justify-content: left;
-  }
-  .guided-tour_title {
-    font-family: "Cormorant Infant", serif;
-    font-size: 28px;
-    font-weight: 400;
-    font-style: italic;
-    margin: 0; 
-  }
+.wine-experience-header {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
 
-  .wine-experience-header {
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-    margin-bottom: 10px;
-  }
-
-  .wine-experience-header img {
-    margin-right: 10px; /* Відстань між зображенням та заголовком */
-    margin-bottom: 30px;
-  }
-  .additional-text-header {
-    font-family: "Spectral", serif;
-    font-size: 19px;
-    font-weight: 500;
-    line-height: 28.5px;
-    margin-bottom: 20px;
-    color: var(--color-additional-text);
-
-  }
+.wine-experience-header img {
+  margin-right: 10px; /* Відстань між зображенням та заголовком */
+  margin-bottom: 30px;
+}
+.additional-text-header {
+  font-family: "Spectral", serif;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 28.5px;
+  margin-bottom: 20px;
+  color: var(--color-additional-text);
+}
 /* випадаюче меню */
-
 
 .toggle-label {
   cursor: pointer;
@@ -86,4 +82,3 @@
 .toggle-checkbox:checked + .additional-text {
   display: block;
 }
-
