@@ -38,7 +38,7 @@ body {
   width: 100%;
 }
 
-header,main,footer {
+.container {
   max-width: 1200px;
   margin: auto;
 }
