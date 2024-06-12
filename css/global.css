@@ -32,8 +32,15 @@
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 header,main,footer {
   max-width: 1200px;
+  margin: auto;
 }
 
 img {
