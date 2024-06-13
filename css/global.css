@@ -32,6 +32,11 @@
   scroll-behavior: smooth;
   --wine-club-how-works-title-color: #bc6e44;
   --wine-club-how-works-subtitle: #28242A;
+  --contacts-visit-us-paragraph-color:#bc6e44;
+  --contacts-visit-us-title-color: #2A2824;
+  --contacts-visit-us-description-title: #837D71;
+  --contacts-visit-us-description-text: #837D71;
+  --contacts-visit-us__list-item: #544E4C;
 }
 
 body {
@@ -45,9 +50,9 @@ body {
   margin: 0 auto;
 }
 
-img {
+/*img {
   display: 100%;
-}
+}*/
 
 ul {
   list-style-type: none; /* Прибираємо маркери зі списку */
