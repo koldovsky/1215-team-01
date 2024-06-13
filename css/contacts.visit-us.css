@@ -3,6 +3,8 @@
   margin: 0 20px;
   display: flex;
   flex-wrap: wrap;
+  padding-left:30px;
+  padding-right: 30px;
 }
 
 .visit-us {
@@ -17,6 +19,43 @@
   flex: 1;
   padding-right: 20px;
 }
+/* те що добавив */
+.visit-us__paragraph{
+  font-family: "Spectral", serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--contacts-visit-us-paragraph-color);
+  border-radius: inherit;
+  
+}
+
+.tasting-conditions__title {
+  font-family: "Spectral", serif;
+  font-size: 38px;
+  font-weight: 100;
+  font-stretch: 100%;
+  line-height: 41.8px;
+  color: var(--contacts-visit-us-title-color);
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+.visit-us-description__title {
+  font-family: "Spectral", serif;
+  font-size: 19px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--contacts-visit-us-description-title);
+}
+.visit-us-description__text {
+  font-family: "Spectral", serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: var(--contacts-visit-us-description-text);
+}
+/*на цьому поки все */
 
 .visit-us__form {
   flex: 1;
@@ -26,13 +65,17 @@
   background-color: #faf8f2;
 }
 
+
+/* це теж мішає) ліпше робити через класи а не через теги... 
 .visit-us h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
   color: #bc6e44;
   text-align: left;
 }
+  */ 
 
+/* це трошки мішає 
 .visit-us h3 {
   font-family: "Spectral", serif;
   font-size: 19px;
@@ -45,9 +88,17 @@
 .visit-us p {
   margin-bottom: 15px;
 }
+*/
 
+/* трошки ще модифікував цей клас */
 .visit-us__links {
   display: flex;
+  font-family: "Spectral", serif;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 400;
+  tab-size: 4;
+  text-decoration: underline;
   justify-content: space-around;
   margin-bottom: 20px;
 }
@@ -73,6 +124,10 @@
 }
 
 .visit-us__list-item {
+  /*добавлю сюди стиль тексту*/
+  font-family: "Spectral", serif;
+  font-size: 17px;
+  color: var(--contacts-visit-us__list-item);
   margin-bottom: 10px;
 }
 
