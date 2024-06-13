@@ -36,15 +36,15 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
-  .carousel-item img {
-    width: 192px;
-    height: 212px;
-  }
-  
-  .col-md-6 {
-    margin-left: auto; /* Стилізуйте колонки, як вам потрібно */
-    margin-right: auto;
-    align-items: center;
-  }
+
+.index-about-us-gourman-choise {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Розділення на дві колонки */
+  justify-content: center; /* Колонки по центру */
+}
+
+.index-about-us-gourman-choise-item{
+  text-align: center; /* Вирівнювання тексту по центру */
+  padding: 20px;
+}
   
