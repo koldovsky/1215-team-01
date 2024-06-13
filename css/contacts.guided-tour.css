@@ -11,6 +11,11 @@
     padding-left: calc((100% - 1200px) / 2 + 12px);
     padding-right: calc((100% - 1200px) / 2 + 12px);
   }
+
+  .guided-tour-img {
+    width: 50px;
+
+  }
 }
 .guided-tour__paragraph {
   font-family: "Cormorant Infant", serif;
