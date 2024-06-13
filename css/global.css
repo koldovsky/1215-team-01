@@ -50,9 +50,9 @@ body {
   margin: auto;
 }
 
-img {
+/*img {
   display: 100%;
-}
+}*/
 
 ul {
   list-style-type: none; /* Прибираємо маркери зі списку */
