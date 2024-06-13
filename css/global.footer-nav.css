@@ -1,5 +1,10 @@
-.footer {
+.full-width-background {
   background: var(--footer-bg-color);
+  width: 100%;
+}
+
+.footer,
+.container {
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -222,4 +227,10 @@
   width: auto;
   height: auto;
   color: var(--footer-text-color);
+}
+
+@media (min-width: 830px) {
+  .footer__text {
+    margin-top: 0px;
+  }
 }
