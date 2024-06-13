@@ -2,58 +2,49 @@
     display: grid;
     grid-template-columns: 1fr 1fr; /* Розділення на дві колонки */
     justify-content: center; /* Колонки по центру */
-   }
-   
-.index-about-us-column {
+  }
+  
+  .index-about-us-column {
     text-align: center; /* Вирівнювання тексту по центру */
     padding: 20px;
-   }
-
-.line {
+  }
+  
+  .line {
     width: 100px;
     height: 2px;
     background-color: rgba(84, 78, 76, .18);
   }
-
-.index-about-us-info-guide {
+  
+  .index-about-us-info-guide {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; /* Розділення на дві колонки */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Розділення на дві колонки */
     justify-content: center; /* Колонки по центру */
     margin-bottom: 20px;
-   }
-.index-about-us-info-item {
+  }
+  
+  .index-about-us-info-item {
     text-align: left; /* Вирівнювання тексту по центру */
     padding: 20px;
-   }
-
-.index-about-us-winegarden {
+  }
+  
+  .index-about-us-winegarden {
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
     max-width: 1200px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-   }
-
-.index-about-us-gourman-choise{
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Розділення на дві колонки */
-    justify-content: center; /* Колонки по центру */
-    grid-template-rows: repeat(3);
-    }
-
-.index-about-us-gourman-choise-item{
-    text-align: left; /* Вирівнювання тексту по центру */
-    padding: 20px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-      background-image: url(../img/eiswein.jpg);
   }
-
-/carousel-item img {
+  
+  .carousel-item img {
     width: 192px;
     height: 212px;
-}
+  }
+  
+  .col-md-6 {
+    margin-left: auto; /* Стилізуйте колонки, як вам потрібно */
+    margin-right: auto;
+    align-items: center;
+  }
+  
