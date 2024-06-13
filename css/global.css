@@ -47,7 +47,7 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /*img {
@@ -62,12 +62,12 @@ ul {
 
 /*  визначає гнучкий елемент, що має рівний розподіл простору
      *по людськи то розбивання на колонки */
-.column {
+/* .column {
   flex: 1;
   margin-left: 0;
   margin-right: 0;
   padding: 20px;
-}
+} */
 
 .column:first-child {
   margin-right: 20px;
