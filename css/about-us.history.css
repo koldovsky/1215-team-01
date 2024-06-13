@@ -1,0 +1,80 @@
+@media (min-width: 1200px) {
+  .about-us {
+    padding: 100px 0 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about-us__content {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-us__title {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about-us__subtitle {
+  text-align: center;
+  font-family: "Cormorant Infant", serif;
+  font-size: 3.3rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.about-us__description {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.about-us__image {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about-us__image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.about-us__text-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+.about-us__text {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .about-us__text-container {
+    grid-template-columns: 1fr;
+  }
+}
