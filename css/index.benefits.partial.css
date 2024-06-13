@@ -1,3 +1,8 @@
+
+/* Debug line */
+/* *{
+  outline: solid red;
+} */
 div.benefits__image img {
   background-image: url(../img/benefits/man-working.jpg);
 }
