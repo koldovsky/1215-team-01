@@ -43,8 +43,44 @@
   --contacts-visit-us__list-item: #544E4C;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
 
 
+.column {
+  flex: 1;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px;
+}
+
+.column:first-child {
+  margin-right: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none; /* Прибираємо маркери зі списку */
+  padding: 0; /* Прибираємо відступи списку */
+  margin: 0; /* Прибираємо відступи списку */
+}
+
+
+/*Щрифт для заголовків в мому випадку Guided Tours*/
+.h-text-content {
+  font-family: "Cormorant Infant", serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43.2px;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
 
 
 

@@ -41,10 +41,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr; /* Розділення на дві колонки */
   justify-content: center; /* Колонки по центру */
+  max-width: 1200px;
+  margin-left: 230px;
 }
 
 .index-about-us-gourman-choise-item{
-  text-align: center; /* Вирівнювання тексту по центру */
+  text-align: start; /* Вирівнювання тексту по центру */
   padding: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: url(../img/gourmand-choise/eiswein.jpg);
 }
   
