@@ -30,8 +30,12 @@
   --section-text-font-family: "Spectral", serif;
   --paragraph-text-font-family: "Cormorant Infant", serif;
   scroll-behavior: smooth;
-  --wine-club-how-works-title-color: #bc6e44;
-  --wine-club-how-works-subtitle: #28242A;
+  --wine-club-how-works-header-title-color: #bc6e44;
+  --wine-club-how-works-subtitle: #2A2824;
+  --wine-club-how-works-description: #837D71;
+  --wine-club-how-works-body-title-color: #2A2824;
+  --wine-club-how-works-body-text-color: #837D71;
+  --wine-club-how-works-body-item-text: #2A2824;
   --contacts-visit-us-paragraph-color:#bc6e44;
   --contacts-visit-us-title-color: #2A2824;
   --contacts-visit-us-description-title: #837D71;
@@ -51,7 +55,8 @@ body {
 }
 
 img {
-  display: 100%;
+  display: block;
+  width: 100%;
 }
 
 ul {

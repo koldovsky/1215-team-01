@@ -3,64 +3,154 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: column;
-
-  
+  flex-direction: column; 
 }
 
 .how-works__header {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 
   .how-works__header-title {
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.15rem;
-    text-transform: uppercase;
-    color: var(--wine-club-title-color);
+    font-size: 12px;
+    font-family: "Spectral",serif;
+    color: var(--wine-club-how-works-header-title-color);
   }
+
   .how-works__header-subtitle{
-    color: rgb(42, 40, 36);
+    font-size: 38px;
     font-family: "Cormorant Infant", serif;
-    font-size: 2.375rem;
-    font-weight: 500;
-    line-height: 2.615rem;
+    color: var(--wine-club-how-works-subtitle);
   }
+  
   .how-works__header-description{
-    color: rgb(131, 125, 113);
-    font-size: 1.188rem;
-    font-weight: 500;
-    line-height: 1.781rem;
+   font-size: 19px;
+   font-family: "Spectral", serif;
+   color: var(--wine-club-how-works-description);
+   margin-bottom: 40px;
   }
 }
 
-.how-works__body {
-  display: flex;
-  flex-direction: row;
-}
+  .how-works__body {
+    display: flex;
+    flex-direction: row;
+  
+  
+    .how-works__item {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      flex: 1;
+      margin-bottom: 60px;
+      
+    }
+
+    .how-works__body__item-title {
+      width: 50%;
+      font-size: 24px;
+      font-family: "Cormorant Infant", serif;
+      color: var(--wine-club-how-works-body-title-color);
+    
+    }
+  
+    .how-works__body__item-text {
+      width: 90%;
+      font-size: 17px;
+      font-family: "Spectral",serif;
+      color: var(--wine-club-how-works-body-text-color);
+      line-height: 1.2;
+      overflow-wrap: break-word;
+    }
+  }
+  @media (max-width: 600px) {
+
+    .how-works__body {
+      display: flex;
+      flex-direction: column;
+  }
+  }
 
 .how-works__gallery {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
 
-.how-works__gallery-item {
-  display: flex;
-  flex-direction: column;
-}
+  .how-works__gallery-item {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .how-works__gallery__item-icon {
+    width: 360px;
+    height: 230px;
+  }
 
-.how-works__gallery__item-icon {
-  width: 360px;
-  height: 230px;
+  .how-works__body__item-title {
+    font-size: 24px;
+    font-family: "Cormorant Infant", serif;
+    color: var(--wine-club-how-works-body-item-text);
+  }
+
+  .how-works__body__item-text {
+    font-size: 14px;
+    font-family: "Spectral",serif;
+  }
 }
 
 .membership-benefits {
   display: flex;
   flex-direction: row;
+
+  .membership-benefits__icon {
+    display: flex;
+    flex:1;
+    width: 400px;
+    height: 240px;
+  } 
 }
 
-.become-member {
+.membership-benefits__item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex:1;
+
+  .membership-benefits__item-title {
+    font-size: 12px;
+  }
+
+  .membership-benefits__item-subtitle {
+    font-size: 38px;
+  }
+
+  .membership-benefits__item-description {
+    font-size: 19px;
+  }
+
+  .membership-benefits__item-description {
+    font-size: 17px;
+  }
 }
+
+.membership-benefits__item-list {
+  font: 1em sans-serif;
+
+  .membership-benefits__item__list-item {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .membership-benefits__item__list__item-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .membership-benefits__item__list__item-text {
+    font-size: 17px;
+  }
+}
+
+
+
+
