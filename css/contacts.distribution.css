@@ -30,6 +30,8 @@
   padding-top: 5.625rem;
   padding-bottom: 5.625rem;
   z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .distribution__header {
@@ -78,7 +80,9 @@
 
 .distribution__item {
   border: 1px solid #ccc;
-  padding: 40px 20px;
+  padding: 20px 20px;
+  margin-left: 20px;
+  margin-right: 50px;
   text-align: center;
 }
 
@@ -125,7 +129,7 @@
   font-weight: 400;
   line-height: 1.594rem;
   text-align: left;
-  width: 100%;
+  /*width: 100%;  -- delete*/ 
 }
 .distribution__note-warning {
   color: rgb(131, 125, 113);
@@ -134,7 +138,7 @@
   font-weight: 400;
   line-height: 1.594rem;
   text-align: left;
-  width: 100%;
+  /*width: 100%;  -- delete*/ 
 }
 .specific-symbol {
   color: rgb(188, 110, 68);
@@ -148,12 +152,45 @@
 }
 
 @media (min-width: 768px) {
+
+  /*йу те що додав*/
+  .distribution__item {
+    margin-left: 0;
+    margin-right: 100px;
+  }
+  
+  .distribution__note-text{
+    margin-left: 0;
+    margin-right: 60px;
+  }
+
+  .distribution__note-warning{
+    margin-left: 0;
+    margin-right: 80px;
+  }
+  /*доци*/
   .distribution__list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 992px) {
+  /*йу те що додав*/
+  .distribution__item {
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+  
+  .distribution__note-text{
+    margin-left: 20px;
+    margin-right: 60px;
+  }
+
+  .distribution__note-warning{
+    margin-left: 20px;
+    margin-right: 60px;
+  }
+  /*доци*/
   .distribution__list {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -234,6 +271,23 @@
 
 /* Додаткові стилі для адаптивності */
 @media (max-width: 320px) {
+/*йу те що додав*/
+  .distribution__item {
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+  
+  .distribution__note-text{
+    margin-left: 20px;
+    margin-right: 60px;
+  }
+
+  .distribution__note-warning{
+    margin-left: 20px;
+    margin-right: 60px;
+  }
+  /*доци*/
+
   .map__container {
     flex-direction: column; /* Вертикальне розташування елементів на малих екранах */
     align-items: center; /* Вирівнювання елементів по центру */
