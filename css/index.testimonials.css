@@ -1,0 +1,18 @@
+
+
+#carousel-rev .carousel-control-prev-icon,
+#carousel-rev .carousel-control-next-icon {
+    background-image: url(../img/index/index_wine_tastings_icon.svg);
+}
+
+
+.carousel-item img {
+    position: relative;
+}
+
+.index-about-us-winegarden{
+    display: grid;
+    grid-template-columns: 1fr; /* Розділення на дві колонки */
+    justify-content: center; /* Колонки по центру */
+    margin-bottom: 20px;
+}

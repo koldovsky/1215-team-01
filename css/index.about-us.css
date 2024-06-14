@@ -1,3 +1,10 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .index-about-us-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Розділення на дві колонки */
@@ -52,6 +59,6 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-image: url(../img/gourmand-choise/eiswein.jpg);
+    background-image: url(../img/index/index-curved-icon.png);
 }
   
