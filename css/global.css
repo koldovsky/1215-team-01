@@ -36,6 +36,16 @@
   --wine-club-how-works-body-title-color: #2A2824;
   --wine-club-how-works-body-text-color: #837D71;
   --wine-club-how-works-body-item-text: #2A2824;
+  --wine-club-how-works__body__item-title: #2A2824;
+  --wine-club-how-works__body__item-subtitle: #837D71;;
+  --wine-club-how-works__body__item__subtitle-special: #bc6e44;
+  --wine-club-how-works__body__item-text: #837D71;;
+  --wine-club-how-works__body__item-btn: #bc6e44;
+  --wine-club-become-member-background-color: #bc6e44;
+  --wine-club-become-member__title: #FFFFFF;
+  --wine-club-become-member__text: #FFFFFFCC;
+  --wine-club-become-member__btn: #bc6e44;
+  --wine-club-become-member__btn-border: #FFFFFF;
   --contacts-visit-us-paragraph-color:#bc6e44;
   --contacts-visit-us-title-color: #2A2824;
   --contacts-visit-us-description-title: #837D71;
