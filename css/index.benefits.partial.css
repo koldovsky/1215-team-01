@@ -1,22 +1,18 @@
-
 /* Debug line */
-/* *{
+/* * {
   outline: solid red;
 } */
 div.benefits__image img {
   background-image: url(../img/benefits/man-working.jpg);
 }
 
-div.benefits-container {
+section.benefits {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
 }
 img.benefits__image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-position: 50% 50%;
 }
 
 li.benefits__item {
@@ -57,13 +53,24 @@ div.benefits__text {
 }
 
 @media (min-width: 768px) {
-  div.benefits-container {
+  .benefits-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  img.benefits__image {
-    width: 49%;
+    flex: 1;
+    img.benefits__image {
+      width: 140%;
+      height: 100%;
+      object-fit: cover;
+      
+    }
+    li.benefits__item {
+      justify-content: flex-start;
+    }
+    div.benefits__image-block {
+      padding: 15px;
+      p.benefits__item-description{
+        margin:0;
+      }
+    }
+
   }
 }
