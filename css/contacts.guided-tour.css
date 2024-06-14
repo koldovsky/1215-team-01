@@ -1,21 +1,38 @@
-.guided-tour__container {
+
+
+.guided-tour-background {
   background-image: url("../img/guided-tour/background-guided-tour.png");
+  background-size: cover; /* Забезпечує розміщення фонового зображення на всій площині */
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; /* Вирівнює контент по центру горизонтально */
 }
 
-@media (min-width: 1200px) {
-  .guided-tour__container {
-    max-width: 100%;
-    padding-left: calc((100% - 1200px) / 2 + 12px);
-    padding-right: calc((100% - 1200px) / 2 + 12px);
-  }
+.guided-tour-container {
+  max-width: 1200px; /* Максимальна ширина контейнера */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Рівномірно розподіляє простір між елементами */
+  padding: 20px; /* Внутрішні відступи */
+}
 
-  .guided-tour-img {
-    width: 50px;
+.guided-tour-column {
+  flex: 0 0 calc(50% - 20px); /* Ширина колонок - половина від контейнера, мінус внутрішні відступи */
+  padding: 20px; /* Внутрішні відступи для кожної колонки */
+  box-sizing: border-box; /* Враховує внутрішні відступи та границі у визначенні ширини */
+}
 
+.guided-tour-column:first-child {
+  margin-right: 20px; /* Відступ між першою та другою колонкою */
+}
+
+@media (max-width: 768px) {
+  .guided-tour-column {
+    flex: 0 0 100%; /* При меншій ширині екрану колонки займають всю доступну ширину */
+    margin-right: 0; /* Видаляє відступ між колонками */
   }
+}
+.wine-experience img{
+  width: 50px;
 }
 .guided-tour__paragraph {
   font-family: "Cormorant Infant", serif;
