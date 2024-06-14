@@ -32,6 +32,8 @@
   z-index: 1;
   margin-left: auto;
   margin-right: auto;
+  margin-ton: 50px;
+  margin-bottom: 50px;
 }
 
 .distribution__header {
