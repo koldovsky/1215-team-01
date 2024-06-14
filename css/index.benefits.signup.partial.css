@@ -34,7 +34,7 @@ div.benefits-container-signup {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 830px) {
   div.benefits-container-signup {
     flex-direction: row;
     justify-content: space-between;
