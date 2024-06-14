@@ -1,12 +1,13 @@
 section.benefits-signup {
   background-color: var(--background-color-signup);
 }
-/*  div.container {
+div.benefits-container-signup {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 50px 25px;
+  padding: 25px 25px;
+  height:max-content;
 
   font-weight: 500;
   .benefits-signup__intro {
@@ -30,5 +31,19 @@ section.benefits-signup {
   a.benefits-signup__link:hover {
     background-color: var(--text-color-signup);
     color: var(--link-text-color);
+  }
+}
+
+@media (min-width: 830px) {
+  div.benefits-container-signup {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 50px;
+    div.benefits-container-signup-text {
+      margin-right: 30px;
+      p.benefits-signup__intro{
+        margin-bottom: -15px;
+      }
+    }
   }
 }
