@@ -34,13 +34,15 @@
 .how-works__body {
     display: flex;
     flex-direction: row;
+    margin-bottom: 60px;
   
     .how-works__item {
       display: flex;
       flex-direction: column;
       flex: 1;
-      margin-bottom: 60px;
-     
+    }
+    .how-works__item:nth-child(2) {
+      margin-left: 10px;
     }
 
     .how-works__body__item-title {
@@ -51,7 +53,6 @@
     }
   
     .how-works__body__item-text {
-      width: 95%;
       font-size: 17px;
       font-family: "Spectral",serif;
       color: var(--wine-club-how-works-body-text-color);
