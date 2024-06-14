@@ -1,6 +1,10 @@
-.footer {
+.full-width-background {
   background: var(--footer-bg-color);
-  padding: 30px;
+  width: 100%;
+}
+
+.footer,
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +20,7 @@
 }
 
 .footer__content {
+  padding: 20px;
   margin: 20px;
   max-width: 100%;
   display: flex;
@@ -55,7 +60,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px ;
+  padding-top: 80px;
 }
 
 @media (min-width: 830px) {
@@ -222,4 +227,10 @@
   width: auto;
   height: auto;
   color: var(--footer-text-color);
+}
+
+@media (min-width: 830px) {
+  .footer__text {
+    margin-top: 0px;
+  }
 }

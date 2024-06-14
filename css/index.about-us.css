@@ -1,48 +1,53 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.index-about-us-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Розділення на дві колонки */
+  justify-content: center; /* Колонки по центру */
 }
 
-.index-about-us-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Розділення на дві колонки */
-    justify-content: center; /* Колонки по центру */
-  }
-  
-  .index-about-us-column {
-    text-align: center; /* Вирівнювання тексту по центру */
-    padding: 20px;
-  }
-  
-  .line {
-    width: 100px;
-    height: 2px;
-    background-color: rgba(84, 78, 76, .18);
-  }
-  
+.index-about-us-column {
+  text-align: center; /* Вирівнювання тексту по центру */
+  padding: 20px;
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background-color: rgba(84, 78, 76, 0.18);
+}
+
+.index-about-us-info-guide {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr; /* Розділення на дві колонки */
+  justify-content: center; /* Колонки по центру */
+  margin-bottom: 20px;
+}
+
+@media (min-width: 830px) {
   .index-about-us-info-guide {
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Розділення на дві колонки */
     justify-content: center; /* Колонки по центру */
     margin-bottom: 20px;
   }
-  
-  .index-about-us-info-item {
-    text-align: left; /* Вирівнювання тексту по центру */
-    padding: 20px;
-  }
-  
-  .index-about-us-winegarden {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    max-width: 1200px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-  }
+}
+
+
+.index-about-us-info-item {
+  text-align: left; /* Вирівнювання тексту по центру */
+  padding: 20px;
+}
+
+.index-about-us-winegarden {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 1200px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .index-about-us-gourman-choise {
   display: grid;
@@ -52,13 +57,12 @@
   margin-left: 230px;
 }
 
-.index-about-us-gourman-choise-item{
+.index-about-us-gourman-choise-item {
   text-align: start; /* Вирівнювання тексту по центру */
   padding: 20px;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-image: url(../img/index/index-curved-icon.png);
+  background-image: url(../img/index/index-curved-icon.png);
 }
-  
