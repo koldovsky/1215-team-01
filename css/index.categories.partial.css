@@ -22,9 +22,6 @@ div.categories__image__bottle {
 
 /* Секція категорій */
 
-.categories-container {
-  padding: 20px 12px;
-}
 .categories__title {
   padding: 90px 0 10px 20px;
   color: var(--heading-section-text-color);
@@ -78,6 +75,8 @@ div.categories__image__bottle {
 }
 
 .categories__item {
+  width: 270px;
+  background-color: var(--text-color-signup);
   padding: 20px;
 }
 
@@ -94,7 +93,7 @@ div.categories__image__bottle {
 
 .categories__item-description {
   font-size: 16px;
-  margin: 10px 0;
+  padding: 10px;
 }
 
 .categories__item-link {
