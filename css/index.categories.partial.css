@@ -4,15 +4,15 @@
 } */
 
 /* Фонові зображення */
-div.categories__image__bottles {
+div.categories__image__bottle {
   background-image: url(../img/categories/background-image-bottles-wine.png);
   width: 100%;
   height: 100%;
-  background-position: 50% 50%;
+  background-position: 40% 50%;
   background-repeat: no-repeat;
 }
 
-div.categories__image__glasses {
+.categories__image__glasses {
   background-image: url(../img/categories/background-image-glasses-and-hammer.svg);
   width: 100%;
   height: 100%;
@@ -21,23 +21,31 @@ div.categories__image__glasses {
 }
 
 /* Секція категорій */
-.categories {
-  text-align: center;
-  padding: 20px;
-}
 
+.categories-container {
+  padding: 20px 12px;
+}
 .categories__title {
-  padding: 30px 20px;
+  padding: 90px 0 10px 20px;
   color: var(--heading-section-text-color);
-  font-size: 20px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
-.categories__subtitle,
-.categories__description,
+.categories__subtitle {
+  color: var(--paragraph-section-text-color);
+  font-size: 38px;
+  padding: 0 10px;
+}
+.categories__description {
+  color: var(--paragraph-content-text-color);
+  font-size: 19px;
+  padding: 5px 10px;
+}
 .categories__text {
-  margin: 15px 0;
-  font-size: 16px;
+  color: var(--paragraph-content-text-color);
+  font-size: 19px;
+  padding: 5px 10px;
 }
 
 .categories__nav {
@@ -48,17 +56,18 @@ div.categories__image__glasses {
 }
 
 .categories__link {
-  text-decoration: none;
-  color: var(--text-color-signup);
-  font-size: 18px;
+  text-decoration:underline;
+  color: var(--color-additional-text);
+  font-size: 28px;
 }
 
 .categories__link:hover {
-  color: var(--text-color-signup);
+  cursor: grab;
 }
 
 .special-arrow {
-  display: none;
+  color: var(--background-color-signup);
+  font-size: 52px;
 }
 
 .categories__list {
@@ -101,6 +110,12 @@ div.categories__image__glasses {
 }
 /* Адаптація для більших екранів */
 @media (min-width: 768px) {
+  div.categories__image__bottle {
+    background-position: 60% 50%;
+  }
+  .categories-container-bottles {
+    max-width: 570px;
+  }
   .categories__nav {
     flex-direction: row;
     justify-content: flex-start;
