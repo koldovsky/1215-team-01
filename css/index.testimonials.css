@@ -1,4 +1,33 @@
+.testimonials__container {
+    max-width: 1200px;
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:30px;
+    padding-right: 30px;
+}
+  
+.testimonials {
+    width: 100%;
+    background-image: url("../img/testimonials/background-testimonials.png");
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
 
+.testimonials__content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.testimonials__paragraph{
+    font-family: "Spectral", serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--contacts-paragraph-color);
+    border-radius: inherit;
+    
+}
 
 #carousel-rev .carousel-control-prev-icon,
 #carousel-rev .carousel-control-next-icon {
