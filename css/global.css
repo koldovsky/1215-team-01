@@ -49,9 +49,33 @@
   --contacts-visit-us-label: #999;
   --contacts-visit-us-submit: #faf8f2;
   --contacts-visit-us-submit-background: #bc6e44;
-  --contacts-visit-us-submit-hover: #a55a34;
+  --contaects-visit-us-submit-hover: #a55a34;
   --contacts-visit-us-input-input-border: #faf8f2; 
   --contacts-visit-us-input-input-background: #faf8f2;
+  --distribution-subtitle-color: #bc6e44;
+  --distribution-title-color: #2a2824;
+  --distribution-description-color: #837d71;
+  --distribution-border-item-color: #faf8f2;
+  --distribution-item-title-color: #544e4c;
+  --distribution-item-location-color: #bc6e44;
+  --distribution-item-link-color: #837d71;
+  --distribution-text-decoration-color: #837d71;
+  --distribution-note-text-color: #837d71;
+  --distribution-specific-symbol: #bc6e44;
+  --distribution-font-style: italic;
+  
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 .container {

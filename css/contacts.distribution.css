@@ -20,7 +20,6 @@
   background-repeat: no-repeat;
   border-image-repeat: stretch;
   border-image-slice: 100%;
-  margin: 0 auto;
   min-width: 320px;
   max-width: 1200px;
   font-weight: 400;
@@ -35,36 +34,42 @@
 .distribution__container {
   max-width: 75rem;
 
-.distribution__header {
-  font-size: 1.063rem;
-  font-weight: 400;
-  line-height: 1.594rem;
-  text-align: center;
-  padding-left: 0.938rem;
-  padding-right: 0.938rem;
-}
+  .distribution__header {
+    font-size: 1.063rem;
+    font-weight: 400;
+    line-height: 1.594rem;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-.distribution__subtitle {
-  color: rgb(188, 110, 68);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
+  .distribution__subtitle {
+    font-family: var(--section-text-font-family);
+    color: var(--distribution-subtitle-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 .distribution__title {
-  color: rgb(42, 40, 36);
-  font-family: "Cormorant Infant", serif;
+  font-family: var(--paragraph-text-font-family);
+  color: var(--distribution-title-color);
   font-size: 2.375rem;
   font-weight: 500;
   line-height: 2.615rem;
+  text-align: center;
 }
 
 .distribution__description {
-  color: rgb(131, 125, 113);
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-description-color);
   font-size: 1.188rem;
   font-weight: 500;
   line-height: 1.781rem;
+  text-align: center;
 }
 
 .distribution__list {
@@ -78,7 +83,7 @@
 }
 
 .distribution__item {
-  border: 1px solid #ccc;
+  border: 0.1rem solid var(--distribution-border-item-color);
   padding: 20px 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -86,29 +91,39 @@
 }
 
 .distribution__item-title {
-  color: rgb(84, 78, 76);
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-item-title-color);
   font-style: normal;
   font-size: 1.188rem;
   font-weight: 500;
   line-height: 1.781rem;
+  text-align: center;
 }
 
 .distribution__item-location {
-  color: rgb(188, 110, 68);
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-item-location-color);
   font-size: 1.063rem;
   font-style: italic;
   font-weight: 400;
   line-height: 1.594rem;
   margin-bottom: 1.25rem;
+  text-align: center;
 }
 
 .distribution__item-link {
-  color: rgb(131, 125, 113);
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-item-link-color);
   font-size: 1.063rem;
   font-weight: 400;
   line-height: 1.594rem;
   cursor: pointer;
   text-decoration: none !important;
+  text-align: center;
+  text-decoration-color: var(--distribution-text-decoration-color);
+  text-decoration-line: none;
+  text-decoration-thickness: auto;
+  text-transform: none;
 }
 
 .distribution__item-link:hover,
@@ -120,72 +135,77 @@
   line-height: 1.594rem;
   padding-left: 0.938rem;
   padding-right: 0.935rem;
+  padding-top: 3.125rem;
 }
 
 .distribution__note-text {
-  color: rgb(131, 125, 113);
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-note-text-color);
   font-size: 1.063rem;
   font-weight: 400;
   line-height: 1.594rem;
   text-align: left;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+
 }
+
 .distribution__note-warning {
-  color: rgb(131, 125, 113);
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-note-text-color);
   font-size: 0.875rem;
   font-style: italic;
   font-weight: 400;
   line-height: 1.594rem;
   text-align: left;
+  padding-top: 0.625rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 .specific-symbol {
-  color: rgb(188, 110, 68);
+  color: var(--distribution-specific-symbol);
+  font-family: var(--paragraph-text-font-family);
   font-size: 3.375rem;
-  font-family: "Cormorant Infant", serif;
+  line-height: 2.613rem;
+  text-align: center;
 }
 .warning-symbol {
-  color: rgb(188, 110, 68);
-  font-size: 0.938rem;
-  font-style: italic;
+  color: var(--distribution-specific-symbol);
+  font-family: var(--section-text-font-family);
+  font-size: 0.875rem;
+  font-style: var(--distribution-font-style);
+  line-height: 1.25rem;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
   .distribution__item {
     margin-left: 0;
-    margin-right: 100px;
+    margin-right: 6.25rem;
   }
 
-  .distribution__note-text {
-    margin-left: 0;
-    margin-right: 60px;
-  }
-
-  .distribution__note-warning {
-    margin-left: 0;
-    margin-right: 80px;
-  }
-  /*доци*/
+  
   .distribution__list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 992px) {
-  /*йу те що додав*/
   .distribution__item {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
 
   .distribution__note-text {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
 
   .distribution__note-warning {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
-  /*доци*/
+  
   .distribution__list {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -194,14 +214,12 @@
 @media (min-width: 1200px) {
   .distribution {
     max-width: 100%;
-    /*padding-left: calc((100% - 1200px) / 2 + 24px);
-    padding-right: calc((100% - 1200px) / 2 + 24px);
-  }*/
-}
+  }
+  
 @media (max-width: 1200px) {
   .distribution {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
