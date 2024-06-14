@@ -51,6 +51,17 @@
   --contacts-visit-us-description-title: #837D71;
   --contacts-visit-us-description-text: #837D71;
   --contacts-visit-us__list-item: #544E4C;
+  --contacts-tasting-conditions-icon: #bc6f44;
+  --contacts-visit-us-form-border: #faf8f2;
+  --contacts-visit-us-form-background-color:#ffffff;
+  --contacts-visit-us-links-hover: #007bff;
+  --contacts-visit-us-links-a: #333;
+  --contacts-visit-us-label: #999;
+  --contacts-visit-us-submit: #faf8f2;
+  --contacts-visit-us-submit-background: #bc6e44;
+  --contacts-visit-us-submit-hover: #a55a34;
+  --contacts-visit-us-input-input-border: #faf8f2; 
+  --contacts-visit-us-input-input-background: #faf8f2;
 }
 
 .container {
@@ -61,7 +72,6 @@
 img {
   display: block;
 }
-
 
 .column {
   flex: 1;
@@ -74,14 +84,11 @@ img {
   margin-right: 20px;
 }
 
-
-
 ul {
   list-style-type: none; /* Прибираємо маркери зі списку */
   padding: 0; /* Прибираємо відступи списку */
   margin: 0; /* Прибираємо відступи списку */
 }
-
 
 /*Щрифт для заголовків в мому випадку Guided Tours*/
 .h-text-content {
@@ -92,6 +99,11 @@ ul {
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
 }
+ 
+
+
+
+
 
 
 

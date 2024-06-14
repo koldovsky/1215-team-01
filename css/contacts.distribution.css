@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.distributors {
+.distribution {
   background-image: url("../img/distribution/background.svg");
   background-size: cover;
   background-position: center;
@@ -23,21 +23,24 @@
   margin: 0 auto;
   min-width: 320px;
   max-width: 1200px;
-  padding-left: 24px;
-  padding-right: 24px;
   font-weight: 400;
   line-height: 1.594rem;
   padding-top: 5.625rem;
   padding-bottom: 5.625rem;
   z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.distribution__container {
+  max-width: 75rem;
 
 .distribution__header {
   font-size: 1.063rem;
   font-weight: 400;
   line-height: 1.594rem;
   text-align: center;
-  padding-left: 0.939rem;
+  padding-left: 0.938rem;
   padding-right: 0.938rem;
 }
 
@@ -67,18 +70,18 @@
 .distribution__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.25rem;
+  grid-gap: 30px;
   width: 100%;
   line-height: 1.594rem;
   text-align: center;
-  padding-left: 0.938rem;
-  padding-right: 0.938rem;
   margin-top: 3.125rem;
 }
 
 .distribution__item {
   border: 1px solid #ccc;
-  padding: 40px 20px;
+  padding: 20px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: center;
 }
 
@@ -125,7 +128,6 @@
   font-weight: 400;
   line-height: 1.594rem;
   text-align: left;
-  width: 100%;
 }
 .distribution__note-warning {
   color: rgb(131, 125, 113);
@@ -134,7 +136,6 @@
   font-weight: 400;
   line-height: 1.594rem;
   text-align: left;
-  width: 100%;
 }
 .specific-symbol {
   color: rgb(188, 110, 68);
@@ -148,26 +149,57 @@
 }
 
 @media (min-width: 768px) {
+  .distribution__item {
+    margin-left: 0;
+    margin-right: 100px;
+  }
+
+  .distribution__note-text {
+    margin-left: 0;
+    margin-right: 60px;
+  }
+
+  .distribution__note-warning {
+    margin-left: 0;
+    margin-right: 80px;
+  }
+  /*доци*/
   .distribution__list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 992px) {
+  /*йу те що додав*/
+  .distribution__item {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .distribution__note-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .distribution__note-warning {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  /*доци*/
   .distribution__list {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (min-width: 1200px) {
-  .distributors {
+  .distribution {
     max-width: 100%;
-    padding-left: calc((100% - 1200px) / 2 + 24px);
+    /*padding-left: calc((100% - 1200px) / 2 + 24px);
     padding-right: calc((100% - 1200px) / 2 + 24px);
-  }
+  }*/
 }
 @media (max-width: 1200px) {
-  .distributors {
+  .distribution {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -234,6 +266,23 @@
 
 /* Додаткові стилі для адаптивності */
 @media (max-width: 320px) {
+  /*йу те що додав*/
+  .distribution__item {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .distribution__note-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .distribution__note-warning {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  /*доци*/
+
   .map__container {
     flex-direction: column; /* Вертикальне розташування елементів на малих екранах */
     align-items: center; /* Вирівнювання елементів по центру */

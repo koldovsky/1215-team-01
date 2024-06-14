@@ -1,7 +1,7 @@
 section.benefits-signup {
   background-color: var(--background-color-signup);
 }
-  div.benefits-container {
+  div.benefits-container-signup {
   display: flex;
   flex-direction: column;
   justify-content: center;
