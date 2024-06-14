@@ -5,6 +5,12 @@
     background-image: url(../img/index/index_wine_tastings_icon.svg);
 }
 
+/* Якщо вам потрібно змінити розмір зображення */
+.carousel-control-prev img,
+.carousel-control-next img {
+    width: 20px; /* ваш розмір */
+    height: auto; /* автоматично обчислений розмір */
+}
 
 .carousel-item img {
     position: relative;
