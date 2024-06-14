@@ -7,7 +7,7 @@ div.benefits-container-signup {
   justify-content: center;
   text-align: center;
   padding: 25px 25px;
-  height: 200px;
+  height:max-content;
 
   font-weight: 500;
   .benefits-signup__intro {
