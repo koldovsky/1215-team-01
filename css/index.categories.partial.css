@@ -1,0 +1,34 @@
+/* Debug line */
+/* * {
+  outline: solid red;
+} */
+
+div.categories__image__bottle {
+  height: 100%;
+  background-image: url(../img/categories/background-image-bottles-wine.png);
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.categories-container-bottles {
+  padding: 90px 20px;
+}
+
+.categories__title {
+  color: var(--heading-section-text-color);
+  font-size: 12px;
+  text-transform: uppercase;
+
+}
+
+/* section 2 */
+
+div.categories__image__glasses {
+  background-image: url(../img/categories/background-image-glasses-and-hammer.svg);
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
