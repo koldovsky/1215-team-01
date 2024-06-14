@@ -7,7 +7,7 @@ div.benefits-container-signup {
   justify-content: center;
   text-align: center;
   padding: 25px 25px;
-  height:max-content;
+  height: max-content;
 
   font-weight: 500;
   .benefits-signup__intro {
@@ -41,7 +41,7 @@ div.benefits-container-signup {
     margin: 0 50px;
     div.benefits-container-signup-text {
       margin-right: 30px;
-      p.benefits-signup__intro{
+      p.benefits-signup__intro {
         margin-bottom: -15px;
       }
     }

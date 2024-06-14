@@ -45,6 +45,10 @@ div.categories__image__bottle {
   padding: 5px 10px;
 }
 
+p.categories__text {
+  margin: 0;
+}
+
 .categories__nav {
   display: flex;
   flex-direction: column;
@@ -53,7 +57,7 @@ div.categories__image__bottle {
 }
 
 .categories__link {
-  text-decoration:underline;
+  text-decoration: underline;
   color: var(--color-additional-text);
   font-size: 28px;
 }
@@ -102,7 +106,6 @@ div.categories__image__bottle {
   color: var(--text-color-signup);
   font-size: 16px;
   padding: 5px;
-  
 }
 .categories__item-link:hover {
   background-color: var(--text-color-background-link-categories);

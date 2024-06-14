@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&family=Spectral:wght@400;500;700&display=swap");
-@import "global.header-nav.css";
-@import "global.footer-nav.css";
+/* @import "global.header-nav.css";
+@import "global.footer-nav.css"; */
 
 * {
   margin: 0;
@@ -64,7 +64,7 @@
   --contacts-visit-us-submit: #faf8f2;
   --contacts-visit-us-submit-background: #bc6e44;
   --contacts-visit-us-submit-hover: #a55a34;
-  --contacts-visit-us-input-input-border: #faf8f2; 
+  --contacts-visit-us-input-input-border: #faf8f2;
   --contacts-visit-us-input-input-background: #faf8f2;
   --distribution-subtitle-color: #bc6e44;
   --distribution-title-color: #2a2824;
@@ -77,12 +77,6 @@
   --distribution-note-text-color: #837d71;
   --distribution-specific-symbol: #bc6e44;
   --distribution-font-style: italic;
-  --distribution-address-box-background-color: #ffffff;
-  --distribution-border-color: #2a2824;
-  --distribution-map-close-button-background-color: #000000;
-  --map-close-button-font-family: "Roboto", Arial, sans-serif;
-
-
   
 
 
