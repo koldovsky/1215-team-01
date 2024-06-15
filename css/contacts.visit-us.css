@@ -104,10 +104,10 @@
 }
 
 .visit-us__list-item svg {
-  width: 24px; /* Задаємо ширину іконки */
-  height: 24px; /* Задаємо висоту іконки */
-  vertical-align: middle; /* Вирівнюємо іконку з текстом по вертикалі */
-  margin-right: 8px; /* Додаємо невеликий відступ між іконкою та текстом */
+  width: 24px; 
+  height: 24px; 
+  vertical-align: middle; 
+  margin-right: 8px;
 }
 
 .visit-us__list-item svg path {
