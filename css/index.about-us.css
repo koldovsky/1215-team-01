@@ -2,11 +2,63 @@
   display: grid;
   grid-template-columns: 1fr 1fr; /* Розділення на дві колонки */
   justify-content: center; /* Колонки по центру */
+  max-width: 1200px;
+  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left:30px;
+  padding-right: 30px;
 }
 
-.index-about-us-column {
+.index-about-us {
   text-align: center; /* Вирівнювання тексту по центру */
   padding: 20px;
+  width: 100%;
+  background-image: url("../img/index.about-us/index.about-us.png");
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.index-about-us__content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.index-about-us__paragraph {
+  font-family: "Spectral", serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--contacts-paragraph-color);
+  border-radius: inherit; 
+}
+
+.wine-is-poetry__title {
+  font-family: "Spectral", serif;
+  font-size: 38px;
+  font-weight: 100;
+  font-stretch: 100%;
+  line-height: 41.8px;
+  color: var(--contacts-title-color);
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+.discover-our-wines__title__title {
+  font-family: "Spectral", serif;
+  font-size: 19px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--contacts-description-title);
+}
+
+.index-about-us-description__text {
+  font-family: "Spectral", serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: var(--contacts-visit-us-description-text);
 }
 
 .line {
