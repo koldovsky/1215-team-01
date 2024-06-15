@@ -128,7 +128,7 @@
   font-size: 1.063rem;
   line-height: 1.594rem;
   padding-left: 0.938rem;
-  padding-right: 0.938rem;
+  padding-right: 0.935rem;
   padding-top: 3.125rem;
 }
 
@@ -225,7 +225,7 @@
   display: grid;
   position: relative;
   width: 100%;
-  height: 857.775px;
+  height: 53.611rem;
   z-index: 3;
 }
 
@@ -243,33 +243,33 @@
   left: 50%; /* Позиціонування по горизонталі на 50% */
   transform: translate(-50%, -150%);
   background-color: rgb(255, 255, 255);
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
   z-index: 1;
   width: max-content;
-  max-width: 300px;
+  max-width: 18.75rem;
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-padding-right: 12px;
+  padding-top: 2.5rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+padding-right: 0.75rem;
 }
 
 .map__address-box::after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: -.0625rem;
   left: 50%;
   transform: translateX(-50%);
-  border-width: 10px 10px 0;
+  border-width: 0.625rem 0.625rem 0;
   border-style: solid;
   border-color: rgb(255, 255, 255) transparent transparent transparent;
 }
 
 .map__address-box h3 {
   font-family: "Cormorant Infant", serif;
-  font-size: 15px;
+  font-size: 0.938rem;
   margin: 0;
   font-weight: 500;
 }
@@ -277,9 +277,9 @@ padding-right: 12px;
 .map__address-box p {
   font-family: "Spectral", serif;
   color: rgb(131, 125, 113);
-  font-size: 13px;
+  font-size: 0.813rem;
   font-weight: 400;
-  margin: 5px 0 0;
+  margin: 0.313rem 0 0;
 }
 
 /* Стиль для вікна робочих годин */
@@ -288,10 +288,10 @@ padding-right: 12px;
   bottom: 30%;
   right: 20%;
   background-color: rgb(255, 255, 255);
-  padding: 40px 20px;
+  padding: 2.5rem 1.25rem;
   z-index: 1;
-  width: 300px;
-  max-width: 300px;
+  width: 18.75rem;
+  max-width: 18.75rem;
   height: auto;
   text-align: center;
   box-sizing: border-box;
@@ -299,7 +299,7 @@ padding-right: 12px;
 
 .map__working-hours h3 {
   font-family: "Cormorant Infant", serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   margin: 0;
   font-weight: 500;
 }
@@ -307,10 +307,10 @@ padding-right: 12px;
 .map__working-hours p {
   font-family: "Spectral", serif;
   color: rgb(131, 125, 113);
-  font-size: 17px;
-  margin: 5px 0 0;
+  font-size: 1.063rem;
+  margin: 0.313rem 0 0;
   font-weight: 400;
-  line-height: 25.5px;
+  line-height: 1.594rem;
   pointer-events: auto;
   text-align: center;
   font-style: italic;
@@ -325,19 +325,19 @@ padding-right: 12px;
   }
 
   .map__working-hours {
-    bottom: 10px;
+    bottom: 0.625rem;
     left: 50%;
     transform: translateX(-50%);
     width: 80%; 
-    max-width: 300px;
-    padding: 50px;
+    max-width: 18.75rem;
+    padding: 3.125rem;
   }
 }
 
 .map__close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0.625rem;
+  right: 0.625rem;
   background: none;
   border: none;
   font-size: 1rem;
