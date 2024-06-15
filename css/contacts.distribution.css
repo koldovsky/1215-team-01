@@ -285,14 +285,16 @@ padding-right: 12px;
 /* Стиль для вікна робочих годин */
 .map__working-hours {
   position: absolute;
-  bottom: 50px;
-  right: 50px;
+  bottom: 30%;
+  right: 20%;
   background-color: rgb(255, 255, 255);
-  padding: 20px;
+  padding: 40px 20px;
   z-index: 1;
   width: 300px;
-  max-width: 305px;
+  max-width: 300px;
+  height: auto;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .map__working-hours h3 {
@@ -326,8 +328,9 @@ padding-right: 12px;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: auto;
-    max-width: 305px;
+    width: 80%; 
+    max-width: 300px;
+    padding: 50px;
   }
 }
 
