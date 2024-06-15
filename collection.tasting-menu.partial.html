@@ -49,45 +49,53 @@
       </div>
     </section>
     <section class="tasting-menu__schedule">
-      <h3 class="tasting-menu__schedule-title">~ SCHEDULE ~</h3>
-      <p class="tasting-menu__schedule-subtitle">Schedule Your Tasting.</p>
-      <p class="tasting-menu__schedule-description">
-        Our Tasting Room is located on the top of the hilly vineyard and offers
-        guided tastings of all our great wine selections. Come visit us to enjoy
-        our wines and relax sipping a divine drink while we take care of the
-        rest.
-      </p>
-    </section>
-    <section class="tasting-menu__schedule-form">
-      <div class="tasting__form">
-        <form action="submit.php" method="post">
-          <div class="schedule__form-group">
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="schedule__input"
-              placeholder=" "
-              required
-            />
-            <label for="name" class="schedule__label">Name</label>
+      <section class="tasting-menu__schedule-text">
+        <h3 class="tasting-menu__schedule-title">~ SCHEDULE ~</h3>
+        <p class="tasting-menu__schedule-subtitle">
+          Schedule Your <span class="schedule__special">Tasting.</span>
+        </p>
+        <p class="tasting-menu__schedule-description">
+          Our Tasting Room is located on the top of the hilly vineyard and
+          offers guided tastings of all our great wine selections. Come visit us
+          to enjoy our wines and relax sipping a divine drink while we take care
+          of the rest.
+        </p>
+      </section>
+      <section class="tasting-menu__schedule-form">
+        <div class="schedule__container">
+          <div class="tasting__form">
+            <form action="submit.php" method="post">
+              <div class="schedule__form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="schedule__input"
+                  placeholder=" "
+                  required
+                />
+                <label for="name" class="schedule__label">Name</label>
+              </div>
+              <div class="schedule__form-group">
+                <input
+                  type="text"
+                  id="phone-number"
+                  name="phone-number"
+                  class="schedule__input"
+                  placeholder=" "
+                  required
+                />
+                <label for="phone-number" class="schedule__label"
+                  >Phone number</label
+                >
+              </div>
+              <button type="submit" class="schedule__submit">
+                Send a Request
+              </button>
+            </form>
           </div>
-          <div class="schedule__form-group">
-            <input
-              type="text"
-              id="phone-number"
-              name="phone-number"
-              class="schedule__input"
-              placeholder=" "
-              required
-            />
-            <label for="phone-number" class="schedule__label"
-              >Phone number</label
-            >
-          </div>
-          <button type="submit" class="schedule__submit">Send a Request</button>
-        </form>
-      </div>
+        </div>
+      </section>
     </section>
   </body>
 </html>
