@@ -77,23 +77,10 @@
   --distribution-note-text-color: #837d71;
   --distribution-specific-symbol: #bc6e44;
   --distribution-font-style: italic;
-  
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
