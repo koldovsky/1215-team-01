@@ -9,7 +9,7 @@ div.categories__image__bottle {
   width: 100%;
   height: 100%;
   background-position: 40% 50%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .categories__image__glasses {
@@ -17,7 +17,7 @@ div.categories__image__bottle {
   width: 100%;
   height: 100%;
   background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 /* Секція категорій */
