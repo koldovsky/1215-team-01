@@ -20,13 +20,12 @@
   padding-right: 20px;
 }
 
-.visit-us__paragraph{
+.visit-us__paragraph {
   font-family: "Spectral", serif;
   font-size: 12px;
   font-weight: 600;
   color: var(--contacts-paragraph-color);
-  border-radius: inherit;
-  
+  border-radius: inherit; 
 }
 
 .tasting-conditions__title {
@@ -35,7 +34,7 @@
   font-weight: 100;
   font-stretch: 100%;
   line-height: 41.8px;
-  color: var(--contacts-visit-us-title-color);
+  color: var(--contacts-title-color);
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
 }
@@ -46,8 +45,9 @@
   font-weight: 500;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: var(--contacts-visit-us-description-title);
+  color: var(--contacts-description-title);
 }
+
 .visit-us-description__text {
   font-family: "Spectral", serif;
   font-size: 17px;

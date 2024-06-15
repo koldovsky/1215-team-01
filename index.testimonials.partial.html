@@ -1,52 +1,117 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/index.css" />
-</head>
-<body>
-  <section class="testimonials">
-    <div class="testimonials__container">
-      <div class="testimonials__content">
-        <p class="testimonials__paragraph">~TESTIMONIALS~</p>
-        <h3 class="testimonials__title">Our Lovely Clients About Us.</h3>
-        <p class="testimonials-description__title">Find out more about the possibilities of visiting our winery.</p>
-<div class="index-about-us-winegarden">
-  <img src="img/gourmand-choise/weingarden.jpg" alt="Beautiful vineyard with lush green vines">
-</div>
-<section class="index-testimonals-reviews">
-<div id="carousel-rev" class="carousel slide container" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carousel-rev" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carousel-rev" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carousel-rev" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carousel-rev" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/index/index_amanda_willson.png" style="width: 50%;" alt="bottle eiswein" />
-    </div>
-    <div class="carousel-item">
-      <img src="img/index/index_grapes_variety.jpeg" style="width: 50%;" alt="bottle grenache-rose" />
-    </div>
-    <div class="carousel-item">
-      <img src="img/index/index_wine_tasting.jpeg" style="width: 50%;" alt="bottle pinotnoir" />
-    </div>
-    <div class="carousel-item">
-      <img src="img/index/index_wine_festival.jpeg" style="width: 50%;" alt="bottle portwein" />
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-rev" data-bs-slide="prev">
-    <img src="img/index/index-curved-icon.png" alt="Previous">
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carousel-rev" data-bs-slide="next">
-    <img src="img/index/index-curved-icon.png" alt="Next">
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</section>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <section class="testimonials">
+      <div class="testimonials__container">
+        <div class="testimonials__content">
+          <p class="testimonials__paragraph">~TESTIMONIALS~</p>
+          <h3 class="testimonials__title">Our Lovely Clients About Us.</h3>
+          <p class="testimonials__description">
+            Find out more about the possibilities of visiting our winery.
+          </p>
+          <section class="testimonials__reviews">
+            <div
+              id="carousel-rev"
+              class="testimonials__carousel carousel slide container"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carousel-rev"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-rev"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-rev"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-rev"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/index/index_amanda_willson.png"
+                    class="testimonials__carousel-image"
+                    alt="bottle eiswein"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/index/index_grapes_variety.jpeg"
+                    class="testimonials__carousel-image"
+                    alt="bottle grenache-rose"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/index/index_wine_tasting.jpeg"
+                    class="testimonials__carousel-image"
+                    alt="bottle pinotnoir"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/index/index_wine_festival.jpeg"
+                    class="testimonials__carousel-image"
+                    alt="bottle portwein"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel-rev"
+                data-bs-slide="prev"
+              >
+                <img
+                  src="img/index/index-curved-icon.png"
+                  class="testimonials__carousel-control"
+                  alt="Previous"
+                />
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel-rev"
+                data-bs-slide="next"
+              >
+                <img
+                  src="img/index/index-curved-icon.png"
+                  class="testimonials__carousel-control"
+                  alt="Next"
+                />
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
