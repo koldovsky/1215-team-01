@@ -1,0 +1,20 @@
+.header__contacts {
+    background-color: var(--header-bg-top-color);
+}
+
+.header__contact-item {
+    color:var(--header-contact-text-color);
+
+    .header__contact-link {
+        color: var(--header-contact-text-second-color);
+    }
+}
+
+.header__contact-address {
+    color: var(--header-contact-text-second-color);
+}
+
+.header__logo,.header__logo-link{
+    width: 102px;
+    height: 82px;
+}

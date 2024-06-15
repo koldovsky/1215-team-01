@@ -10,6 +10,9 @@
 }
 
 :root {
+  --header-bg-top-color: #2a2824;
+  --header-contact-text-color: #fff;
+  --header-contact-text-second-color: #837d71;
   --footer-bg-color: #2a2824;
   --footer-logo-width: 85px;
   --footer-logo-height: 68.7px;
