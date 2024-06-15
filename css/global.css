@@ -10,6 +10,10 @@
 }
 
 :root {
+  --primary-dark-color: #2a2824;
+  --primary-orang-color: #bc6e44;
+  --primary-white-color: #ffffff;
+  --primary-light-grey-color: #837d71;
   --footer-bg-color: #2a2824;
   --footer-logo-width: 85px;
   --footer-logo-height: 68.7px;
@@ -34,21 +38,8 @@
   --section-text-font-family: "Spectral", serif;
   --paragraph-text-font-family: "Cormorant Infant", serif;
   scroll-behavior: smooth;
-  --wine-club-how-works-header-title-color: #bc6e44;
-  --wine-club-how-works-subtitle: #2a2824;
-  --wine-club-how-works-description: #837d71;
-  --wine-club-how-works-body-title-color: #2a2824;
-  --wine-club-how-works-body-text-color: #837d71;
-  --wine-club-how-works-body-item-text: #2a2824;
-  --wine-club-how-works__body__item-title: #2a2824;
-  --wine-club-how-works__body__item-subtitle: #837d71;
-  --wine-club-how-works__body__item__subtitle-special: #bc6e44;
-  --wine-club-how-works__body__item-text: #837d71;
-  --wine-club-how-works__body__item-btn: #bc6e44;
-  --wine-club-become-member-background-color: #bc6e44;
   --wine-club-become-member__title: #ffffff;
   --wine-club-become-member__text: #ffffffcc;
-  --wine-club-become-member__btn: #bc6e44;
   --wine-club-become-member__btn-border: #ffffff;
   --contacts-paragraph-color: #bc6e44;
   --contacts-color: #2a2824;
