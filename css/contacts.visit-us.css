@@ -48,14 +48,6 @@
   color: var(--contacts-description-title);
 }
 
-.visit-us-description__text {
-  font-family: "Spectral", serif;
-  font-size: 17px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  color: var(--contacts-visit-us-description-text);
-}
-
 .visit-us__form {
   flex: 1;
   padding: 40px;
