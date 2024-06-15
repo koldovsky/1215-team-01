@@ -128,7 +128,7 @@
   font-size: 1.063rem;
   line-height: 1.594rem;
   padding-left: 0.938rem;
-  padding-right: 0.935rem;
+  padding-right: 0.938rem;
   padding-top: 3.125rem;
 }
 
@@ -173,7 +173,7 @@
 
 @media (min-width: 768px) {
   .distribution__item {
-    margin-left: 0;
+    margin-left: 6.25rem;
     margin-right: 6.25rem;
   }
 
@@ -184,8 +184,8 @@
 
 @media (min-width: 992px) {
   .distribution__item {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .distribution__note-text {
