@@ -306,28 +306,27 @@
 }
 
 /* Стиль для вікна робочих годин */
-map__working-hours {
-  .map__working-hours {
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    z-index: 3;
-    width: 300px; /* Фіксована ширина вікна */
-    max-width: 305px; /* Максимальна ширина на всіх екранах */
-    text-align: center;
-    bottom: 50px; /* Позиціонування відносно нижнього краю контейнера */
-    right: 50px; /* Позиціонування відносно правого краю контейнера */
-  }
+.map__working-hours {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  z-index: 10;
+  width: 300px; /* Фіксована ширина вікна */
+  max-width: 305px; /* Максимальна ширина на всіх екранах */
+  text-align: center;
+  bottom: 50px; /* Позиціонування відносно нижнього краю контейнера */
+  right: 50px; /* Позиціонування відносно правого краю контейнера */
+}
 
-  @media (max-width: 990px) {
-    .map__working-hours {
-      bottom: 50px; /* Позиціонування на 50px нижче точки на мапі */
-      right: 50%; /* Центруємо горизонтально */
-      transform: translateX(50%); /* Центруємо горизонтально */
-      width: auto; /* Розтягуємо вікно на всю ширину екрану */
-      max-width: 305px; /* Знімаємо обмеження максимальної ширини */
-    }
+@media (max-width: 990px) {
+  .map__working-hours {
+    bottom: 50px; /* Позиціонування на 50px нижче точки на мапі */
+    right: 50%; /* Центруємо горизонтально */
+    transform: translateX(50%); /* Центруємо горизонтально */
+    width: auto; /* Розтягуємо вікно на всю ширину екрану */
+    max-width: 305px; /* Знімаємо обмеження максимальної ширини */
   }
+}
 
 .map__working-hours h3 {
   font-family: "Cormorant Infant", serif;
