@@ -1,10 +1,9 @@
 .full-width-background {
-  background: var(--footer-bg-color);
+  background: var(--header-footer-bg-top-color);
   width: 100%;
 }
 
-.footer,
-.container {
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;

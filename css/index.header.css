@@ -1,0 +1,69 @@
+.index__header-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../img/header-hero/index.header.jpg");
+    background-size: 100%;
+    background-position: 100%;
+    position: relative;
+  }
+.index__hero {
+  padding-top: 220px;
+  padding-bottom: 100px;
+
+}
+
+.index__container {
+  text-align: center; /* Центрує текст всередині контейнера */
+}
+
+.index__title {
+  margin-bottom: 0.5em; /* Відступ між заголовком і підзаголовком */
+  font-size: 12px;
+}
+
+.index__subtitle {
+  margin-bottom: 0.5em; /* Відступ між підзаголовком і описом */
+  font-size: 80px;
+}
+
+.index__description {
+  margin-bottom: 1em; /* Відступ між описом і списком */
+  font-size: 19px;
+}
+
+.empty {
+  height: 160px;
+}
+.index__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.index__list-item {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center; /* Центрує текст всередині кожного елемента */
+}
+
+.index__link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5em; /* Відступ між посиланням і описом */
+}
+
+.index__link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.index__em {
+  color: white;
+  font-style: italic;
+}
+
+.index__separation {
+  color:white;
+}

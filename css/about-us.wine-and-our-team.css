@@ -1,0 +1,8 @@
+h2.header {
+    font-family: "Cormorant Infant", serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 43.2px;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+}

@@ -1,10 +1,16 @@
-@media (min-width: 1200px) {
-  .about-us {
-    padding: 100px 0 1px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+.about-us {
+  background-image: url("../img/about-us/history-part/back-ground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.about-us {
+  padding: 100px 0 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .content-container {
@@ -19,28 +25,36 @@
 }
 
 .about-us__title {
+  font: var(--section-text-font-family);
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.15rem;
+  letter-spacing: 2.4px;
+  line-height: 20.4px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  color: var(--wine-club-how-works-header-title-color);
 }
 
 .about-us__subtitle {
   text-align: center;
-  font-family: "Cormorant Infant", serif;
-  font-size: 3.5rem;
+  font: var(--paragraph-text-font-family);
+  font-size: 38px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 41.8px;
+  overflow: break-word;
   margin-bottom: 16px;
+  color: var(--wine-club-how-works-subtitle);
 }
 
 .about-us__description {
+  font: var(--section-text-font-family);
   text-align: center;
-  font-size: 23px;
-  font-weight: 400;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 28.5px;
   margin-bottom: 20px;
+  color: var(--wine-club-how-works-description);
 }
 
 .about-us__image {
@@ -54,7 +68,7 @@
 .about-us__image img {
   width: 100%;
   height: auto;
-  object-fit: cover; 
+  object-fit: cover;
   object-position: center top;
 }
 
@@ -63,9 +77,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   align-items: start;
-  font-size: 20.5px;
+  font-size: 19px;
   line-height: 1.6;
-  color: #4a4a4a;
+  color: #837d71;
 }
 
 .about-us__text {
@@ -79,14 +93,21 @@
   }
 }
 
+.timeline-wrapper {
+  width: 100%;
+  padding: 5px 20px 50px 20px;
+}
+
 .timeline {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5px 20px 50px 20px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  gap: 10px;
   justify-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .timeline__item {
@@ -115,8 +136,8 @@
 
 .timeline__description {
   margin-top: 30px;
-  font-size: 20.5px;
-  color: #555;
+  font-size: 19px;
+  color: #837d71;
 }
 
 @media (max-width: 768px) {
@@ -126,13 +147,14 @@
   }
 
   .timeline__date {
-    text-align: left; 
+    text-align: left;
   }
 
   .timeline__date::before {
     width: 100%;
   }
 }
+
 .winemaking-process {
   max-width: 1200px;
   margin: 0 auto;
@@ -146,27 +168,30 @@
 
 .winemaking-process__title {
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-  margin-top: 100px;
+  margin-top: 50px;
+  color: #bc6e44;
 }
 
 .winemaking-process__subtitle {
   text-align: center;
   font-family: "Cormorant Infant", serif;
-  font-size: 3.3rem;
+  font-size: 3.5rem;
   font-weight: 500;
   line-height: 1.5;
   margin-bottom: 15px;
+  color: #2a2824;
 }
 
 .winemaking-process__description {
   text-align: center;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 50px;
+  color: #837d71;
 }
 
 .winemaking-process__carousel {

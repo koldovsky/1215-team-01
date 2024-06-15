@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&family=Spectral:wght@400;500;700&display=swap");
-@import "global.header-nav.css";
-@import "global.footer-nav.css";
+/* @import "global.header-nav.css";
+@import "global.footer-nav.css"; */
 
 * {
   margin: 0;
@@ -10,10 +10,11 @@
 }
 
 :root {
-  --header-bg-top-color: #2a2824;
+  --header-footer-bg-top-color: rgba(42,40,36,0.82);
   --header-contact-text-color: #fff;
   --header-contact-text-second-color: #837d71;
-  --footer-bg-color: #2a2824;
+  --header-menu-link-color:#ffffffb0;
+  --header-menu-link-hover-color: #fff;
   --footer-logo-width: 85px;
   --footer-logo-height: 68.7px;
   --footer-separator: #ffffff;
@@ -33,6 +34,7 @@
   --background-color-signup: #bc6e44;
   --text-color-signup: #fff;
   --text-color-content-signup: #eddcd2;
+  --text-color-background-link-categories: #000;
   --section-text-font-family: "Spectral", serif;
   --paragraph-text-font-family: "Cormorant Infant", serif;
   scroll-behavior: smooth;
@@ -52,7 +54,7 @@
   --wine-club-become-member__text: #ffffffcc;
   --wine-club-become-member__btn: #bc6e44;
   --wine-club-become-member__btn-border: #ffffff;
-  --contacts-visit-us-paragraph-color: #bc6e44;
+  --contacts-paragraph-color: #bc6e44;
   --contacts-visit-us-title-color: #2a2824;
   --contacts-visit-us-description-title: #837d71;
   --contacts-visit-us-description-text: #837d71;
@@ -68,6 +70,17 @@
   --contacts-visit-us-submit-hover: #a55a34;
   --contacts-visit-us-input-input-border: #faf8f2;
   --contacts-visit-us-input-input-background: #faf8f2;
+  --distribution-subtitle-color: #bc6e44;
+  --distribution-title-color: #2a2824;
+  --distribution-description-color: #837d71;
+  --distribution-border-item-color: #faf8f2;
+  --distribution-item-title-color: #544e4c;
+  --distribution-item-location-color: #bc6e44;
+  --distribution-item-link-color: #837d71;
+  --distribution-text-decoration-color: #837d71;
+  --distribution-note-text-color: #837d71;
+  --distribution-specific-symbol: #bc6e44;
+  --distribution-font-style: italic;
 }
 
 .container {

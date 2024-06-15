@@ -1,9 +1,13 @@
 @import "global.css";
 @import "global.header-nav.css";
+@import "index.header.css";
 @import "index.benefits.partial.css";
 @import "index.benefits.signup.partial.css";
+@import "index.categories.partial.css";
+@import "index.our-vineyards.partial.css";
 @import "global.footer-nav.css";
-@import "contacts.css"; 
-@import "about-us.partners.css";
+@import "contacts.css";
 @import "index.about-us.css";
 @import "index.testimonials.css";
+@import "about-us.our-team";
+@import "about-us.our-events";
