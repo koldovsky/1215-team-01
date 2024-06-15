@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts Page | Winery</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/contacts-header.css">
+  </head>
+  <body>
+    <header>
+      <section class="contacts__header">
+        <nav
+          class="contacts-header__global"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="global.header-nav.partial.html"
+        ></nav>
+        <nav class="contacts__title">
+          <h1 class="contacts-header__title">Contact Us</h1>
+          <p>
+            <a href="index.html">Home</a> > <a href="contacts.html">Contacts</a>
+          </p>
+        </nav>
+      </section>
+    </header>
+  </body>
+</html>
