@@ -1,24 +1,35 @@
 .header__menu {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
 }
 
+.header__contacts {
+    list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+
+}
 .header__menu-item {
-    color: rgba(255, 255, 255, 0.66);
-cursor: pointer;
-display: block;
-font-family: "Spectral", serif;
-font-size: 14px;
-overflow-x: hidden;
-overflow-y: hidden;
-text-align: left;
-text-decoration-color: rgba(255, 255, 255, 0.66);
-text-decoration-line: none;
-text-decoration-style: solid;
-text-decoration-thickness: auto;
-text-overflow: ellipsis;
-text-wrap: nowrap;
-white-space-collapse: collapse;
+  color: rgba(255, 255, 255, 0.66);
+  cursor: pointer;
+  display: block;
+  font-family: "Spectral", serif;
+  font-size: 14px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: left;
+  text-decoration-color: rgba(255, 255, 255, 0.66);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  white-space-collapse: collapse;
 }
