@@ -94,6 +94,25 @@
   text-align: center;
 }
 
+/* Стилі для посилань без підкреслення і зі зміненим кольором */
+.distribution__item-link a {
+  text-decoration: none; /* Видаляємо підкреслення */
+  color: inherit; /* Застосовуємо колір тексту, що успадковується */
+}
+
+/* Опціонально: коли курсор наведений на посилання, змінюємо його курсор */
+.distribution__item-link a:hover {
+  cursor: pointer;
+  text-decoration: underline; /* Додаємо підкреслення при наведенні */
+
+}
+
+/* Додатково: стилі для вибіркових номерів телефонів і електронної пошти */
+.distribution__item-location {
+  margin-bottom: 5px;
+  font-weight:bold
+}
+
 .distribution__item-location {
   font-family: var(--section-text-font-family);
   color: var(--distribution-item-location-color);
