@@ -219,7 +219,10 @@
 /* додаємо карту */
 
 /* Стиль для контейнера мапи */
+/* Центрування мапи на всю ширину екрану */
+/* Контейнер для мапи */
 .map__container {
+  display: grid;
   position: relative;
   width: 100%;
   height: 857.775px;
@@ -236,9 +239,9 @@
 /* Стиль для адресного вікна */
 .map__address-box {
   position: absolute;
-  top: 20%;
-  left: 20%;
-  transform: translate(-50%, -50%);
+  top: 50%; /* Позиціонування по вертикалі на 50% */
+  left: 50%; /* Позиціонування по горизонталі на 50% */
+  transform: translate(-50%, -150%);
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -247,9 +250,10 @@
   max-width: 300px;
   display: flex;
   flex-direction: column;
-  top: 50%; /* Позиціонування по вертикалі на 50% */
-  left: 50%; /* Позиціонування по горизонталі на 50% */
-  transform: translate(-50%, -150%); /* Зміщення блоку вліво і вгору */
+  padding-top: 40px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+padding-right: 12px;
 }
 
 .map__address-box::after {
@@ -268,10 +272,6 @@
   font-size: 15px;
   margin: 0;
   font-weight: 500;
-  text-decoration-color: rgb(42, 40, 36);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  padding-top: 50px;
 }
 
 .map__address-box p {
@@ -279,14 +279,56 @@
   color: rgb(131, 125, 113);
   font-size: 13px;
   font-weight: 400;
-  height: 39px;
-  line-height: 19.5px;
   margin: 5px 0 0;
-  font-size: 0.875rem;
-  font-weight: 400;
 }
-.map__address {
-  padding: 12px;
+
+/* Стиль для вікна робочих годин */
+.map__working-hours {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  z-index: 1;
+  width: 300px;
+  max-width: 305px;
+  text-align: center;
+}
+
+.map__working-hours h3 {
+  font-family: "Cormorant Infant", serif;
+  font-size: 30px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.map__working-hours p {
+  font-family: "Spectral", serif;
+  color: rgb(131, 125, 113);
+  font-size: 17px;
+  margin: 5px 0 0;
+  font-weight: 400;
+  line-height: 25.5px;
+  pointer-events: auto;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Адаптивне розташування для екранів до 990px */
+@media (max-width: 990px) {
+  .map__address-box {
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+  }
+
+  .map__working-hours {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    max-width: 305px;
+  }
 }
 
 .map__close-button {
@@ -303,52 +345,4 @@
   content: "✖";
   font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.5);
-}
-
-/* Стиль для вікна робочих годин */
-.map__working-hours {
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  padding: 20px;
-  z-index: 10;
-  width: 300px; /* Фіксована ширина вікна */
-  max-width: 305px; /* Максимальна ширина на всіх екранах */
-  text-align: center;
-  bottom: 50px; /* Позиціонування відносно нижнього краю контейнера */
-  right: 50px; /* Позиціонування відносно правого краю контейнера */
-}
-
-@media (max-width: 990px) {
-  .map__working-hours {
-    bottom: 50px; /* Позиціонування на 50px нижче точки на мапі */
-    right: 50%; /* Центруємо горизонтально */
-    transform: translateX(50%); /* Центруємо горизонтально */
-    width: auto; /* Розтягуємо вікно на всю ширину екрану */
-    max-width: 305px; /* Знімаємо обмеження максимальної ширини */
-  }
-}
-
-.map__working-hours h3 {
-  font-family: "Cormorant Infant", serif;
-  font-size: 30px;
-  margin: 0;
-  font-weight: 500;
-  text-align: center;
-}
-.hours__line {
-  color: rgb(188, 110, 68);
-}
-
-.map__working-hours p {
-  color: rgb(131, 125, 113);
-  font-family: "Spectral", serif;
-  font-size: 17px;
-  margin: 5px 0 0;
-  font-weight: 400;
-  line-height: 25.5px;
-  pointer-events: auto;
-  text-align: center;
-  font-style: italic;
-  padding-left: 40px;
-  padding-right: 40px;
 }
