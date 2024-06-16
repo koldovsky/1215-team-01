@@ -30,7 +30,7 @@
 }
 
 .nearest-tasting_title {
-  color: rgb(255, 255, 255);
+  color: var(--collection-tasting-menu-color);
   font-family: "Spectral", serif;
   font-size: 12px;
   font-weight: 700;
@@ -41,7 +41,7 @@
 }
 
 .nearest-tasting_subtitle {
-  color: rgb(255, 255, 255);
+  color: var(--collection-tasting-menu-color);
   font-family: "Cormorant Infant", serif;
   font-size: 38px;
   font-weight: 500;
@@ -50,7 +50,7 @@
 }
 
 .nearest__special {
-  color: rgb(255, 255, 255);
+  color: var(--collection-tasting-menu-color);
   font-family: "Cormorant Infant", serif;
   font-size: 38px;
   font-style: italic;
@@ -60,7 +60,7 @@
 }
 
 .nearest__special-point {
-  color: rgb(188, 110, 68);
+  color: var(--collection-tasting-menu-special);
   font-family: "Cormorant Infant", serif;
   font-size: 38px;
   font-style: italic;
@@ -70,7 +70,7 @@
 }
 
 .nearest-tasting__description {
-  color: rgba(250, 248, 242, 0.69);
+  color: var(--collection-tasting-menu-discription);
   font-family: "Spectral", serif;
   font-size: 19px;
   font-weight: 500;
@@ -94,7 +94,7 @@
 }
 
 .nearest-tasting__item-title {
-  color: rgb(255, 255, 255);
+  color: var(--collection-tasting-menu-color);
   font-family: "Cormorant Infant", serif;
   font-size: 28px;
   font-style: italic;
@@ -104,7 +104,7 @@
 }
 
 .nearest-tasting__item-description {
-  color: rgba(250, 248, 242, 0.69);
+  color: var(--collection-tasting-menu-discription);
   display: block;
   font-family: "Spectral", serif;
   font-size: 17px;
@@ -113,7 +113,7 @@
 }
 
 .nearest-tasting__item-title li {
-  color: rgba(250, 248, 242, 0.69);
+  color: var(--collection-tasting-menu-discription);
   display: block;
   font-family: "Spectral", serif;
   font-size: 17px;
@@ -165,7 +165,7 @@
   background-size: cover;
   background-position: center;
   overflow-wrap: break-word;
-  border: 0.125rem solid rgba(0, 0, 0, 0);
+  border: 0.125rem solid var(--collection-tasting-menu-border);
   position: relative;
   display: flex;
   align-items: center;
@@ -195,7 +195,7 @@
 }
 
 .tasting-menu__title {
-  color: rgb(188, 110, 68);
+  color: var(--collection-tasting-menu-special);
   font-family: "Spectral", serif;
   font-size: 12px;
   font-weight: 700;
@@ -206,7 +206,7 @@
 }
 
 .tasting-menu__subtitle {
-  color: rgb(42, 40, 36);
+  color: var(--collection-tasting-menu-subtitle);
   font-family: "Cormorant Infant", serif;
   font-size: 38px;
   font-weight: 500;
@@ -215,7 +215,7 @@
 }
 
 .tasting-menu__description {
-  color: rgb(131, 125, 113);
+  color: var(--collection-tasting-menu-item);
   font-family: "Spectral", serif;
   font-size: 19px;
   font-weight: 500;
@@ -224,7 +224,7 @@
 }
 
 .tasting-menu__item-list {
-  background-color: rgb(250, 248, 242);
+  background-color: var(--collection-tasting-menu-discription);
   width: 100%;
   line-height: 1.594rem;
   text-align: center;
@@ -251,7 +251,7 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: rgb(42, 40, 36);
+  background-color: var(--collection-tasting-menu-subtitle);
   opacity: 0.2;
   position: absolute;
   right: 0;
@@ -260,7 +260,7 @@
 }
 
 .tasting-menu__item-title {
-  color: rgb(42, 40, 36);
+  color: var(--collection-tasting-menu-subtitle);
   font-family: "Cormorant Infant", serif;
   font-style: italic;
   font-size: 24px;
@@ -270,7 +270,7 @@
 }
 
 .tasting-menu__item-description {
-  color: rgb(131, 125, 113);
+  color:  var(--collection-tasting-menu-item);
   font-family: "Spectral", serif;
   font-size: 17px;
   line-height: 25.5px;
@@ -304,8 +304,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   align-items: start;
-  background-color: rgb(188, 110, 68);
-  border: 0.125rem solid rgba(0, 0, 0, 0);
+  background-color: var(--collection-tasting-menu-special);
+  border: 0.125rem solid var(--collection-tasting-menu-border);
   position: relative;
   box-sizing: border-box;
   background-origin: border-box;
@@ -332,7 +332,7 @@
 }
 
 .tasting-menu__schedule-title {
-  color: rgb(250, 248, 242);
+  color: var(--collection-tasting-menu-discription);
   font-family: "Spectral", serif;
   font-size: 12px;
   font-weight: 700;
@@ -343,7 +343,7 @@
 }
 
 .tasting-menu__schedule-subtitle {
-  color: rgb(255, 255, 255);
+  color: var(--collection-tasting-menu-color);
   display: inline;
   font-family: "Cormorant Infant", serif;
   font-size: 45px;
@@ -353,7 +353,7 @@
 }
 
 .schedule__special {
-  color: rgb(255, 255, 255);
+  color: var(--collection-tasting-menu-color);
   font-family: "Cormorant Infant", serif;
   font-size: 45px;
   font-style: italic;
@@ -363,7 +363,7 @@
 }
 
 .tasting-menu__schedule-description {
-  color: rgba(250, 248, 242, 0.69);
+  color: var(--collection-tasting-menu-discription);
   font-family: "Spectral", serif;
   font-size: 17px;
   font-style: italic;
@@ -377,7 +377,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(188, 110, 68);
+  background-color: var(--collection-tasting-menu-special);
   padding: 20px;
 }
 
@@ -393,8 +393,8 @@
 .schedule__input {
   width: 100%;
   padding: 10px;
-  background-color: rgba(250, 248, 242, 0.13);
-  color: rgb(250, 248, 242);
+  background-color: var(--collection-tasting-menu-discription);
+  color:  var(--collection-tasting-menu-discription);
   font-size: 14px;
   border: none;
   box-sizing: border-box;
@@ -411,8 +411,8 @@
   left: 10px;
   padding: 0 5px;
   font-size: 14px;
-  background-color: rgba(250, 248, 242, 0.13);
-  color: rgb(255, 255, 255);
+  background-color: var(--collection-tasting-menu-discription);
+  color: var(--collection-tasting-menu-color);
   direction: ltr;
   background-color: transparent;
   transform: translateY(0);
@@ -429,7 +429,7 @@
   top: 50%;
   left: 10px;
   font-size: 16px;
-  color: rgb(188, 110, 68);
+  color: var(--collection-tasting-menu-special);
   transform: translateY(-50%);
 }
 
@@ -437,8 +437,8 @@
   width: 100%;
   padding: 10px;
   background-color: transparent;
-  color: #fff;
-  border: 2px solid #fff;
+  color: var(--collection-tasting-menu-color);
+  border: 2px solid var(--collection-tasting-menu-color);
   border-radius: 5px;
   font-size: 15px;
   font-family: "Spectral", serif;
@@ -450,8 +450,8 @@
 }
 
 .schedule__submit:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--collection-tasting-menu-color);
+  color: var(--collection-tasting-menu-border);
 }
 
 @media (max-width: 768px) {

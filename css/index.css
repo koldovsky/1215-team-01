@@ -9,11 +9,8 @@
 @import "contacts.css";
 @import "index.about-us.css";
 @import "index.testimonials.css";
-<<<<<<< HEAD
-@import "about-us_wine-and-our-team";
-=======
-@import "about-us.our-team";
-@import "about-us.partners";
-@import "about-us.our-events";
+@import "about-us_wine-and-our-team.css";
+@import "about-us.our-team.css";
+@import "about-us.partners.css";
+@import "about-us.our-events.css";
 @import "index.gallary.css"
->>>>>>> 9391b97cc91ebb66393ca56f3f795e0920d3d79b
