@@ -61,12 +61,42 @@
 }
 
 .carousel-item img {
-    position: relative;
+    position: center;
+
 }
 
-.index-about-us-winegarden{
+.testimonials__carousel-image { 
+    display: block; 
+    margin: 0 auto; 
+    width: 300px;
+}
+
+.index-about-us-winegarden {
     display: grid;
     grid-template-columns: 1fr; /* Розділення на дві колонки */
     justify-content: center; /* Колонки по центру */
     margin-bottom: 20px;
+}
+
+/* Styles for text carousele */
+.carousel-item-name {
+    font-family: 'Spectral', serif;
+    font-size: 26px;
+    text-align: center;
+    color: #2A2824;
+}
+
+.carousel-item-review {
+    font-family: 'Spetral', serif;
+    font-size: 17px;
+    text-align: center;
+    color: #837D71;
+}
+
+.carousel-item-date {
+    font-family: 'Spectral', serif;
+    font-size: 12px;
+    text-align: center;
+    color: #544E4C;
+    margin-bottom: 30px;
 }

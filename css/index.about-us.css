@@ -138,9 +138,11 @@
   font-weight: 400;
 }
 
-.carousel-control-prev-icon,
+.carousel-control-prev-icon{
+  background-image: url(../img/index/index_carousele-arrow-left.png);
+}
 .carousel-control-next-icon {
-  background-image: url(../img/index/index-curved-icon.png);
+  background-image: url(../img/index/index_carousele-arrow-right.png);
 }
 
 /* Для пристроїв з мінімальною шириною 768px */
