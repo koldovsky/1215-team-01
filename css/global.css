@@ -73,6 +73,11 @@
   --distribution-note-text-color: #837d71;
   --distribution-specific-symbol: #bc6e44;
   --distribution-font-style: italic;
+  --about-us-button: #BC6E44; 
+  --about-us-button-text: #FFFFFF;
+  --about-us-line: #837d71;
+  --about-us-title:  #2a2824;
+
 }
 
 .container {
