@@ -13,13 +13,14 @@
   --header-footer-bg-top-color: rgba(42,40,36,0.82);
   --header-contact-text-color: #fff;
   --header-contact-text-second-color: #837d71;
+  --header-text-third-color:#bc6e44;
   --header-menu-link-color:#ffffffb0;
   --header-menu-link-hover-color: #fff;
-  /* --primary-dark-color: #2a2824;
+  --primary-dark-color: #2a2824;
   --primary-orang-color: #bc6e44;
   --primary-white-color: #ffffff;
   --primary-light-grey-color: #837d71;
-  --footer-bg-color: #2a2824; */
+  --footer-bg-color: #2a2824;
   --footer-logo-width: 85px;
   --footer-logo-height: 68.7px;
   --footer-separator: #ffffff;

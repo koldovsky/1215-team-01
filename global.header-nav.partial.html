@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/global.header-nav.css"/>
   </head>
   <body>
     <nav class="header__nav" data-proofer-ignore>
@@ -54,5 +56,35 @@
         </ul>
       </div>
     </nav>
+    <div class="navbar container">
+      <a href="index.html" class="navbar__logo-link">
+        <img class="navbar__logo" src="img/footer/logo-footer.svg" alt="Logo" />
+      </a>
+      <div class="navbar__burger" onclick="toggleBurgerMenu()">&#9776;</div>
+      <div class="navbar__menu">
+        <div class="navbar__contacts">
+          <p class="navbar__contact-item">
+            Call: <a href="tel:+12345678900">+ 1 (234) 567 89 00</a>
+          </p>
+          <p class="navbar__contact-item">
+            Visit Us: <em>121 Pickle Road #97 Austin</em>
+          </p>
+        </div>
+        <ul class="navbar__menu-list">
+          <li><a href="about-us.html">ABOUT US</a></li>
+          <li><a href="contacts#distribution">DISTRIBUTION</a></li>
+          <li><a href="collection.html">COLLECTION</a></li>
+          <li><a href="collection#menu">TESTING</a></li>
+          <li><a href="wine-club.html">WINE CLUB</a></li>
+          <li><a href="contacts.html">CONTACTS</a></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      function toggleBurgerMenu() {
+        const menu = document.querySelector(".navbar__menu");
+        menu.classList.toggle("navbar__menu--active");
+      }
+    </script>
   </body>
 </html>
