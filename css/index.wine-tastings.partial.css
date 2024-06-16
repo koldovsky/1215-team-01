@@ -1,0 +1,70 @@
+/* Debug line */
+/* * {
+  outline: solid red;
+} */
+
+.wine__tastings-background-image {
+    background-image: url(../img/wine-tastings/wine-tasting-background-image.jpg);
+    height: 700px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+
+.wine__tastings-container {
+    padding: 110px 0;
+}
+
+
+.wine-tastings-information{
+    width: 270px;
+    height: 480px;
+    margin: auto;
+    background-color: var(--background-color-container);
+}
+
+.wine-tastings__intro-title{
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 30px 20px;
+    color: var(--heading-section-text-color);
+}
+
+.wine-tastings__main-text {
+    font-size: 38px;
+    padding: 0 20px;
+    margin-top: -20px;
+    color: var(--paragraph-section-text-color);
+}
+
+.wine-tastings__main-text-info {
+    font-size: 17px;
+    padding: 0 20px;
+    color: var(--paragraph-content-text-color);
+}
+
+.special-text {
+    font-style: italic;
+}
+
+.special-point {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--special-point-color);
+}
+
+@media (min-width: 768px) {
+    .wine-tastings-information {
+        width: 470px;
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 60px 120px;
+        
+    }
+    .wine__tastings-background-image{
+        background-position: 50% 35%;
+    }
+}

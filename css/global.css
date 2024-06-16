@@ -40,6 +40,8 @@
   --text-color-signup: #fff;
   --text-color-content-signup: #eddcd2;
   --text-color-background-link-categories: #000;
+  --background-color-container: #fff;
+  --special-point-color: #bc6e44;
   --section-text-font-family: "Spectral", serif;
   --paragraph-text-font-family: "Cormorant Infant", serif;
   scroll-behavior: smooth;
