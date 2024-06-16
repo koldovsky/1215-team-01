@@ -1,54 +1,121 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/index.css" />
-</head>
-<body>
-<div class="testimonials">
-  <h2 class="testimonials__heading">~ TESTIMONIALS ~</h2>
-  <h1 class="testimonials__title">Our Lovely Clients About Us.</h1>
-  <p class="testimonials__description">
-    Read the testimonials of our customers to find out why so many people
-    visit us.
-  </p>
-</div>
-<div class="index-about-us-winegarden">
-  <img src="img/gourmand-choise/weingarden.jpg" alt="Beautiful vineyard with lush green vines">
-</div>
-<section class="index-testimonals-reviews">
-<div id="carousel-rev" class="carousel slide container" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carousel-rev" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carousel-rev" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carousel-rev" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carousel-rev" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/index/index_amanda_willson.png" style="width: 50%;" alt="bottle eiswein" />
-    </div>
-    <div class="carousel-item">
-      <img src="img/index/index_grapes_variety.jpeg" style="width: 50%;" alt="bottle grenache-rose" />
-    </div>
-    <div class="carousel-item">
-      <img src="img/index/index_wine_tasting.jpeg" style="width: 50%;" alt="bottle pinotnoir" />
-    </div>
-    <div class="carousel-item">
-      <img src="img/index/index_wine_festival.jpeg" style="width: 50%;" alt="bottle portwein" />
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-rev" data-bs-slide="prev">
-    <img src="img/index/index-curved-icon.png" alt="Previous">
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carousel-rev" data-bs-slide="next">
-    <img src="img/index/index-curved-icon.png" alt="Next">
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</section>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <section class="testimonials">
+      <div class="testimonials__container">
+        <div class="testimonials__content">
+          <p class="testimonials__paragraph">~TESTIMONIALS~</p>
+          <h3 class="testimonials__title">Our Lovely Clients About Us.</h3>
+          <p class="testimonials__description">
+            Read the testimonials of our customers to find out why so many people visit us.
+          </p>
+          <section class="testimonials__reviews">
+            <div
+              id="carousel-rev"
+              class="testimonials__carousel carousel slide container"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carousel-rev"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-rev"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-rev"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/testimonials/index_amanda_willson.png"
+                    class="testimonials__carousel-image" 
+                    alt="Amanda Willson"
+                  />
+                  <p class="carousel-item-name">Amanda Willson</p>
+                  <p class="carousel-item-review">"I'm so happy for the opening of the Pinot Noir Winery. They have a tremendous 
+                    collection of the finest work. We had a really great time there and will 
+                    definately come back soon"
+                  </p>
+                  <p class="carousel-item-date">DECEMBER 15, 2022</p>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/testimonials/will-smith.png"
+                    class="testimonials__carousel-image" style="display: block; margin: 0 auto; width: 300px;"
+                    alt="Will Smith"
+                  />
+                  <p class="carousel-item-name">Will Smith</p>
+                  <p class="carousel-item-review">
+                    "Visiting the winery wa an amazing expirience! the staff were so friednly adn knowlegeable 
+                    and the wine was delicious. I've already recommended Pinot Noir to may friends"
+                  </p>
+                  <p class="carousel-item-date">JANUARY 04, 2023</p>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/testimonials/alise-jackson.png"
+                    class="testimonials__carousel-image" style="display: block; margin: 0 auto; width: 300px;"
+                    alt="Alice Jackson"
+                  />
+                  <p class="carousel-item-name">Alice Jackson</p>
+                  <p class="carousel-item-review">"the scenery was beautiful adn it was the perfect way to spend an afternoon, I would
+                    higly recommend visiting this winery!"
+                  </p>
+                  <p class="carousel-item-date">MACH 25, 2023</p>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel-rev"
+                data-bs-slide="prev"
+              >
+                <img
+                  src="img/index/index_carousele-arrow-left.png"
+                  class="testimonials__carousel-control"
+                  alt="Previous"
+                />
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel-rev"
+                data-bs-slide="next"
+              >
+                <img
+                  src="img/index/index_carousele-arrow-right.png"
+                  class="testimonials__carousel-control"
+                  alt="Next"
+                />
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

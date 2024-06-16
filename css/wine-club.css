@@ -1,2 +1,5 @@
+@import "global.header-nav.css";
+@import "wine-club.header.css";
+@import "wine-club.how-it-works.css";
+@import "global.footer-nav.css";
 @import "global.css";
-@import "wine-club.how-it-works.partial.css";

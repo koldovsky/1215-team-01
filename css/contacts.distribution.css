@@ -94,6 +94,21 @@
   text-align: center;
 }
 
+.distribution__item-link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.distribution__item-link a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.distribution__item-location {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
 .distribution__item-location {
   font-family: var(--section-text-font-family);
   color: var(--distribution-item-location-color);
@@ -124,11 +139,12 @@
 .distribution__item-link:focus {
   text-decoration: underline;
 }
+
 .distribution__note {
   font-size: 1.063rem;
   line-height: 1.594rem;
   padding-left: 0.938rem;
-  padding-right: 0.935rem;
+  padding-right: 0.938rem;
   padding-top: 3.125rem;
 }
 
@@ -155,6 +171,7 @@
   margin-left: 1.25rem;
   margin-right: 1.25rem;
 }
+
 .specific-symbol {
   color: var(--distribution-specific-symbol);
   font-family: var(--paragraph-text-font-family);
@@ -162,6 +179,7 @@
   line-height: 2.613rem;
   text-align: center;
 }
+
 .warning-symbol {
   color: var(--distribution-specific-symbol);
   font-family: var(--section-text-font-family);
@@ -173,7 +191,7 @@
 
 @media (min-width: 768px) {
   .distribution__item {
-    margin-left: 0;
+    margin-left: 6.25rem;
     margin-right: 6.25rem;
   }
 
@@ -184,8 +202,8 @@
 
 @media (min-width: 992px) {
   .distribution__item {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .distribution__note-text {
@@ -216,66 +234,119 @@
   }
 }
 
-/* додаємо карту */
-
-/* Стиль для контейнера мапи */
 .map__container {
+  display: grid;
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 53.611rem;
+  z-index: 3;
 }
 
-/* Стиль для iframe мапи */
 .map__iframe {
   width: 100%;
   height: 100%;
   border: 0;
 }
 
-/* Стиль для адресного вікна */
 .map__address-box {
   position: absolute;
-  top: 20%;
-  left: 20%;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
   background-color: rgb(255, 255, 255);
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
   z-index: 1;
   width: max-content;
-  max-width: 300px;
+  max-width: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.map__address-box::after {
+  content: "";
+  position: absolute;
+  bottom: -0.625rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0.625rem 0.625rem 0;
+  border-style: solid;
+  border-color: rgb(255, 255, 255) transparent transparent transparent;
 }
 
 .map__address-box h3 {
   font-family: "Cormorant Infant", serif;
-  font-size: 15px;
+  font-size: 0.938rem;
   margin: 0;
   font-weight: 500;
-  text-decoration-color: rgb(42, 40, 36);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  padding-top: 50px;
 }
 
 .map__address-box p {
   font-family: "Spectral", serif;
   color: rgb(131, 125, 113);
-  font-size: 13px;
+  font-size: 0.813rem;
   font-weight: 400;
-  height: 39px;
-  line-height: 19.5px;
-  margin: 5px 0 0;
-  font-size: 0.875rem;
-  font-weight: 400;
+  margin: 0.313rem 0 0;
 }
-.map__address {
-  padding: 12px;
+
+.map__working-hours {
+  position: absolute;
+  bottom: 30%;
+  right: 20%;
+  background-color: rgb(255, 255, 255);
+  padding: 2.5rem 1.25rem;
+  z-index: 1;
+  width: 18.75rem;
+  max-width: 18.75rem;
+  height: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.map__working-hours h3 {
+  font-family: "Cormorant Infant", serif;
+  font-size: 1.875rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.map__working-hours p {
+  font-family: "Spectral", serif;
+  color: rgb(131, 125, 113);
+  font-size: 1.063rem;
+  margin: 0.313rem 0 0;
+  font-weight: 400;
+  line-height: 1.594rem;
+  pointer-events: auto;
+  text-align: center;
+  font-style: italic;
+}
+
+@media (max-width: 990px) {
+  .map__address-box {
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+  }
+
+  .map__working-hours {
+    bottom: 0.625rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 18.75rem;
+    padding: 3.125rem;
+  }
 }
 
 .map__close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0.625rem;
+  right: 0.625rem;
   background: none;
   border: none;
   font-size: 1rem;
@@ -286,57 +357,4 @@
   content: "✖";
   font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.5);
-}
-
-/* Стиль для вікна робочих годин */
-.map__working-hours {
-  position: absolute;
-  bottom: 20%;
-  right: 20%;
-  transform: translate(50%, 50%);
-  background-color: rgb(255, 255, 255);
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 10;
-  width: max-content;
-  max-width: 300px;
-  text-align: center;
-}
-
-.map__working-hours h3 {
-  font-family: "Cormorant Infant", serif;
-  font-size: 30px;
-  margin: 0;
-  font-weight: 500;
-  text-align: center;
-}
-.hours__line {
-  stroke: rgb(188, 110, 68);
-  stroke-width: 2px;
-}
-
-.map__working-hours p {
-  color: rgb(131, 125, 113);
-  font-family: "Spectral", serif;
-  font-size: 17px;
-  margin: 5px 0 0;
-  font-weight: 400;
-  line-height: 25.5px;
-  pointer-events: auto;
-  text-align: center;
-  font-style: italic;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-/* Додаткові стилі для адаптивності */
-@media (max-width: 768px) {
-  .map__address-box,
-  .map__working-hours {
-    position: static;
-    transform: none;
-    margin: 10px auto;
-    width: 90%;
-  }
 }

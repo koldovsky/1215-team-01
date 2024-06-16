@@ -1,4 +1,61 @@
+.testimonials__container {
+    max-width: 1200px;
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:30px;
+    padding-right: 30px;
+}
+  
+.testimonials {
+    width: 100%;
+    background-image: url("../img/testimonials/background-testimonials.png");
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
 
+.testimonials__content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.testimonials__paragraph{
+    font-family: "Spectral", serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--contacts-paragraph-color);
+    border-radius: inherit; 
+}
+
+.testimonials__title {
+    font-family: "Spectral", serif;
+    font-size: 38px;
+    font-weight: 100;
+    font-stretch: 100%;
+    line-height: 41.8px;
+    text-align: center;
+    color: var(--contacts-title-color);
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+}
+
+.testimonials-description__title {
+    font-family: "Spectral", serif;
+    font-size: 19px;
+    font-weight: 500;text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--contacts-description-title);
+}
+
+.testimonials__description{
+    font-family: 'Spectral', serif;
+    font-size: 19px;
+    text-align: center;
+    color: #837D71;
+}
 
 #carousel-rev .carousel-control-prev-icon,
 #carousel-rev .carousel-control-next-icon {
@@ -13,12 +70,42 @@
 }
 
 .carousel-item img {
-    position: relative;
+    position: center;
+
 }
 
-.index-about-us-winegarden{
+.testimonials__carousel-image { 
+    display: block; 
+    margin: 0 auto; 
+    width: 300px;
+}
+
+.index-about-us-winegarden {
     display: grid;
     grid-template-columns: 1fr; /* Розділення на дві колонки */
     justify-content: center; /* Колонки по центру */
     margin-bottom: 20px;
+}
+
+/* Styles for text carousele */
+.carousel-item-name {
+    font-family: 'Spectral', serif;
+    font-size: 26px;
+    text-align: center;
+    color: #2A2824;
+}
+
+.carousel-item-review {
+    font-family: 'Spetral', serif;
+    font-size: 17px;
+    text-align: center;
+    color: #837D71;
+}
+
+.carousel-item-date {
+    font-family: 'Spectral', serif;
+    font-size: 12px;
+    text-align: center;
+    color: #544E4C;
+    margin-bottom: 30px;
 }

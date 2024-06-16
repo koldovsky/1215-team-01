@@ -1,68 +1,216 @@
-.index-about-us-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Розділення на дві колонки */
-  justify-content: center; /* Колонки по центру */
+.index-about-us__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
-.index-about-us-column {
-  text-align: center; /* Вирівнювання тексту по центру */
+.index-about-us__content {
+  flex: 1 1 100%; 
   padding: 20px;
+  text-align: justify; /* Вирівнювання тексту за шириною */
+}
+
+.index-about-us {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  background-image: url("../img/index.about-us/index.about-us.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-about-us__paragraph {
+  font-family: "Spectral", serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--contacts-paragraph-color);
+  border-radius: inherit; 
+}
+
+.index-about-us__title {
+  font-family: "Cormorant Infant", serif;
+  font-size: 45px;
+  font-weight: 100;
+  font-stretch: 100%;
+  line-height: 41.8px;
+  color: var(--contacts-title-color);
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  text-align: justify; /* Вирівнювання тексту за шириною */
+}
+
+.index-about-us-description__text {
+  font-family: "Spectral", serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: var(--contacts-description-text);
+  text-align: justify; /* Вирівнювання тексту за шириною */
 }
 
 .line {
   width: 100px;
   height: 2px;
   background-color: rgba(84, 78, 76, 0.18);
+  margin-left: 0; /* Зменшено відстань між цифрами та текстом */
+  background-color: var(--about-us-line);
+  margin: 5px auto; /* Зменшено відстань між цифрами та текстом */
 }
+
+
 
 .index-about-us-info-guide {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr; /* Розділення на дві колонки */
-  justify-content: center; /* Колонки по центру */
+  display: flex;
+  flex-wrap: nowrap; /* Запобігає переносу на новий ряд */
+  justify-content: center;
   margin-bottom: 20px;
+  overflow-x: auto; /* Прокрутка по горизонталі, якщо елементи не вміщаються в одному ряду */
 }
 
-@media (min-width: 830px) {
-  .index-about-us-info-guide {
+.index-about-us-info-item {
+  text-align: left;
+  padding: 10px;
+  color: var(--contacts-paragraph-color);
+  flex: 0 0 auto; /* Фіксована ширина, щоб елементи не розтягувалися */
+  max-width: calc(20% - 20px); /* Максимальна ширина кожного елемента з відступами */
+  margin: 0px 50px; /* Відстань між елементами */
+  white-space: normal; /* Забезпечує перенос тексту */
+}
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Розділення на дві колонки */
-    justify-content: center; /* Колонки по центру */
-    margin-bottom: 20px;
+@media (max-width: 768px) {
+  .index-about-us-info-item {
+    max-width: calc(50% - 20px); /* При малому розмірі екрану розташовувати по два елементи в ряд */
   }
 }
 
 
-.index-about-us-info-item {
-  text-align: left; /* Вирівнювання тексту по центру */
-  padding: 20px;
-}
-
 .index-about-us-winegarden {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  max-width: 1200px;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1200px; /* Збільшуємо ширину зображення */
+  height: auto;
+  margin: 0 auto 20px;
 }
 
 .index-about-us-gourman-choise {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Розділення на дві колонки */
-  justify-content: center; /* Колонки по центру */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   max-width: 1200px;
-  margin-left: 230px;
+  margin: 0 auto;
 }
 
 .index-about-us-gourman-choise-item {
-  text-align: start; /* Вирівнювання тексту по центру */
+  flex: 1 1 45%; /* Дві колонки */
   padding: 20px;
+  text-align: center; /* Центрування елементів */
 }
 
-.carousel-control-prev-icon,
+.index-about-us-gourman-choise__paragraph {
+  font-family: "Spectral", serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--contacts-paragraph-color);
+  border-radius: inherit; 
+}
+
+.experience-the-luxury__title {
+  font-family: "Cormorant Infant", serif;
+  font-size: 45px;
+  font-weight: 100;
+  font-stretch: 100%;
+  line-height: 41.8px;
+  color: var(--contacts-title-color);
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  text-align: justify; /* Вирівнювання тексту за шириною */
+}
+
+.index-about-us-gourman-choise__title {
+  font-family: "Spectral", serif;
+  font-size: 19px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--contacts-description-title);
+  text-align: justify; /* Вирівнювання тексту за шириною */
+}
+
+.index-about-us-gourman-choise__text {
+  font-family: "Spectral", serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: var(--contacts-description-text);
+  text-align: justify; /* Вирівнювання тексту за шириною */
+}
+
+.info-number {
+  font-family: 'Cormorant Infant', serif;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 100;
+  color: #BC6E44;
+  text-align: left;
+  color: var(--about-us-button);
+}
+
+.info-text {
+  font-family: 'Spectral', serif;
+  font-size: 17px;
+  font-weight: 200;
+  color: #837D71;
+  text-align: left;
+  color: var(--paragraph-content-text-color);
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../img/index/index_carousele-arrow-left.png);
+}
+
 .carousel-control-next-icon {
-  background-image: url(../img/index/index-curved-icon.png);
+  background-image: url(../img/index/index_carousele-arrow-right.png);
+}
+
+.test-button {
+  background-color: var(--about-us-button);
+  color: var(--about-us-button-text);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.test-button a {
+  color: var(--about-us-button-text);
+  text-decoration: none;
+}
+
+.wine-title {
+  color: var(--about-us-title);
+  font-weight: bold;
+}
+
+.wine-subtitle {
+  color: var(--about-us-button);;
+  margin-bottom: 20px;
+}
+
+/* Для пристроїв з мінімальною шириною 768px */
+@media (min-width: 768px) {
+  .index-about-us__content {
+    flex: 1 1 45%; /* Дві колонки */
+  }
+
+  .index-about-us-gourman-choise-item {
+    flex: 1 1 45%; /* Дві колонки */
+  }
 }
