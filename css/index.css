@@ -9,8 +9,19 @@
 @import "contacts.css";
 @import "index.about-us.css";
 @import "index.testimonials.css";
+<<<<<<< HEAD
 @import "about-us_wine-and-our-team.css";
 @import "about-us.our-team.css";
 @import "about-us.partners.css";
 @import "about-us.our-events.css";
 @import "index.gallary.css"
+=======
+@import "index.wine-tastings.partial.css";
+@import "about-us_wine-and-our-team";
+@import "about-us.our-team";
+@import "about-us.partners";
+@import "about-us.our-events";
+@import "index.gallary.css";
+@import "confirm-age.css";
+
+>>>>>>> c221b12bc0c782423dfe2032adb316e1e8f46b8e

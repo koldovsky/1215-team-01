@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&family=Spectral:wght@400;500;700&display=swap");
-/* @import "global.header-nav.css";
-@import "global.footer-nav.css"; */
 
 * {
   margin: 0;
@@ -13,13 +11,14 @@
   --header-footer-bg-top-color: rgba(42,40,36,0.82);
   --header-contact-text-color: #fff;
   --header-contact-text-second-color: #837d71;
+  --header-text-third-color:#bc6e44;
   --header-menu-link-color:#ffffffb0;
   --header-menu-link-hover-color: #fff;
-  /* --primary-dark-color: #2a2824;
+  --primary-dark-color: #2a2824;
   --primary-orang-color: #bc6e44;
   --primary-white-color: #ffffff;
   --primary-light-grey-color: #837d71;
-  --footer-bg-color: #2a2824; */
+  --footer-bg-color: #2a2824;
   --footer-logo-width: 85px;
   --footer-logo-height: 68.7px;
   --footer-separator: #ffffff;
@@ -40,6 +39,8 @@
   --text-color-signup: #fff;
   --text-color-content-signup: #eddcd2;
   --text-color-background-link-categories: #000;
+  --background-color-container: #fff;
+  --special-point-color: #bc6e44;
   --section-text-font-family: "Spectral", serif;
   --paragraph-text-font-family: "Cormorant Infant", serif;
   scroll-behavior: smooth;
@@ -73,6 +74,9 @@
   --distribution-note-text-color: #837d71;
   --distribution-specific-symbol: #bc6e44;
   --distribution-font-style: italic;
+  --map-background-color: #ffffff;
+  --map--box-text-color: #837d71;
+  --map-button-color: #837d71;
   --about-us-button: #BC6E44; 
   --about-us-button-text: #FFFFFF;
   --about-us-line: #837d71;
@@ -123,4 +127,10 @@ ul {
   line-height: 43.2px;
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
+}
+
+.special-point {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--special-point-color);
 }

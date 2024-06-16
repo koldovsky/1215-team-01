@@ -2,6 +2,12 @@
 @import "about-us.header.css";
 @import "about-us.history.css";
 @import "about-us.partners.css";
+<<<<<<< HEAD
 @import "global.css";
 @import "about-us_wine-and-our-team.css";
 @import "global.footer-nav.css";
+=======
+@import "about-us_wine-and-our-team.css";
+@import "global.footer-nav.css";
+@import "about-us_wine-and-our-team.css"
+>>>>>>> c221b12bc0c782423dfe2032adb316e1e8f46b8e

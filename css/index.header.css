@@ -1,14 +1,18 @@
 .index__header-background {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../img/header-hero/index.header.jpg");
-    background-size: 100%;
-    background-position: 100%;
-    position: relative;
-  }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url("../img/header-hero/index.header.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-family: "Cormorant Infant", serif;
+  font-style: normal;
+}
 .index__hero {
   padding-top: 220px;
   padding-bottom: 100px;
-
 }
 
 .index__container {
@@ -16,25 +20,38 @@
 }
 
 .index__title {
+  color: var(--header-text-third-color);
   margin-bottom: 0.5em; /* Відступ між заголовком і підзаголовком */
   font-size: 12px;
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-style: normal;
 }
 
 .index__subtitle {
+  color: var(--header-contact-text-color);
   margin-bottom: 0.5em; /* Відступ між підзаголовком і описом */
   font-size: 80px;
+  font-weight: 400;
 }
 
 .index__description {
+  color: var(--header-menu-link-color);
   margin-bottom: 1em; /* Відступ між описом і списком */
   font-size: 19px;
+  font-family: "Spectral", serif;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .empty {
   height: 160px;
+  width: 100%;
 }
 .index__list {
   list-style: none;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -45,25 +62,29 @@
   padding-left: 30px;
   padding-right: 30px;
   text-align: center; /* Центрує текст всередині кожного елемента */
+  flex: 1 1 250px;
 }
 
 .index__link {
   display: block;
-  color: white;
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--header-contact-text-color);
   text-decoration: none;
   margin-bottom: 0.5em; /* Відступ між посиланням і описом */
 }
 
 .index__link:hover {
-  color: white;
   text-decoration: underline;
 }
 
 .index__em {
-  color: white;
+  color: var(--header-text-third-color);
+  font-family: "Spectral", serif;
+  font-size: 18px;
   font-style: italic;
 }
 
 .index__separation {
-  color:white;
+  color: var(--header-contact-text-color);
 }

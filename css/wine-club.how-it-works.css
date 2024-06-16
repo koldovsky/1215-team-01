@@ -262,44 +262,6 @@
     display: flex;
     object-fit: cover;
     max-width: 1200px;
-<<<<<<< HEAD:css/wine-club.how-it-works.css
-  }
-}
-
-.membership-benefits__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-  margin-left: 120px;
-
-  .membership-benefits__item-title {
-    font-size: 12px;
-  }
-
-  .membership-benefits__item-subtitle {
-    font-size: 38px;
-  }
-
-  .membership-benefits__item-description {
-    font-size: 19px;
-  }
-
-  .membership-benefits__item-text {
-    font-size: 17px;
-    margin-top: 20px;
-  }
-}
-
-.membership-benefits__item-list {
-
-
-  .membership-benefits__item__list-item {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-
-=======
     object-position: 50% 50%;
   }
 
@@ -326,7 +288,6 @@
         font-size: 17px;
         margin-top: 20px;
       }
->>>>>>> bbf619e76d4a02d66d2a1cdf8be97dbb79424865:css/wine-club.how-it-works.partial.css
   }
 }
 
@@ -353,11 +314,6 @@
     width: 20px;
     height: 20px;
   }
-<<<<<<< HEAD:css/wine-club.how-it-works.css
-
-=======
-
->>>>>>> bbf619e76d4a02d66d2a1cdf8be97dbb79424865:css/wine-club.how-it-works.partial.css
   .membership-benefits__item__list__item-text {
     font-size: 17px;
     margin-left: 10px;
@@ -393,11 +349,6 @@
     width: 110px;
       height: 45px;
       background-color: var(--wine-club-become-member__btn);
-<<<<<<< HEAD:css/wine-club.how-it-works.css
-      border-color: var(--wine-club-become-member__btn-border);
-  }
-}
-=======
       border-color: var(--primary-white-color);
   }
 }
@@ -411,6 +362,3 @@
     align-items: center;
   }
 }
-
-
->>>>>>> bbf619e76d4a02d66d2a1cdf8be97dbb79424865:css/wine-club.how-it-works.partial.css
