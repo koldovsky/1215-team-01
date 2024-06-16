@@ -1,0 +1,88 @@
+.private-events-background {
+  background: url(../img/wine-club-private-events/private-event-background.svg);
+  background-size: cover; /* Забезпечує розміщення фонового зображення на всій площині */
+  justify-content: center;
+  display: block;
+}
+
+.private-events {
+  width: auto; /* Задаємо фіксовану ширину блоку */
+  margin-bottom: 0;
+  text-align: center; /* Вирівнюємо текст по центру */
+  padding: 20px; /* Додамо відступи всередині блоку */
+}
+
+.private-events__title{
+  font-family: "Spectral", serif;
+  font-size: 12px;
+  color: #BC6E44;
+}
+
+.private-events__subtitle {
+  font-family: "Cormorant Infant", serif;
+  font-size: 52px;
+  font-weight: 200;
+  color: #2A2824;
+}
+
+.private-events__description {
+  font-size: 19px;
+  font-family: "Spectral", serif;
+  font-weight: 100;
+  color: #837D71;
+}
+.events-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Грід з двома колонками */
+  gap: 20px; /* Відстань між елементами */
+  max-width: 1200px; /* Максимальна ширина контейнера */
+  margin: 0 auto; /* Центрування контейнера на сторінці */
+  margin-top: 50px;
+  padding: 0; /* Відступи всередині контейнера */
+}
+
+.event-item {
+  display: flex;
+  align-items: center; /* Вирівнювання елементів по вертикалі */
+  background-color: white; /* Колір фону для кожної події */
+  padding: 0; /* Внутрішні відступи для кожної події */
+  border-radius: 8px; /* Закруглені кути */
+  margin-bottom: 20px;
+  border: 2px solid #faf8f2;
+}
+
+.event-item img {
+  width: 318px; /* Фіксована ширина для зображень */
+  height: 270px; /* Фіксована висота для зображень */
+  margin-right: 10px; /* Відстань між зображенням і текстом */
+  border-radius: 8px; /* Закруглені кути для круглих зображень */
+}
+
+.event-item-content {
+  flex: 1; /* Займати доступний простір у флекс-контейнері */
+}
+
+.event-item__date {
+  font-family: "Spectral", serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: #BC6E44;
+  margin-bottom: 10px;
+}
+
+.event-item__title {
+  font-family: "Cormorant Infant", serif;
+  font-size: 28px;
+  font-weight: 100;
+  color: #2A2824;
+  margin-bottom: 20px;
+}
+
+.event-item__description {
+  font-family: "Spectral", serif;
+  font-size: 17px;
+  font-weight: 100;
+  color: #837D71;
+}
+
+
