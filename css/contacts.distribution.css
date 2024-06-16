@@ -94,23 +94,19 @@
   text-align: center;
 }
 
-/* Стилі для посилань без підкреслення і зі зміненим кольором */
 .distribution__item-link a {
-  text-decoration: none; /* Видаляємо підкреслення */
-  color: inherit; /* Застосовуємо колір тексту, що успадковується */
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Опціонально: коли курсор наведений на посилання, змінюємо його курсор */
 .distribution__item-link a:hover {
   cursor: pointer;
-  text-decoration: underline; /* Додаємо підкреслення при наведенні */
-
+  text-decoration: underline;
 }
 
-/* Додатково: стилі для вибіркових номерів телефонів і електронної пошти */
 .distribution__item-location {
   margin-bottom: 5px;
-  font-weight:bold
+  font-weight: bold;
 }
 
 .distribution__item-location {
@@ -143,11 +139,12 @@
 .distribution__item-link:focus {
   text-decoration: underline;
 }
+
 .distribution__note {
   font-size: 1.063rem;
   line-height: 1.594rem;
   padding-left: 0.938rem;
-  padding-right: 0.935rem;
+  padding-right: 0.938rem;
   padding-top: 3.125rem;
 }
 
@@ -174,6 +171,7 @@
   margin-left: 1.25rem;
   margin-right: 1.25rem;
 }
+
 .specific-symbol {
   color: var(--distribution-specific-symbol);
   font-family: var(--paragraph-text-font-family);
@@ -181,6 +179,7 @@
   line-height: 2.613rem;
   text-align: center;
 }
+
 .warning-symbol {
   color: var(--distribution-specific-symbol);
   font-family: var(--section-text-font-family);
@@ -235,11 +234,6 @@
   }
 }
 
-/* додаємо карту */
-
-/* Стиль для контейнера мапи */
-/* Центрування мапи на всю ширину екрану */
-/* Контейнер для мапи */
 .map__container {
   display: grid;
   position: relative;
@@ -248,18 +242,16 @@
   z-index: 3;
 }
 
-/* Стиль для iframe мапи */
 .map__iframe {
   width: 100%;
   height: 100%;
   border: 0;
 }
 
-/* Стиль для адресного вікна */
 .map__address-box {
   position: absolute;
-  top: 50%; /* Позиціонування по вертикалі на 50% */
-  left: 50%; /* Позиціонування по горизонталі на 50% */
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -150%);
   background-color: rgb(255, 255, 255);
   border-radius: 0.5rem;
@@ -272,13 +264,13 @@
   padding-top: 2.5rem;
   padding-bottom: 0.75rem;
   padding-left: 0.75rem;
-padding-right: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .map__address-box::after {
   content: "";
   position: absolute;
-  bottom: -.0625rem;
+  bottom: -0.625rem;
   left: 50%;
   transform: translateX(-50%);
   border-width: 0.625rem 0.625rem 0;
@@ -301,7 +293,6 @@ padding-right: 0.75rem;
   margin: 0.313rem 0 0;
 }
 
-/* Стиль для вікна робочих годин */
 .map__working-hours {
   position: absolute;
   bottom: 30%;
@@ -335,7 +326,6 @@ padding-right: 0.75rem;
   font-style: italic;
 }
 
-/* Адаптивне розташування для екранів до 990px */
 @media (max-width: 990px) {
   .map__address-box {
     top: 35%;
@@ -347,7 +337,7 @@ padding-right: 0.75rem;
     bottom: 0.625rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%; 
+    width: 80%;
     max-width: 18.75rem;
     padding: 3.125rem;
   }
