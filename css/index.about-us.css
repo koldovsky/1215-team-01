@@ -129,17 +129,23 @@
 }
 
 .info-number {
-  font-size: 33px;
-  font-weight: 700;
+  font-family: 'Cormorant Infant', serif;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 100;
+  color: #BC6E44;
 }
 
 .info-text {
+  font-family: 'Spectral', serif;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 200;
+  color: #837D71;
 }
 
 .carousel-control-prev-icon{
   background-image: url(../img/index/index_carousele-arrow-left.png);
+
 }
 .carousel-control-next-icon {
   background-image: url(../img/index/index_carousele-arrow-right.png);

@@ -1,0 +1,30 @@
+
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* проміжок між елементами галереї */
+    justify-content: center; 
+    background: url(../img/index-gallary/background-index-gallary.png);
+  }
+  
+  .gallery__item {
+    flex: 1 1 200px; /* розтягування елемента в галереї */
+    max-width: 200px; /* максимальна ширина елемента */
+    text-align: center; /* відцентрувати вміст елемента по горизонталі */
+  }
+  
+  .gallery__image {
+    width: 100%; /* займати всю доступну ширину в контейнері */
+    height: auto; /* автоматична висота, щоб зберегти пропорції */
+    border-radius: 8px; /* закруглені кути для зображення */
+  }
+  
+  .gallery__caption {
+    font-family: "Spectral", serif;
+    font-size: 17px;
+    margin-top: 10px; /* відступ зверху від зображення */
+    font-size: 16px; /* розмір шрифту підпису */
+    color: #837D71; /* колір тексту підпису */
+  }
+

@@ -6,25 +6,31 @@
 .vineyards-container {
   display: flex;
   flex-direction: column;
+
   .vineyards__intro-title {
     padding: 90px 0 0;
     color: var(--background-color-signup);
     font-size: 12px;
     text-transform: uppercase;
   }
+
   .vineyards__main-title {
     color: var(--paragraph-section-text-color);
     font-size: 38px;
   }
+
   .vineyards__text {
     color: var(--paragraph-content-text-color);
     font-size: 19px;
   }
+
   .vineyards__text-info {
     color: var(--paragraph-content-text-color);
     font-size: 17px;
   }
+
 }
+
 div.visit-vineyard {
   padding: 30px;
   display: flex;
