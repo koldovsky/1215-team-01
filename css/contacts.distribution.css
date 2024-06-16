@@ -312,6 +312,19 @@
   font-size: 1.875rem;
   margin: 0;
   font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.map__working-hours h3::after {
+  content: '';
+  display: block;
+  width: 3.125rem; 
+  height: 0.125rem; 
+  background-color: rgb(188, 110, 68); 
+  margin: 1rem auto 0 auto;
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(-50%); 
 }
 
 .map__working-hours p {
@@ -324,6 +337,7 @@
   pointer-events: auto;
   text-align: center;
   font-style: var(--distribution-font-style);
+  padding-top: 1rem;
 }
 
 @media (max-width: 990px) {
@@ -356,5 +370,5 @@
 .map__close-button::before {
   content: "✖";
   font-size: 1.2rem;
-  color: vsr(--map-button-color: #837d71);
+  color: var(--map-button-color);
 }
