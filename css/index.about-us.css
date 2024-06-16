@@ -54,7 +54,7 @@
   width: 100px;
   height: 2px;
   background-color: rgba(84, 78, 76, 0.18);
-  margin: 5px auto; /* Зменшено відстань між цифрами та текстом */
+  margin-left: 0; /* Зменшено відстань між цифрами та текстом */
 }
 
 .index-about-us-info-guide {
@@ -67,10 +67,21 @@
 
 .index-about-us-info-item {
   text-align: center;
-  padding: 10px; /* Зменшено відстань між елементами */
+  padding: 10px;
   color: var(--contacts-paragraph-color);
-  flex: 1 1 200px;
+  flex: 1 1 calc(20% - 50px); /* Враховує відстань між елементами */
+  max-width: calc(20% - 50px); /* Враховує відстань між елементами */
+  margin-left: -55px; /* Відстань між елементами (по 25px по кожному боці) */
 }
+
+@media (max-width: 768px) {
+  .index-about-us-info-item {
+    flex: 1 1 calc(50% - 50px); /* Для мобільних екранів дві колонки з відступом */
+    max-width: calc(50% - 50px); /* Враховує відстань між елементами */
+    margin: 0 25px; /* Відстань між елементами (по 25px по кожному боці) */
+  }
+}
+
 
 .index-about-us-winegarden {
   width: 100%;
@@ -134,6 +145,7 @@
   font-size: 30px;
   font-weight: 100;
   color: #BC6E44;
+  text-align: left;
 }
 
 .info-text {
@@ -141,6 +153,7 @@
   font-size: 17px;
   font-weight: 200;
   color: #837D71;
+  text-align: left;
 }
 
 .carousel-control-prev-icon{
