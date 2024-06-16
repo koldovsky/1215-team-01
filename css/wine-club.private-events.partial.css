@@ -15,14 +15,24 @@
 .private-events__title{
   font-family: "Spectral", serif;
   font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 2px;
   color: #BC6E44;
 }
 
 .private-events__subtitle {
   font-family: "Cormorant Infant", serif;
   font-size: 52px;
-  font-weight: 200;
+  font-weight: 100;
   color: #2A2824;
+}
+
+.italic__word {
+  font-style: italic;
+}
+
+.special__point {
+  color: var(--special-point-color);
 }
 
 .private-events__description {
@@ -31,13 +41,14 @@
   font-weight: 100;
   color: #837D71;
 }
+
 .events-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Грід з двома колонками */
   gap: 20px; /* Відстань між елементами */
   max-width: 1200px; /* Максимальна ширина контейнера */
   margin: 0 auto; /* Центрування контейнера на сторінці */
-  margin-top: 50px;
+  margin-top: 10px;
   padding: 0; /* Відступи всередині контейнера */
 }
 
@@ -52,10 +63,27 @@
 }
 
 .event-item img {
-  width: 318px; /* Фіксована ширина для зображень */
-  height: 270px; /* Фіксована висота для зображень */
   margin-right: 10px; /* Відстань між зображенням і текстом */
   border-radius: 8px; /* Закруглені кути для круглих зображень */
+  position: relative; /* Забезпечення контексту для позиціонування псевдоелемента */
+  width: 100%; /* Фіксована ширина для зображень, щоб вони були однаковими */
+  max-width: 318px; /* Максимальна ширина зображення */
+  height: auto; /* Автоматична висота для збереження пропорцій */
+  max-height: 270px; /* Максимальна висота зображення */
+  object-fit: cover; /* Масштабує зображення, щоб воно повністю заповнювало контейнер, зберігаючи пропорції */
+}
+
+.event-item img::after {
+  content: "";
+  position: absolute; /* Абсолютне позиціонування відносно зображення */
+  width: 100%; /* Ширина псевдоелемента відповідно до ширини зображення */
+  height: 100%; /* Висота псевдоелемента відповідно до висоти зображення */
+  top: 0; /* Розміщення зверху відносно зображення */
+  right: 0; /* Розміщення справа відносно зображення */
+  bottom: 0; /* Розміщення знизу відносно зображення */
+  left: 0; /* Розміщення зліва відносно зображення */
+  background-color: rgba(255, 0, 0, 0.3); /* Приклад кольору фону для псевдоелемента */
+  border-radius: 8px; /* Закруглені кути для псевдоелемента */
 }
 
 .event-item-content {
@@ -65,6 +93,7 @@
 .event-item__date {
   font-family: "Spectral", serif;
   font-size: 15px;
+  font-style: italic;
   font-weight: 100;
   color: #BC6E44;
   margin-bottom: 10px;
