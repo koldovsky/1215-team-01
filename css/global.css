@@ -122,3 +122,9 @@ ul {
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
 }
+
+.special-point {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--special-point-color);
+}
