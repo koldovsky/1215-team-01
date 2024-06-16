@@ -61,28 +61,30 @@
   margin: 5px auto; /* Зменшено відстань між цифрами та текстом */
 }
 
+
+
 .index-about-us-info-guide {
-  width: 35%;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Запобігає переносу на новий ряд */
   justify-content: center;
   margin-bottom: 20px;
+  overflow-x: auto; /* Прокрутка по горизонталі, якщо елементи не вміщаються в одному ряду */
 }
 
 .index-about-us-info-item {
-  text-align: center;
+  text-align: left;
   padding: 10px;
   color: var(--contacts-paragraph-color);
-  flex: 1 1 calc(20% - 50px); /* Враховує відстань між елементами */
-  max-width: calc(20% - 50px); /* Враховує відстань між елементами */
-  margin-left: -55px; /* Відстань між елементами (по 25px по кожному боці) */
+  flex: 0 0 auto; /* Фіксована ширина, щоб елементи не розтягувалися */
+  max-width: calc(20% - 20px); /* Максимальна ширина кожного елемента з відступами */
+  margin: 0px 50px; /* Відстань між елементами */
+  white-space: normal; /* Забезпечує перенос тексту */
 }
 
 @media (max-width: 768px) {
   .index-about-us-info-item {
-    flex: 1 1 calc(50% - 50px); /* Для мобільних екранів дві колонки з відступом */
-    max-width: calc(50% - 50px); /* Враховує відстань між елементами */
-    margin: 0 25px; /* Відстань між елементами (по 25px по кожному боці) */
+    max-width: calc(50% - 20px); /* При малому розмірі екрану розташовувати по два елементи в ряд */
   }
 }
 
