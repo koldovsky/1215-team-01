@@ -1,3 +1,9 @@
+
+.professional-team img {
+  width: 200px;
+  height: 200px;
+}
+
 .professional-team {
   background-image: url("../img/about-us/history-part/back-ground.png");
   background-size: cover;
