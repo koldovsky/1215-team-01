@@ -28,10 +28,9 @@
     color: var(--paragraph-content-text-color);
     font-size: 17px;
   }
-
 }
 
-div.visit-vineyard {
+.visit-vineyard {
   padding: 30px;
   display: flex;
   flex-direction: row;

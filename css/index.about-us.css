@@ -8,7 +8,7 @@
 }
 
 .index-about-us__content {
-  flex: 1 1 100%; 
+  flex: 1 1 100%;
   padding: 20px;
   text-align: justify; /* Вирівнювання тексту за шириною */
 }
@@ -28,7 +28,7 @@
   font-size: 12px;
   font-weight: 600;
   color: var(--contacts-paragraph-color);
-  border-radius: inherit; 
+  border-radius: inherit;
 }
 
 .index-about-us__title {
@@ -61,8 +61,6 @@
   margin: 5px auto; /* Зменшено відстань між цифрами та текстом */
 }
 
-
-
 .index-about-us-info-guide {
   width: 100%;
   display: flex;
@@ -77,17 +75,20 @@
   padding: 10px;
   color: var(--contacts-paragraph-color);
   flex: 0 0 auto; /* Фіксована ширина, щоб елементи не розтягувалися */
-  max-width: calc(20% - 20px); /* Максимальна ширина кожного елемента з відступами */
+  max-width: calc(
+    20% - 20px
+  ); /* Максимальна ширина кожного елемента з відступами */
   margin: 0px 50px; /* Відстань між елементами */
   white-space: normal; /* Забезпечує перенос тексту */
 }
 
 @media (max-width: 768px) {
   .index-about-us-info-item {
-    max-width: calc(50% - 20px); /* При малому розмірі екрану розташовувати по два елементи в ряд */
+    max-width: calc(
+      50% - 20px
+    ); /* При малому розмірі екрану розташовувати по два елементи в ряд */
   }
 }
-
 
 .index-about-us-winegarden {
   width: 100%;
@@ -115,7 +116,7 @@
   font-size: 12px;
   font-weight: 600;
   color: var(--contacts-paragraph-color);
-  border-radius: inherit; 
+  border-radius: inherit;
 }
 
 .experience-the-luxury__title {
@@ -150,20 +151,20 @@
 }
 
 .info-number {
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   font-style: italic;
   font-size: 30px;
   font-weight: 100;
-  color: #BC6E44;
+  color: #bc6e44;
   text-align: left;
   color: var(--about-us-button);
 }
 
 .info-text {
-  font-family: 'Spectral', serif;
+  font-family: "Spectral", serif;
   font-size: 17px;
   font-weight: 200;
-  color: #837D71;
+  color: #837d71;
   text-align: left;
   color: var(--paragraph-content-text-color);
 }
@@ -200,7 +201,7 @@
 }
 
 .wine-subtitle {
-  color: var(--about-us-button);;
+  color: var(--about-us-button);
   margin-bottom: 20px;
 }
 

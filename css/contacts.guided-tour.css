@@ -1,5 +1,3 @@
-
-
 .guided-tour-background {
   background-image: url("../img/guided-tour/background-guided-tour.png");
   background-size: cover; /* Забезпечує розміщення фонового зображення на всій площині */
@@ -31,7 +29,7 @@
     margin-right: 0; /* Видаляє відступ між колонками */
   }
 }
-.wine-experience img{
+.wine-experience img {
   width: 50px;
 }
 .guided-tour__paragraph {

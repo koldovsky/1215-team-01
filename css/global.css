@@ -8,11 +8,11 @@
 }
 
 :root {
-  --header-footer-bg-top-color: rgba(42,40,36,0.82);
+  --header-footer-bg-top-color: rgba(42, 40, 36, 0.82);
   --header-contact-text-color: #fff;
   --header-contact-text-second-color: #837d71;
-  --header-text-third-color:#bc6e44;
-  --header-menu-link-color:#ffffffb0;
+  --header-text-third-color: #bc6e44;
+  --header-menu-link-color: #ffffffb0;
   --header-menu-link-hover-color: #fff;
   --primary-dark-color: #2a2824;
   --primary-orang-color: #bc6e44;
@@ -45,7 +45,7 @@
   --paragraph-text-font-family: "Cormorant Infant", serif;
   scroll-behavior: smooth;
   --wine-club-become-member-text: #ffffffcc;
-  --wine-club-membership-benefits-list-text: #544E4C;
+  --wine-club-membership-benefits-list-text: #544e4c;
   --contacts-paragraph-color: #bc6e44;
   --contacts-color: #2a2824;
   --contacts-description-title: #837d71;
@@ -76,17 +76,16 @@
   --map-background-color: #ffffff;
   --map--box-text-color: #837d71;
   --map-button-color: #837d71;
-  --about-us-button: #BC6E44; 
-  --about-us-button-text: #FFFFFF;
+  --about-us-button: #bc6e44;
+  --about-us-button-text: #ffffff;
   --about-us-line: #837d71;
-  --about-us-title:  #2a2824;
+  --about-us-title: #2a2824;
   --collection-tasting-menu-color: #ffffff;
   --collection-tasting-menu-discription: #faf8f2;
   --collection-tasting-menu-special: #bc6e44;
-  --collection-tasting-menu-border:#000000;
+  --collection-tasting-menu-border: #000000;
   --collection-tasting-menu-subtitle: #2a2824;
   --collection-tasting-menu-item: #837d71;
-
 }
 
 .container {

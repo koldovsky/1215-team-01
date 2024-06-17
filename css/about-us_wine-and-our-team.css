@@ -1,3 +1,8 @@
+.professional-team img {
+  width: 200px;
+  height: 200px;
+}
+
 .professional-team {
   background-image: url("../img/about-us/history-part/back-ground.png");
   background-size: cover;
@@ -40,5 +45,4 @@
   overflow: break-word;
   margin-bottom: 20px;
   color: var(--wine-club-how-works-subtitle);
-  
 }

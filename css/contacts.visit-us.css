@@ -3,7 +3,7 @@
   margin: 0 20px;
   display: flex;
   flex-wrap: wrap;
-  padding-left:30px;
+  padding-left: 30px;
   padding-right: 30px;
 }
 
@@ -25,7 +25,7 @@
   font-size: 12px;
   font-weight: 600;
   color: var(--contacts-paragraph-color);
-  border-radius: inherit; 
+  border-radius: inherit;
 }
 
 .tasting-conditions__title {
@@ -78,7 +78,7 @@
 
 .visit-us__links a {
   text-decoration: none;
-  color:  var(--contacts-visit-us-links-a);
+  color: var(--contacts-visit-us-links-a);
   transition: color 0.3s ease;
 }
 
@@ -104,9 +104,9 @@
 }
 
 .visit-us__list-item svg {
-  width: 24px; 
-  height: 24px; 
-  vertical-align: middle; 
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
   margin-right: 8px;
 }
 
@@ -114,12 +114,11 @@
   fill: #bc6f44;
 }
 
-.icons-text{
-  width: 24px; 
-  height: 24px; 
+.icons-text {
+  width: 24px;
+  height: 24px;
   margin-bottom: 50px;
   color: var(--contacts-tasting-conditions-icon);
-
 }
 
 .visit-us__form-group {
@@ -152,7 +151,7 @@
 .visit-us__textarea {
   width: 100%;
   padding: 20px 10px 10px 10px;
-  border: 1px solid var( --contacts-visit-us-input-border); 
+  border: 1px solid var(--contacts-visit-us-input-border);
   background-color: var(--contacts-visit-us-input-input-background);
   border-radius: 4px;
   box-sizing: border-box;
@@ -165,7 +164,7 @@
 
 .visit-us__submit {
   display: inline-block;
-  background-color: var( --contacts-visit-us-submit-background);
+  background-color: var(--contacts-visit-us-submit-background);
   color: var(--contacts-visit-us-submit);
   padding: 10px 20px;
   border: none;

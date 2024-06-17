@@ -3,7 +3,7 @@
   flex-wrap: wrap; /* Дозволяє зображенням переноситися на наступний рядок */
   gap: 10px; /* Проміжок між елементами галереї */
   justify-content: center;
-  background: url('../img/index-gallary/background-index-gallary.png');
+  background: url("../img/index-gallary/background-index-gallary.png");
   overflow-x: auto; /* Додає горизонтальну прокрутку для маленьких екранів */
 }
 
@@ -24,7 +24,7 @@
   font-family: "Spectral", serif;
   font-size: 14px; /* Розмір шрифту підпису */
   margin-top: 5px; /* Відступ зверху від зображення */
-  color: #837D71; /* Колір тексту підпису */
+  color: #837d71; /* Колір тексту підпису */
 }
 
 /* Медіа-запити для адаптивності */

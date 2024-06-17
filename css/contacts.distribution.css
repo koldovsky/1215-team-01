@@ -316,15 +316,15 @@
 }
 
 .map__working-hours h3::after {
-  content: '';
+  content: "";
   display: block;
-  width: 3.125rem; 
-  height: 0.125rem; 
-  background-color: rgb(188, 110, 68); 
+  width: 3.125rem;
+  height: 0.125rem;
+  background-color: rgb(188, 110, 68);
   margin: 1rem auto 0 auto;
-  position: absolute; 
-  left: 50%; 
-  transform: translateX(-50%); 
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .map__working-hours p {

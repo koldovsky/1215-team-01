@@ -4,7 +4,7 @@
 } */
 
 /* Фонові зображення */
-div.categories__image__bottle {
+.categories__image__bottle {
   background-image: url(../img/categories/background-image-bottles-wine.png);
   width: 100%;
   height: 100%;
@@ -45,7 +45,7 @@ div.categories__image__bottle {
   padding: 5px 10px;
 }
 
-p.categories__text {
+.categories__text {
   margin: 0;
 }
 
@@ -112,7 +112,7 @@ p.categories__text {
 }
 /* Адаптація для більших екранів */
 @media (min-width: 768px) {
-  div.categories__image__bottle {
+  .categories__image__bottle {
     background-position: 60% 50%;
   }
   .categories-container-bottles {
