@@ -1,0 +1,64 @@
+.collection-wine__container {
+  padding-bottom: 90px;
+  padding-top: 80px;
+}
+
+.collection__description {
+  line-height: 25.5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.collection__title {
+  color: rgb(188, 110, 68);
+  font-family: "Spectral", serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  line-height: 20.4px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.collection__subtitle {
+  color: rgb(42, 40, 36);
+  font-family: "Cormorant Infant", serif;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 57.2px;
+  text-align: left;
+}
+
+.collection__item {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
+}
+
+.collection__item-title {
+  color: rgb(42, 40, 36);
+  font-family: "Cormorant Infant", serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 500;
+  text-align: left;
+}
+
+.collection__price {
+  color: rgb(188, 110, 68);
+  font-family: "Cormorant Infant", serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33.6px;
+  text-align: left;
+}
+
+.collection__item-description {
+  color: rgb(131, 125, 113);
+  font-family: "Spectral", serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.5px;
+  text-align: left;
+}
