@@ -169,14 +169,23 @@
 }
 
 .winemaking-process {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 90px 0 15px;
+  background-color: var( --header-contact-text-color);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 0 20px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .carousel {
+  max-width: 1200px;
+  margin-top: 60px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .winemaking-process__title {
@@ -209,7 +218,7 @@
   font-size: 19px;
   font-weight: 500;
   line-height: 28.5px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: var(--header-contact-text-second-color);
 }
 
@@ -217,14 +226,13 @@
   display: flex;
   overflow: hidden;
   position: relative;
-  padding: 40px;
+  gap: 30px;
 }
 
 .winemaking-process__slide {
   min-width: 33.333%;
   box-sizing: border-box;
   transition: transform 0.5s ease-in-out;
-  padding: 0 10px;
 }
 
 .winemaking-process__image {
