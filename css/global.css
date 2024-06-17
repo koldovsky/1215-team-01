@@ -44,9 +44,8 @@
   --section-text-font-family: "Spectral", serif;
   --paragraph-text-font-family: "Cormorant Infant", serif;
   scroll-behavior: smooth;
-  --wine-club-become-member__title: #ffffff;
-  --wine-club-become-member__text: #ffffffcc;
-  --wine-club-become-member__btn-border: #ffffff;
+  --wine-club-become-member-text: #ffffffcc;
+  --wine-club-membership-benefits-list-text: #544E4C;
   --contacts-paragraph-color: #bc6e44;
   --contacts-color: #2a2824;
   --contacts-description-title: #837d71;
