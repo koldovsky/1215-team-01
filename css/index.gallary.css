@@ -1,30 +1,51 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* Дозволяє зображенням переноситися на наступний рядок */
+  gap: 10px; /* Проміжок між елементами галереї */
+  justify-content: center;
+  background: url('../img/index-gallary/background-index-gallary.png');
+  overflow-x: auto; /* Додає горизонтальну прокрутку для маленьких екранів */
+}
 
-  
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* проміжок між елементами галереї */
-    justify-content: center; 
-    background: url(../img/index-gallary/background-index-gallary.png);
-  }
-  
+.gallery__item {
+  flex: 0 0 auto; /* Запобігає розтягуванню елементів галереї */
+  width: 250px; /* Фіксована ширина елемента */
+  text-align: center; /* Відцентрувати вміст елемента по горизонталі */
+}
+
+.gallery__image {
+  width: 250px; /* Фіксована ширина зображення */
+  height: 250px; /* Фіксована висота зображення */
+  object-fit: cover; /* Зберігає пропорції зображення, заповнюючи контейнер */
+  border-radius: 8px; /* Закруглені кути для зображення */
+}
+
+.gallery__caption {
+  font-family: "Spectral", serif;
+  font-size: 14px; /* Розмір шрифту підпису */
+  margin-top: 5px; /* Відступ зверху від зображення */
+  color: #837D71; /* Колір тексту підпису */
+}
+
+/* Медіа-запити для адаптивності */
+@media (max-width: 1400px) {
   .gallery__item {
-    flex: 1 1 200px; /* розтягування елемента в галереї */
-    max-width: 200px; /* максимальна ширина елемента */
-    text-align: center; /* відцентрувати вміст елемента по горизонталі */
-  }
-  
-  .gallery__image {
-    width: 100%; /* займати всю доступну ширину в контейнері */
-    height: auto; /* автоматична висота, щоб зберегти пропорції */
-    border-radius: 8px; /* закруглені кути для зображення */
-  }
-  
-  .gallery__caption {
-    font-family: "Spectral", serif;
-    font-size: 17px;
-    margin-top: 10px; /* відступ зверху від зображення */
-    font-size: 16px; /* розмір шрифту підпису */
-    color: #837D71; /* колір тексту підпису */
+    width: 200px; /* Менша ширина на середніх екранах */
   }
 
+  .gallery__image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery__item {
+    width: 150px; /* Ще менша ширина на маленьких екранах */
+  }
+
+  .gallery__image {
+    width: 150px;
+    height: 150px;
+  }
+}
