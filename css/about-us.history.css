@@ -4,19 +4,16 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-}
-
-.about-us {
-  padding: 100px 0 1px;
+  padding: 0 20px; 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  opacity: 1;
 }
 
 .content-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  margin-top: 110px;
 }
 
 .about-us__content {
@@ -25,7 +22,7 @@
 }
 
 .about-us__title {
-  font: var(--section-text-font-family);
+  font-family: var(--section-text-font-family);
   text-align: center;
   font-size: 12px;
   font-weight: 700;
@@ -33,23 +30,23 @@
   line-height: 20.4px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: var(--wine-club-how-works-header-title-color);
+  color: var(--header-text-third-color);
 }
 
 .about-us__subtitle {
   text-align: center;
-  font: var(--paragraph-text-font-family);
+  font-family: var(--paragraph-text-font-family);
   font-size: 52px;
   font-weight: 500;
   line-height: 57.2px;
   overflow: break-word;
   margin-bottom: 20px;
-  color: var(--wine-club-how-works-subtitle);
+  color: var(--primary-dark-color);
 }
 
 .about-us__point,
 .winemaking-process__point {
-  color: var(--distribution-specific-symbol);
+  color: var(--special-point-color);
   font-family: var(--paragraph-text-font-family);
   font-size: 52px;
   line-height: 57.2px;
@@ -57,13 +54,13 @@
 }
 
 .about-us__description {
-  font: var(--section-text-font-family);
+  font-family: var(--section-text-font-family);
   text-align: center;
   font-size: 19px;
   font-weight: 500;
   line-height: 28.5px;
   margin-bottom: 20px;
-  color: var(--wine-club-how-works-description);
+  color: var(--header-contact-text-second-color);
 }
 
 .about-us__image {
@@ -84,17 +81,22 @@
 .about-us__text-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  gap: 25px;
   align-items: start;
+  font-family: var(--section-text-font-family);
   font-size: 17px;
   line-height: 25.5px;
   font-weight: 400;
-  color: var(--wine-club-how-works-description);
-  margin-bottom: 18px;
+  color: var(--primary-light-grey-color);
+  margin-bottom: 70px;
   text-align: left;
 }
 
 @media (max-width: 768px) {
+  .about-us {
+    padding: 0 20px;
+  }
+
   .about-us__text-container {
     grid-template-columns: 1fr;
     text-align: left;
@@ -103,13 +105,13 @@
 
 .timeline-wrapper {
   width: 100%;
-  padding: 5px 20px 50px 20px;
+  padding: 0 20px 50px; 
   box-sizing: border-box;
 }
 
 .timeline {
   max-width: 1200px;
-  margin: 0 auto; 
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 15px;
@@ -119,18 +121,17 @@
 
 .timeline__item {
   text-align: left; 
-  padding: 10px;
   box-sizing: border-box; 
   width: 100%;
 }
 
 .timeline__date {
-  font-size: 33px;
+  font-size: 36px;
   font-weight: 500;
-  font-family: "Cormorant Infant", serif;
+  font-family: var(--paragraph-text-font-family);
   position: relative;
   line-height: 39.6px;
-  color: var(--wine-club-how-works-subtitle);
+  color: var(--primary-dark-color);
 }
 
 .timeline__date::before {
@@ -140,15 +141,16 @@
   left: 0;
   width: 34px;
   height: 2.5px;
-  background-color: var(--wine-club-how-works-header-title-color);
+  background-color: var(--header-text-third-color);
 }
 
 .timeline__description {
   margin-top: 30px;
+  font-family: var(--section-text-font-family);
   font-size: 17px;
   line-height: 25.5px;
   font-weight: 400;
-  color: var(--wine-club-how-works-description);
+  color: var(--primary-light-grey-color);
 }
 
 @media (max-width: 768px) {
@@ -169,7 +171,7 @@
 .winemaking-process {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 90px 0 15px;
 }
 
 .carousel {
@@ -178,22 +180,22 @@
 }
 
 .winemaking-process__title {
-  font: var(--section-text-font-family);
+  font-family: var(--section-text-font-family);
   text-align: center;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2.4px;
   line-height: 20.4px;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 20px;
-  color: var(--wine-club-how-works-header-title-color);
+  color: var(--header-text-third-color);
 }
 
 .winemaking-process__subtitle {
   text-align: center;
-  font: var(--paragraph-text-font-family);
- font-size: 52px;
+  font-family: var(--paragraph-text-font-family);
+  font-size: 52px;
   font-weight: 500;
   line-height: 57.2px;
   overflow: break-word;
@@ -202,13 +204,13 @@
 }
 
 .winemaking-process__description {
-  font: var(--section-text-font-family);
+  font-family: var(--section-text-font-family);
   text-align: center;
   font-size: 19px;
   font-weight: 500;
   line-height: 28.5px;
   margin-bottom: 20px;
-  color: var(--wine-club-how-works-description);
+  color: var(--header-contact-text-second-color);
 }
 
 .winemaking-process__carousel {
@@ -239,7 +241,10 @@
 
 .winemaking-process__step {
   font-size: 26px;
-  font-family: "Cormorant Infant", serif;
+  font-family: var(--paragraph-text-font-family);
+  .winemaking-process__special-text {
+    color: var(--header-contact-text-second-color);
+  }
 }
 
 .winemaking-process__button {
