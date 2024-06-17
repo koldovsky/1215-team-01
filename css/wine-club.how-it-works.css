@@ -19,14 +19,24 @@
 
     .how-works__header-title {
       font-size: 12px;
+      letter-spacing: 3px;
       font-family: "Spectral", serif;
+      font-weight: bold;
       color: var(--primary-orang-color);
     }
 
     .how-works__header-subtitle {
-      font-size: 38px;
+      font-size: 52px;
       font-family: "Cormorant Infant", serif;
       color: var(--primary-dark-color);
+
+      .how-works__header__subtitle-special-word {
+        font-style: italic;
+      }
+
+      .how-works__header__subtitle-special-symbol {
+        color: var(--primary-orang-color);
+      }
     }
 
     .how-works__header-description {
@@ -57,6 +67,7 @@
     .how-works__body__item-title {
       font-size: 26px;
       font-family: "Cormorant Infant", serif;
+      font-style: italic;
       color: var(--primary-dark-color);
       margin-top: 20px;
     }
@@ -104,7 +115,7 @@
     }
 
     .how-works__gallery__item-title {
-      font-size: 26px;
+      font-size: 28px;
       font-family: "Cormorant Infant", serif;
       color: var(--primary-dark-color);
     }
@@ -118,6 +129,7 @@
     .how-works__gallery__item__subtitle-special {
       font-size: 15px;
       font-family: "Spectral", serif;
+      font-weight: bold;
       color: var(--primary-orang-color);
     }
 
@@ -131,11 +143,18 @@
     }
 
     .btn {
+      font-size: 17px;
+      font-family: "Spectral", serif;
+      font-weight: bold;
       width: 110px;
       height: 45px;
       margin-top: 40px;
       background-color: var(--primary-orang-color);
       border-color: var(--wine-club-how-works__body__item-btn);
+    }
+
+    .btn:hover {
+      background-color: var(--primary-dark-color);
     }
   }
 }
@@ -209,13 +228,24 @@
     .membership-benefits__item-title {
       font-size: 12px;
       font-family: "Spectral", serif;
+      margin-top: 30px;
+      letter-spacing: 3px;
+      font-weight: bold;
       color: var(--primary-orang-color);
     }
 
     .membership-benefits__item-subtitle {
-      font-size: 38px;
+      font-size: 52px;
       font-family: "Cormorant Infant", serif;
       color: var(--primary-dark-color);
+
+      .membership-benefits__item__subtitle-special-text {
+        font-style: italic;
+      }
+
+      .membership-benefits__item__subtitle-special-symbol {
+        color: var(--primary-orang-color);
+      }
     }
 
     .membership-benefits__item-description {
@@ -240,6 +270,10 @@
   .membership-benefits {
     display: flex;
     flex-direction: column;
+
+    .membership-benefits__item {
+      margin-left: 20px;
+    }
 
     .membership-benefits__icon {
       display: flex;
@@ -271,6 +305,7 @@
 }
 
 .become-member {
+  height: 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -282,6 +317,10 @@
     color: var(--primary-white-color);
     margin-right: 40px;
     white-space: nowrap;
+
+    .become-member__title-special-text {
+      font-style: italic;
+    }
   }
 
   .become-member__text {
@@ -292,10 +331,17 @@
   }
 
   .btn {
+    font-size: 17px;
+    font-family: "Spectral", serif;
+    font-weight: bold;
     width: 110px;
     height: 45px;
     background-color: var(--primary-orang-color);
     border-color: var(--primary-white-color);
+  }
+  .btn:hover {
+    color: var(--primary-dark-color);
+    background-color: var(--primary-white-color);
   }
 }
 
@@ -303,12 +349,12 @@
   .become-member_background {
     max-width: 1200px;
     background-color: var(--primary-orang-color);
-    margin-top: 30px;
   }
 
   .become-member {
     display: flex;
     flex-direction: column;
+    height: 200px;
 
     .become-member__title {
       margin-right: 0;
