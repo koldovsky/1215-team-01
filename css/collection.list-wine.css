@@ -2,11 +2,14 @@
   padding-bottom: 90px;
   padding-top: 80px;
   background-color: rgb(250, 248, 242);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .collection {
   padding-bottom: 30px;
-padding-top: 30px;
+  padding-top: 30px;
+  width: 100%;
 }
 
 .collection__description {
@@ -25,6 +28,7 @@ padding-top: 30px;
   line-height: 20.4px;
   text-align: left;
   text-transform: uppercase;
+  padding-bottom: 20px;
 }
 
 .collection__subtitle {
@@ -34,6 +38,7 @@ padding-top: 30px;
   font-weight: 500;
   line-height: 57.2px;
   text-align: left;
+  padding-bottom: 40px;
 }
 
 .collection__list {
@@ -88,15 +93,16 @@ padding-top: 30px;
     gap: 30px;
     padding-left: 15px;
     padding-right: 15px;
+    width: 100%;
   }
 }
 
-/* Медіа-запит для екранів шириною менше 768 пікселів */
 @media (max-width: 768px) {
   .collection__list {
     grid-template-columns: 1fr;
-    gap: 20px; /* Можете змінити відстань між елементами для маленьких екранів */
+    gap: 20px;
     padding-left: 15px;
     padding-right: 15px;
+    width: 100%;
   }
 }

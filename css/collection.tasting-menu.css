@@ -165,7 +165,6 @@
   background-size: cover;
   background-position: center;
   overflow-wrap: break-word;
-  border: 0.125rem solid var(--collection-tasting-menu-border);
   position: relative;
   display: flex;
   align-items: center;
@@ -305,7 +304,6 @@
   gap: 20px;
   align-items: start;
   background-color: var(--collection-tasting-menu-special);
-  border: 0.125rem solid var(--collection-tasting-menu-border);
   position: relative;
   box-sizing: border-box;
   background-origin: border-box;
