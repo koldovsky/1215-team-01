@@ -1,13 +1,15 @@
 .collection-wine__container {
   padding-bottom: 90px;
   padding-top: 80px;
+
+  background-color: (250, 248, 242);
 }
 
 .collection__description {
   line-height: 25.5px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  width: 100%;
 }
 
 .collection__title {
@@ -30,9 +32,17 @@
   text-align: left;
 }
 
+.collection__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .collection__item {
-  padding-left: 30px;
-  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
   text-align: left;
 }
 
@@ -43,6 +53,8 @@
   font-style: italic;
   font-weight: 500;
   text-align: left;
+  position: relative;
+  padding-right: 120px; /* Додаємо простір для ціни */
 }
 
 .collection__price {
@@ -51,7 +63,21 @@
   font-size: 28px;
   font-weight: 500;
   line-height: 33.6px;
-  text-align: left;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.collection__item-title::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  right: 120px; /* Від правого краю до ціни */
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.06);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .collection__item-description {
@@ -61,4 +87,5 @@
   font-weight: 400;
   line-height: 25.5px;
   text-align: left;
+  margin-top: 5px;
 }
