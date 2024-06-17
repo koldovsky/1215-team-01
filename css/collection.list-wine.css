@@ -37,19 +37,19 @@
   line-height: 57.2px;
   text-align: left;
   padding-bottom: 40px;
-  position: relative; 
+  position: relative;
 }
 
 .collection__subtitle::after {
   content: "";
   display: block;
-  width: calc(100% - 30px); 
+  width: calc(100% - 30px);
   height: 1px;
   background-color: rgb(235, 233, 228);
   position: absolute;
   top: 100%;
   left: 15px;
-  transform: translateY(-30px); 
+  transform: translateY(-30px);
 }
 
 .collection__list {
@@ -110,7 +110,7 @@
 @media (max-width: 768px) {
   .collection__list {
     grid-template-columns: 1fr;
-    gap: 20px; 
+    gap: 20px;
     padding-left: 15px;
     padding-right: 15px;
   }

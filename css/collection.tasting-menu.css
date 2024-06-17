@@ -26,7 +26,6 @@
   margin-top: 50px;
   display: grid;
   gap: 10px;
-  
 }
 
 .nearest-tasting_title {
@@ -269,7 +268,7 @@
 }
 
 .tasting-menu__item-description {
-  color:  var(--collection-tasting-menu-item);
+  color: var(--collection-tasting-menu-item);
   font-family: "Spectral", serif;
   font-size: 17px;
   line-height: 25.5px;
@@ -392,7 +391,7 @@
   width: 100%;
   padding: 10px;
   background-color: var(--collection-tasting-menu-discription);
-  color:  var(--collection-tasting-menu-discription);
+  color: var(--collection-tasting-menu-discription);
   font-size: 14px;
   border: none;
   box-sizing: border-box;

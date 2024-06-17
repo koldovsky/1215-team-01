@@ -14,7 +14,6 @@
   background-repeat: repeat;
 }
 
-
 .benefits {
   display: flex;
   flex-flow: column wrap;
@@ -64,7 +63,7 @@ div.benefits__text {
       width: 100%;
       object-fit: cover;
       background-position: 27% 6%;
-      .benefits__image{
+      .benefits__image {
         visibility: hidden;
       }
     }
