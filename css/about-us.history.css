@@ -4,7 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 20px; 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -73,9 +73,9 @@
 
 .about-us__image img {
   width: 100%;
-  height: auto;
+  height: 600px;
   object-fit: cover;
-  object-position: center top;
+  object-position: 50% 30%;
 }
 
 .about-us__text-container {
@@ -105,7 +105,7 @@
 
 .timeline-wrapper {
   width: 100%;
-  padding: 0 20px 50px;
+  padding: 0 20px 50px; 
   box-sizing: border-box;
 }
 
@@ -120,8 +120,8 @@
 }
 
 .timeline__item {
-  text-align: left;
-  box-sizing: border-box;
+  text-align: left; 
+  box-sizing: border-box; 
   width: 100%;
 }
 
@@ -167,14 +167,12 @@
     width: 15%;
   }
 }
-
 .winemaking-process {
   background-color: var(--header-contact-text-color);
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
   padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
@@ -186,6 +184,7 @@
   margin-top: 60px;
   text-align: center;
   margin-bottom: 50px;
+  position: relative;
 }
 
 .winemaking-process__title {
@@ -230,49 +229,82 @@
 }
 
 .winemaking-process__slide {
-  min-width: 33.333%;
+  min-width: 50%; /* Ширина слайду на малих екранах */
   box-sizing: border-box;
   transition: transform 0.5s ease-in-out;
 }
 
 .winemaking-process__image {
   width: 100%;
-  height: 250px; /* Fixed height for images */
-  object-fit: cover; /* Preserve image aspect ratio and fill container */
+  height: 250px;
+  object-fit: cover;
 }
 
 .winemaking-process__info {
   text-align: left;
   margin-top: 30px;
-  position: relative; /* Ensure button can be positioned absolutely */
+  position: relative;
 }
 
 .winemaking-process__step {
   font-size: 26px;
   font-family: var(--paragraph-text-font-family);
-  .winemaking-process__special-text {
-    color: var(--header-contact-text-second-color);
-  }
+}
+
+.winemaking-process__special-text {
+  color: var(--header-contact-text-second-color);
 }
 
 .winemaking-process__button {
   background: none;
   border: none;
-  color: #bc6e44;
+  color: var(--color-additional-text);
   font-size: 1.5rem;
   cursor: pointer;
-  position: absolute; /* Position button absolutely */
-  top: 0; /* Align to the top of the parent */
-  right: 0; /* Align to the right of the parent */
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .winemaking-process__details {
   display: none;
   margin-top: 30px;
-  text-align: left; /* Align text to the left */
+  text-align: left;
 }
 
 .winemaking-process__detail {
   font-size: 1rem;
   margin-bottom: 40px;
+}
+
+.winemaking-process__carousel-control {
+  background: none;
+  border: none;
+  color: var(--color-additional-text);
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  z-index: 1;
+  width: 50px; /* ширина кнопки */
+  height: 50px; /* висота кнопки */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* закруглені краї */
+}
+
+.winemaking-process__carousel-control--left {
+  left: -50px;
+}
+
+.winemaking-process__carousel-control--right {
+  right: -50px;
+}
+
+@media (min-width: 768px) {
+  .winemaking-process__slide {
+    min-width: 33.333%; /* Три слайди на широких екранах */
+  }
 }
