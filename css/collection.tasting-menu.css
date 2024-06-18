@@ -26,7 +26,6 @@
   margin-top: 50px;
   display: grid;
   gap: 10px;
-  
 }
 
 .nearest-tasting_title {
@@ -269,7 +268,7 @@
 }
 
 .tasting-menu__item-description {
-  color:  var(--collection-tasting-menu-item);
+  color: var(--collection-tasting-menu-item);
   font-family: "Spectral", serif;
   font-size: 17px;
   line-height: 25.5px;
@@ -375,12 +374,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--collection-tasting-menu-special);
-  padding: 20px;
+  background-color: rgb(188, 110, 68);
 }
 
 .tasting__form {
-  width: 300px;
+  max-width: 350px;
+  min-width: 272px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .schedule__form-group {
@@ -391,8 +392,8 @@
 .schedule__input {
   width: 100%;
   padding: 10px;
-  background-color: var(--collection-tasting-menu-discription);
-  color:  var(--collection-tasting-menu-discription);
+  background-color: rgba(250, 248, 242, 0.13);
+  color: rgb(250, 248, 242);
   font-size: 14px;
   border: none;
   box-sizing: border-box;
@@ -409,8 +410,8 @@
   left: 10px;
   padding: 0 5px;
   font-size: 14px;
-  background-color: var(--collection-tasting-menu-discription);
-  color: var(--collection-tasting-menu-color);
+  background-color: rgba(250, 248, 242, 0.13);
+  color: rgb(255, 255, 255);
   direction: ltr;
   background-color: transparent;
   transform: translateY(0);
@@ -437,7 +438,6 @@
   background-color: transparent;
   color: var(--collection-tasting-menu-color);
   border: 2px solid var(--collection-tasting-menu-color);
-  border-radius: 5px;
   font-size: 15px;
   font-family: "Spectral", serif;
   cursor: pointer;
