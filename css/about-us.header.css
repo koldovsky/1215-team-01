@@ -1,12 +1,12 @@
 .about-us__header-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
     url("../img/header-hero/about-us__header.jpg");
-    background-size: cover;
-    background-position: 50% 100%;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  background-size: cover;
+  background-position: 50% 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .about-us__bottom {
   padding-bottom: 110px;
@@ -42,7 +42,7 @@
   margin: 0 auto;
   color: var(--footer-separator);
   opacity: 0.2;
-  margin:20px;
+  margin: 20px;
 }
 .about-us__subtitle-paragraph {
   color: var(--header-contact-text-second-color);

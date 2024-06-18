@@ -392,8 +392,8 @@
 .schedule__input {
   width: 100%;
   padding: 10px;
-  background-color: rgba(250, 248, 242, 0.13);
-  color: rgb(250, 248, 242);
+  background-color: var(--collection-tasting-menu-discription);
+  color:  var(--collection-tasting-menu-discription);
   font-size: 14px;
   border: none;
   box-sizing: border-box;
