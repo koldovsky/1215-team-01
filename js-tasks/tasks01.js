@@ -51,6 +51,15 @@ function makeNegative(num) {
 }
 
 //
+function makeNegative(num) {
+  switch (true) {
+    case num > 0:
+      return -num;
+      break;
+    default:
+      return num;
+  }
+}
 // task 3
 // Game Move https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
 // ++
@@ -61,6 +70,20 @@ function move(position, roll) {
 function move (position, roll) {
   const newPosition = position + roll * 2;
  return newPosition;
+
+//
+  function move (position, roll) {
+  switch (roll) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    return position + roll * 2;
+    break;
+    }
+}
 }
 // task 4
 // Personalized Message https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
@@ -90,6 +113,17 @@ function greet (name, owner) {
   return name === owner ? "Hello boss" : "Hello guest";
 }
 
+//
+function greet(name, owner) {
+  switch (name) {
+    case owner:
+      return 'Hello boss';
+    default:
+      return 'Hello guest';
+  }
+}
+
+
 // task 5 + 
 // Keep Hydrated https://www.codewars.com/kata/keep-hydrated-1/train/javascript
 
@@ -97,6 +131,16 @@ function litres(time) {
   return Math.floor(time * 0.5);
 }
 
+//
+function litres(time) {
+  const roundedTime = Math.floor(time * 0.5);
+  switch (true) {
+    case roundedTime >= 0:
+      return roundedTime;
+    default:
+      return 0;
+  }
+}
 // task 6
 // Opposites Attract https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
 
@@ -121,6 +165,19 @@ function lovefunc(flower1, flower2) {
 //+ + 
 function lovefunc(flower1, flower2){
   return (flower1 % 2 === 0 && flower2 % 2 !== 0) || (flower1 % 2 !== 0 && flower2 % 2 === 0);
+}
+
+//
+function lovefunc(flower1, flower2){
+  const firstFlower = flower1 % 2;
+  const secondFlower = flower2 % 2;
+  switch (true) {
+      case (firstFlower === 0 && secondFlower != 0):
+      case (firstFlower != 0 && secondFlower === 0):
+      return true;
+  default:
+  return false
+  }
 }
 
 
