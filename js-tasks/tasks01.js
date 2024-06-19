@@ -22,12 +22,12 @@ function move(position, roll) {
 // task 4
 // Personalized Message https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
 
-function greet (name, owner) {
+function greet(name, owner) {
   // Add code here
   return name === owner ? "Hello boss" : "Hello guest";
 }
 
-// task 5 
+// task 5
 // Keep Hydrated https://www.codewars.com/kata/keep-hydrated-1/train/javascript
 
 function litres(time) {
@@ -37,12 +37,9 @@ function litres(time) {
 // task 6
 // Opposites Attract https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
 
-function lovefunc(flower1, flower2){
-  return (flower1 % 2 === 0 && flower2 % 2 !== 0) || (flower1 % 2 !== 0 && flower2 % 2 === 0);
+function lovefunc(flower1, flower2) {
+  return (
+    (flower1 % 2 === 0 && flower2 % 2 !== 0) ||
+    (flower1 % 2 !== 0 && flower2 % 2 === 0)
+  );
 }
-
-
-
-
-
-
