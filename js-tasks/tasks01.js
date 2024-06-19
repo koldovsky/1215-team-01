@@ -14,7 +14,7 @@ function makeNegative(num) {
   if (num <= 0) return num;
   return num * -1;
 }
-
+// 
 function makeNegative(num) {
   // Code?
   if (num > 0) {
@@ -24,10 +24,13 @@ function makeNegative(num) {
     return num;
   }
 }
-
+//
+function makeNegative(num) {
+  return num <= 0 ? num : -num;
+}
 // task 3
 // Game Move https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
-
+// +
 function move(position, roll) {
   return position + roll * 2;
 }
@@ -58,7 +61,11 @@ function greet(name, owner) {
     return currentUserGreet;
   }
 }
-
+// + 
+function greet (name, owner) {
+  // Add code here
+  return name === owner ? "Hello boss" : "Hello guest";
+}
 
 // task 5
 // Keep Hydrated https://www.codewars.com/kata/keep-hydrated-1/train/javascript
@@ -88,7 +95,7 @@ function lovefunc(flower1, flower2) {
     return false;
   }
 }
-
+//+
 function lovefunc(flower1, flower2){
   return (flower1 % 2 === 0 && flower2 % 2 !== 0) || (flower1 % 2 !== 0 && flower2 % 2 === 0);
 }
