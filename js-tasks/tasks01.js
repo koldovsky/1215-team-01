@@ -23,7 +23,6 @@ function move(position, roll) {
 // Personalized Message https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
 
 function greet(name, owner) {
-  // Add code here
   return name === owner ? "Hello boss" : "Hello guest";
 }
 
