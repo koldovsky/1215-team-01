@@ -8,6 +8,7 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 // task 2
 // Make negative    https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
 
+// +
 function makeNegative(num) {
   if (num <= 0) return num;
   return num * -1;
@@ -40,6 +41,7 @@ function greet(name, owner) {
   return "Hello guest";
 }
 
+// +
 function greet(name, owner) {
   // Add code here
   let currentUserGreet;
@@ -62,6 +64,7 @@ function litres(time) {
 // task 6
 // Opposites Attract https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
 
+// +
 function lovefunc(flower1, flower2) {
   if (flower1 % 2 === 0 && flower2 % 2 === 1) return true;
   if (flower2 % 2 === 0 && flower1 % 2 === 1) return true;
