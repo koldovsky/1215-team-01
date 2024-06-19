@@ -64,10 +64,24 @@
 .index-about-us-info-guide {
   width: 100%;
   display: flex;
-  flex-wrap: nowrap; 
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+  .index-about-us-info-guide {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 10px; 
+  }
+  .line{
+    align-self: flex-start;
+    margin-left: 0;
+  }
+}
+
 
 .index-about-us-info-item {
   text-align: left;
