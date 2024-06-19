@@ -5,6 +5,7 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 
+
 // task 2
 // Make negative    https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
 
@@ -31,6 +32,10 @@ function move(position, roll) {
   return position + roll * 2;
 }
 
+function move (position, roll) {
+  const newPosition = position + roll * 2;
+ return newPosition;
+}
 // task 4
 // Personalized Message https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
 
@@ -53,6 +58,7 @@ function greet(name, owner) {
     return currentUserGreet;
   }
 }
+
 
 // task 5
 // Keep Hydrated https://www.codewars.com/kata/keep-hydrated-1/train/javascript
@@ -82,3 +88,12 @@ function lovefunc(flower1, flower2) {
     return false;
   }
 }
+
+function lovefunc(flower1, flower2){
+  return (flower1 % 2 === 0 && flower2 % 2 !== 0) || (flower1 % 2 !== 0 && flower2 % 2 === 0);
+}
+
+
+
+
+
