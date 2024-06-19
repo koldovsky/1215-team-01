@@ -5,6 +5,15 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 
+//
+
+let laLigaGoals = 30
+let copaDelReyGoals = 6
+let championsLeagueGoals = 20
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
 
 // task 2
 // Make negative    https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
@@ -28,20 +37,34 @@ function makeNegative(num) {
 function makeNegative(num) {
   return num <= 0 ? num : -num;
 }
+
+//
+let num = 5
+function makeNegative(num) {
+  if (num<=0){
+    return num
+  }
+  else{ 
+    let negativenum = -num
+    return negativenum
+  }
+}
+
+//
 // task 3
 // Game Move https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
 // ++
 function move(position, roll) {
   return position + roll * 2;
 }
-
+// +
 function move (position, roll) {
   const newPosition = position + roll * 2;
  return newPosition;
 }
 // task 4
 // Personalized Message https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
-//+
+//++
 function greet(name, owner) {
   if (name === owner) {
     return "Hello boss";
@@ -67,7 +90,7 @@ function greet (name, owner) {
   return name === owner ? "Hello boss" : "Hello guest";
 }
 
-// task 5
+// task 5 + 
 // Keep Hydrated https://www.codewars.com/kata/keep-hydrated-1/train/javascript
 
 function litres(time) {
@@ -85,7 +108,7 @@ function lovefunc(flower1, flower2) {
 }
 
 function lovefunc(flower1, flower2) {
-  // moment of truth
+  // moment of truth +
   if (
     (flower1 % 2 === 0 && flower2 % 2 !== 0) ||
     (flower1 % 2 !== 0 && flower2 % 2 === 0)
@@ -95,7 +118,7 @@ function lovefunc(flower1, flower2) {
     return false;
   }
 }
-//+ +
+//+ + 
 function lovefunc(flower1, flower2){
   return (flower1 % 2 === 0 && flower2 % 2 !== 0) || (flower1 % 2 !== 0 && flower2 % 2 === 0);
 }
