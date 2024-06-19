@@ -10,7 +10,7 @@
 .index-about-us__content {
   flex: 1 1 100%;
   padding: 20px;
-  text-align: justify; /* Вирівнювання тексту за шириною */
+  text-align: justify; 
 }
 
 .index-about-us {
@@ -40,7 +40,7 @@
   color: var(--contacts-title-color);
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
-  text-align: justify; /* Вирівнювання тексту за шириною */
+  text-align: justify; 
 }
 
 .index-about-us-description__text {
@@ -49,50 +49,49 @@
   font-weight: 400;
   margin-bottom: 20px;
   color: var(--contacts-description-text);
-  text-align: justify; /* Вирівнювання тексту за шириною */
+  text-align: justify; 
 }
 
 .line {
   width: 100px;
   height: 2px;
   background-color: rgba(84, 78, 76, 0.18);
-  margin-left: 0; /* Зменшено відстань між цифрами та текстом */
+  margin-left: 0; 
   background-color: var(--about-us-line);
-  margin: 5px auto; /* Зменшено відстань між цифрами та текстом */
+  margin: 5px auto; 
 }
 
 .index-about-us-info-guide {
   width: 100%;
   display: flex;
-  flex-wrap: nowrap; /* Запобігає переносу на новий ряд */
+  flex-wrap: nowrap; 
   justify-content: center;
   margin-bottom: 20px;
-  overflow-x: auto; /* Прокрутка по горизонталі, якщо елементи не вміщаються в одному ряду */
 }
 
 .index-about-us-info-item {
   text-align: left;
   padding: 10px;
   color: var(--contacts-paragraph-color);
-  flex: 0 0 auto; /* Фіксована ширина, щоб елементи не розтягувалися */
+  flex: 0 0 auto; 
   max-width: calc(
     20% - 20px
-  ); /* Максимальна ширина кожного елемента з відступами */
-  margin: 0px 50px; /* Відстань між елементами */
-  white-space: normal; /* Забезпечує перенос тексту */
+  ); 
+  margin: 0px 50px; 
+  white-space: normal; 
 }
 
 @media (max-width: 768px) {
   .index-about-us-info-item {
     max-width: calc(
       50% - 20px
-    ); /* При малому розмірі екрану розташовувати по два елементи в ряд */
+    ); 
   }
 }
 
 .index-about-us-winegarden {
   width: 100%;
-  max-width: 1200px; /* Збільшуємо ширину зображення */
+  max-width: 1200px; 
   height: auto;
   margin: 0 auto 20px;
 }
@@ -106,9 +105,9 @@
 }
 
 .index-about-us-gourman-choise-item {
-  flex: 1 1 45%; /* Дві колонки */
+  flex: 1 1 45%; 
   padding: 20px;
-  text-align: center; /* Центрування елементів */
+  text-align: center; 
 }
 
 .index-about-us-gourman-choise__paragraph {
@@ -128,7 +127,7 @@
   color: var(--contacts-title-color);
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
-  text-align: justify; /* Вирівнювання тексту за шириною */
+  text-align: justify; 
 }
 
 .index-about-us-gourman-choise__title {
@@ -138,7 +137,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   color: var(--contacts-description-title);
-  text-align: justify; /* Вирівнювання тексту за шириною */
+  text-align: justify; 
 }
 
 .index-about-us-gourman-choise__text {
@@ -147,7 +146,7 @@
   font-weight: 400;
   margin-bottom: 20px;
   color: var(--contacts-description-text);
-  text-align: justify; /* Вирівнювання тексту за шириною */
+  text-align: justify; 
 }
 
 .info-number {
@@ -205,13 +204,12 @@
   margin-bottom: 20px;
 }
 
-/* Для пристроїв з мінімальною шириною 768px */
 @media (min-width: 768px) {
   .index-about-us__content {
-    flex: 1 1 45%; /* Дві колонки */
+    flex: 1 1 45%; 
   }
 
   .index-about-us-gourman-choise-item {
-    flex: 1 1 45%; /* Дві колонки */
+    flex: 1 1 45%; 
   }
 }
