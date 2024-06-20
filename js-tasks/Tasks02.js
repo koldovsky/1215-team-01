@@ -5,7 +5,7 @@ function stringToArray(string) {
   return string.split(" ");
 }
 
-//Task 2
+//task 2
 //DNA to RNA Conversion https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
 function DNAtoRNA(dna) {
