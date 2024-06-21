@@ -13,7 +13,7 @@ function DNAtoRNA(dna) {
 }
 //
 function DNAtoRNA(dna) {
-  let rna = dna.split("");
+  const rna = dna.split("");
   rna.forEach((letter, index) => {
     if (letter === "T") {
       rna[index] = "U";
