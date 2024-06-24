@@ -1,17 +1,23 @@
 //task 1
-//Find the smallest integer in the array 
+//Find the smallest integer in the array
 //https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
 
+/+
 function findSmallestInt(arr) {
   return Math.min(...arr);
 }
 
+function findSmallestInt(arr) {
+  const minNum = arr.sort((a, b) => a - b);
+  return minNum[0];
+}
 
 //task 2
-//Geometry Basics: Circle Circumference in 2D 
+//Geometry Basics: Circle Circumference in 2D
 //https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
 
-const circleCircumference = ({ radius }) => parseFloat((2 * Math.PI * radius).toFixed(6));
+const circleCircumference = ({ radius }) =>
+  parseFloat((2 * Math.PI * radius).toFixed(6));
 
 //task 3
 //Training JS #12: loop statement --for..in and for..of
@@ -40,9 +46,11 @@ function buildFun(n) {
   const res = [];
 
   for (let i = 0; i < n; i++) {
-    res.push(function(index) {
-      return index;
-    }.bind(null, i));
+    res.push(
+      function (index) {
+        return index;
+      }.bind(null, i),
+    );
   }
 
   return res;
