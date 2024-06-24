@@ -2,14 +2,8 @@
 //Find the smallest integer in the array
 //https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
 
-/+
 function findSmallestInt(arr) {
   return Math.min(...arr);
-}
-
-function findSmallestInt(arr) {
-  const minNum = arr.sort((a, b) => a - b);
-  return minNum[0];
 }
 
 //task 2
@@ -25,7 +19,6 @@ const circleCircumference = ({ radius }) =>
 
 function giveMeFive(obj) {
   const result = [];
-
   for (const key in obj) {
     if (key.length === 5) {
       result.push(key);
@@ -34,7 +27,6 @@ function giveMeFive(obj) {
       result.push(obj[key].toString());
     }
   }
-
   return result;
 }
 
@@ -44,7 +36,6 @@ function giveMeFive(obj) {
 
 function buildFun(n) {
   const res = [];
-
   for (let i = 0; i < n; i++) {
     res.push(
       function (index) {
@@ -52,7 +43,6 @@ function buildFun(n) {
       }.bind(null, i),
     );
   }
-
   return res;
 }
 
