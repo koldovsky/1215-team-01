@@ -182,3 +182,8 @@
   flex: 1 100%;
   margin-top: 20px;
 }
+
+.visit-us__form-group--error .visit-us__input,
+.visit-us__form-group--error .visit-us__textarea {
+  border-color: red;
+}
