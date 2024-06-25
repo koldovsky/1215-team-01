@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".visit-us__form form");
     const submitButton = form.querySelector(".visit-us__submit");
     const formGroups = form.querySelectorAll(".visit-us__form-group");
@@ -14,8 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
           group.classList.add("visit-us__form-group--error");
         } else {
           group.classList.remove("visit-us__form-group--error");
-        }
-      });
+        };
   
       if (formIsValid) {
         const formData = new FormData(form);
