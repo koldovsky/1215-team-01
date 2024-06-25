@@ -357,6 +357,17 @@
   }
 }
 
+@media (min-width: 990px) {
+  .map__working-hours {
+    bottom: 0.625rem;
+    right: 10%; 
+    transform: none;
+    width: auto;
+    max-width: 18.75rem;
+    padding: 3.125rem;
+  }
+}
+
 .map__close-button {
   position: absolute;
   top: 0.625rem;
@@ -371,4 +382,20 @@
   content: "✖";
   font-size: 1.2rem;
   color: var(--map-button-color);
+}
+
+#working-hours__info {
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-working-hours-info-color);
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0.313rem 0 0;
+}
+
+#working-hours__countdown-info {
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-countdown-info-color);
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0.313rem 0 0;
 }
