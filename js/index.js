@@ -1,5 +1,6 @@
 function init() {
     import('./index.about-us.carousel.js');
+    import('./contacts.distribution-map.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
