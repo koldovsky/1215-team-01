@@ -114,3 +114,13 @@
     padding-right: 15px;
   }
 }
+
+#wine-list__currency {
+  color: rgb(188, 110, 68);
+  font-family: "Cormorant Infant", serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 30px;
+  text-align: center;
+  justify-content: center;
+}
