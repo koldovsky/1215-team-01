@@ -297,6 +297,7 @@
     grid-column: 1;
   }
 }
+
 .tasting-menu__schedule {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -421,15 +422,9 @@
   pointer-events: none;
 }
 
-.schedule__input:focus + .schedule__label::before,
-.schedule__input:not(:placeholder-shown) + .schedule__label::before {
-  content: attr(data-content);
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  font-size: 16px;
-  color: var(--collection-tasting-menu-special);
-  transform: translateY(-50%);
+.schedule__input:focus + .schedule__label,
+.schedule__input:not(:placeholder-shown) + .schedule__label {
+  display: none;
 }
 
 .schedule__submit {
