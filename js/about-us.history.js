@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
       setupCarousel();
   });
 
-  function getSlidesPerView() {
+
     function getSlidesPerView() {
       const screenWidth = window.innerWidth;
       if (screenWidth >= 1200) {
@@ -81,5 +81,4 @@ document.addEventListener('DOMContentLoaded', function () {
           return 1; 
       }
     }
-  }
 });
