@@ -1,38 +1,37 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const carousel = document.querySelector('.winemaking-process__carousel');
-  let slidesPerView = getSlidesPerView();
-  let currentIndex = slidesPerView;
+const carousel = document.querySelector('.winemaking-process__carousel');
+let slidesPerView = getSlidesPerView();
+let currentIndex = slidesPerView;
 
-  setupCarousel();
+setupCarousel();
 
-  function setupCarousel() {
-      const slides = Array.from(document.querySelectorAll('.winemaking-process__slide'));
-      const carouselInner = document.querySelector('.winemaking-process__carousel .winemaking-process__carousel-inner');
+function setupCarousel() {
+  const slides = Array.from(document.querySelectorAll('.winemaking-process__slide'));
+  const carouselInner = document.querySelector('.winemaking-process__carousel .winemaking-process__carousel-inner');
 
-      slides.forEach(slide => {
-          if (slide.classList.contains('clone')) {
-              slide.remove();
-          }
-      });
+  slides.forEach(slide => {
+    if (slide.classList.contains('clone')) {
+          slide.remove();
+        }
+  });
 
-      const clonesStart = slides.slice(-slidesPerView).map(cloneSlide);
-      const clonesEnd = slides.slice(0, slidesPerView).map(cloneSlide);
+  const clonesStart = slides.slice(-slidesPerView).map(cloneSlide);
+  const clonesEnd = slides.slice(0, slidesPerView).map(cloneSlide);
 
-      carouselInner.append(...clonesStart, ...slides, ...clonesEnd);
+  carouselInner.append(...clonesStart, ...slides, ...clonesEnd);
 
-      updateCarousel();
-  }
+  updateCarousel();
+}
 
-  function cloneSlide(slide) {
-      const clone = slide.cloneNode(true);
-      clone.classList.add('clone');
-      return clone;
-  }
+function cloneSlide(slide) {
+  const clone = slide.cloneNode(true);
+  clone.classList.add('clone');
+  return clone;
+}
 
-  function updateCarousel() {
-      const carouselInner = document.querySelector('.winemaking-process__carousel .winemaking-process__carousel-inner');
-      carouselInner.style.transform = `translateX(-${currentIndex * 100 / slidesPerView}%)`;
-  }
+function updateCarousel() {
+  const carouselInner = document.querySelector('.winemaking-process__carousel .winemaking-process__carousel-inner');
+  carouselInner.style.transform = `translateX(-${currentIndex * 100 / slidesPerView}%)`;
+}
 
   document.querySelector('.winemaking-process__carousel-control--left').addEventListener('click', () => {
       if (--currentIndex < 0) {
@@ -81,4 +80,3 @@ document.addEventListener('DOMContentLoaded', function () {
           return 1; 
       }
     }
-});
