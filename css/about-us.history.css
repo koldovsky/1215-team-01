@@ -229,7 +229,7 @@
 }
 
 .winemaking-process__slide {
-  min-width: 50%; /* Ширина слайду на малих екранах */
+  min-width: 33.333%; /* Три слайди на широких екранах */
   box-sizing: border-box;
   transition: transform 0.5s ease-in-out;
 }
@@ -283,16 +283,10 @@
   color: var(--color-additional-text);
   cursor: pointer;
   position: absolute;
-  top: 70%;
+  top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
   z-index: 1;
-  width: 50px; /* ширина кнопки */
-  height: 50px; /* висота кнопки */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%; /* закруглені краї */
 }
 
 .winemaking-process__carousel-control--left {
@@ -301,10 +295,4 @@
 
 .winemaking-process__carousel-control--right {
   right: -50px;
-}
-
-@media (min-width: 768px) {
-  .winemaking-process__slide {
-    min-width: 33.333%; /* Три слайди на широких екранах */
-  }
 }
