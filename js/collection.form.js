@@ -1,6 +1,7 @@
 const form = document.querySelector('.tasting__form form');
 const name = document.getElementById('name');
 const phoneNumber = document.getElementById('phone-number');
+const submitButton = form.querySelector('.schedule__submit');
 
 function showError(input, message) {
   const formGroup = input.parentElement;
@@ -22,8 +23,10 @@ function checkNameLength() {
   const inputValue = name.value.trim();
   if (inputValue.length < 3 || inputValue.length > 30) {
     showError(name, 'Name must be between 3 and 30 characters');
+    return false;
   } else {
     showSuccess(name);
+    return true;
   }
 }
 
@@ -32,22 +35,33 @@ function checkPhoneNumberFormat() {
   const phoneRegex = /^\d{10}$/;
   if (!phoneRegex.test(inputValue)) {
     showError(phoneNumber, 'Phone number must be 10 digits');
+    return false;
   } else {
     showSuccess(phoneNumber);
+    return true;
   }
 }
 
 name.addEventListener('input', function() {
-  checkNameLength();
+  validateForm();
 });
 
 phoneNumber.addEventListener('input', function() {
-  checkPhoneNumberFormat();
+  validateForm();
 });
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
 
-  checkNameLength();
-  checkPhoneNumberFormat();
+  if (checkNameLength() && checkPhoneNumberFormat()) {
+    form.submit(); 
+  }
 });
+
+function validateForm() {
+  if (checkNameLength() && checkPhoneNumberFormat()) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+}
