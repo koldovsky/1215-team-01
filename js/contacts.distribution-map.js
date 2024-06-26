@@ -5,7 +5,6 @@ closeButton.addEventListener("click", function () {
   addressBox.style.display = "none";
 });
 
-
 function getCurrentTime() {
   return new Date();
 }
@@ -50,25 +49,25 @@ function updateWorkingHours() {
     nextCloseTime.setMinutes(0);
     nextCloseTime.setSeconds(0);
   } else {
-    if (currentDay === 0 || (currentDay === 6 && currentHour >= workingHours.Sat.close)) {
-      nextOpenTime = new Date(currentTime);
-      nextOpenTime.setDate(currentTime.getDate() + (2 - currentDay));
+    nextOpenTime = new Date(currentTime);
+    if (currentDay === 0 && currentHour >= workingHours.Sun.close) {
+      nextOpenTime.setDate(currentTime.getDate() + (2 - currentDay + 7) % 7);
       nextOpenTime.setHours(workingHours.TueFri.open);
-      nextOpenTime.setMinutes(0);
-      nextOpenTime.setSeconds(0);
-    } else if (currentDay === 6 && currentHour < workingHours.Sat.close) {
-      nextOpenTime = new Date(currentTime);
-      nextOpenTime.setDate(currentTime.getDate());
-      nextOpenTime.setHours(workingHours.Sat.open);
-      nextOpenTime.setMinutes(0);
-      nextOpenTime.setSeconds(0);
-    } else {
-      nextOpenTime = new Date(currentTime);
+    } else if (currentDay === 6 && currentHour >= workingHours.Sat.close) {
+      nextOpenTime.setDate(currentTime.getDate() + 2);
+      nextOpenTime.setHours(workingHours.TueFri.open);
+    } else if (currentDay >= 1 && currentDay <= 5 && currentHour >= workingHours.TueFri.close) {
       nextOpenTime.setDate(currentTime.getDate() + 1);
       nextOpenTime.setHours(workingHours.TueFri.open);
-      nextOpenTime.setMinutes(0);
-      nextOpenTime.setSeconds(0);
+    } else if (currentDay >= 2 && currentDay <= 5) {
+      nextOpenTime.setHours(workingHours.TueFri.open);
+    } else if (currentDay === 6) {
+      nextOpenTime.setHours(workingHours.Sat.open);
+    } else if (currentDay === 0) {
+      nextOpenTime.setHours(workingHours.Sun.open);
     }
+    nextOpenTime.setMinutes(0);
+    nextOpenTime.setSeconds(0);
   }
 
   const infoElement = document.getElementById('working-hours__info');
