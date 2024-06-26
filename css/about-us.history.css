@@ -39,7 +39,7 @@
   font-size: 52px;
   font-weight: 500;
   line-height: 57.2px;
-  overflow: break-word;
+  word-break: break-word;
   margin-bottom: 20px;
   color: var(--primary-dark-color);
 }
@@ -206,7 +206,7 @@
   font-size: 52px;
   font-weight: 500;
   line-height: 57.2px;
-  overflow: break-word;
+  word-break: break-word;
   margin-bottom: 20px;
   color: var(--wine-club-how-works-subtitle);
 }
