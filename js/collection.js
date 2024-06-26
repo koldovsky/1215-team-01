@@ -1,5 +1,6 @@
 function init() {
     import('./collection.wine-list.js');
+    import('./collection.form.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;

@@ -117,7 +117,7 @@
       <section class="tasting-menu__schedule-form">
         <div class="schedule__container">
           <div class="tasting__form">
-            <form action="submit.php" method="post">
+            <form action="https://formspree.io/f/xldrrvdj" method="POST">
               <div class="schedule__form-group">
                 <input
                   type="text"
@@ -127,6 +127,7 @@
                   placeholder=" "
                 />
                 <label for="name" class="schedule__label">Name</label>
+                <small class="error-message"></small>
               </div>
               <div class="schedule__form-group">
                 <input
@@ -136,17 +137,15 @@
                   class="schedule__input"
                   placeholder=" "
                 />
-                <label for="phone-number" class="schedule__label"
-                  >Phone number</label
-                >
+                <label for="phone-number" class="schedule__label">Phone number</label>
+                <small class="error-message"></small>
               </div>
-              <button type="submit" class="schedule__submit">
-                Send a Request
-              </button>
+              <button type="submit" class="schedule__submit">Send a Request</button>
             </form>
           </div>
         </div>
       </section>
     </section>
+    <script src="js/collection.form.js"></script>
   </body>
 </html>

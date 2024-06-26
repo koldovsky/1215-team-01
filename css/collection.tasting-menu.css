@@ -463,3 +463,17 @@
     padding-right: 20px;
   }
 }
+
+.schedule__input.error {
+  border: 2px solid red;
+}
+
+.error-message {
+  display: block;
+  background-color: #bc6e44;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  margin-top: 5px;
+  font-family: "Spectral", serif;
+}
