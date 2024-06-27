@@ -185,6 +185,7 @@
   text-align: center;
   margin-bottom: 50px;
   position: relative;
+  word-break: break-word;
 }
 
 .winemaking-process__title {
@@ -206,7 +207,6 @@
   font-size: 52px;
   font-weight: 500;
   line-height: 57.2px;
-  word-break: break-word;
   margin-bottom: 20px;
   color: var(--wine-club-how-works-subtitle);
 }
@@ -220,6 +220,10 @@
   margin-bottom: 30px;
   color: var(--header-contact-text-second-color);
 }
+.winemaking-process__carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
 
 .winemaking-process__carousel {
   display: flex;
@@ -228,7 +232,7 @@
 }
 
 .winemaking-process__slide {
-  min-width: 30%; /* Три слайди на широких екранах */
+  flex: 0 0 30%; /* Три слайди на широких екранах */
   box-sizing: border-box;
   transition: transform 0.5s ease-in-out;
   margin-right: 30px; /* Додати проміжок між слайдами */
@@ -279,7 +283,6 @@
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: left;
-  text-align: left;
 }
 
 .winemaking-process__detail {
@@ -292,7 +295,7 @@
   color: var(--color-additional-text);
   cursor: pointer;
   position: absolute;
-  top: 70%;
+  top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
   z-index: 1;
