@@ -183,7 +183,12 @@
   margin-top: 20px;
 }
 
-.visit-us__form-group--error .visit-us__input,
-.visit-us__form-group--error .visit-us__textarea {
-  border-color: red;
+.visit__error-message {
+  display: block;
+  background-color: white;
+  color: #bc6e44;
+  padding: 5px;
+  font-size: 14px;
+  margin-top: 5px;
+  font-family: "Spectral", serif;
 }

@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <section class="visit-us">
@@ -199,45 +203,38 @@
           </div>
         </div>
         <div class="visit-us__form">
-          <form action="submit.php" method="post">
+          <form action="https://formspree.io/f/xldrrvdj" method="POST">
             <div class="visit-us__form-group">
               <input
                 type="text"
                 id="full-name"
-                name="full-name"
                 class="visit-us__input"
                 placeholder=" "
-                required
               />
-              <label for="full-name" class="visit-us__label"
-                >Enter your full name*</label
-              >
+              <label for="full-name" class="visit-us__label">Full Name</label>
+              <small class="visit__error-message"></small>
             </div>
             <div class="visit-us__form-group">
               <input
-                type="tel"
+                type="text"
                 id="phone-number"
-                name="phone-number"
                 class="visit-us__input"
                 placeholder=" "
-                required
               />
               <label for="phone-number" class="visit-us__label"
-                >Enter your phone number*</label
+                >Phone Number</label
               >
+              <small class="visit__error-message"></small>
             </div>
             <div class="visit-us__form-group">
               <input
                 type="email"
                 id="email"
-                name="email"
                 class="visit-us__input"
                 placeholder=" "
-                required
               />
-              <label for="email" class="visit-us__label"
-                >Enter your e-mail*</label
-              >
+              <label for="email" class="visit-us__label">Email</label>
+              <small class="visit__error-message"></small>
             </div>
             <div class="visit-us__form-group">
               <textarea
@@ -266,6 +263,6 @@
         </div>
       </div>
     </section>
-   <script src="js/contacts.visit-us.js"></script>
+    <script src="js/contacts.visit-us.js"></script>
   </body>
 </html>

@@ -1,61 +1,84 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector(".visit-us__form form");
-  const submitButton = form.querySelector(".visit-us__submit");
-  const formGroups = form.querySelectorAll(".visit-us__form-group");
+const form = document.querySelector(".visit-us__form form");
+const fullName = document.getElementById("full-name");
+const phoneNumber = document.getElementById("phone-number");
+const email = document.getElementById("email");
+const submitButton = form.querySelector(".visit-us__submit");
 
-  submitButton.addEventListener("click", function (event) {
-    event.preventDefault();
-    let formIsValid = true;
+function showError(input, message) {
+  const formGroup = input.parentElement;
+  formGroup.classList.add("error");
+  formGroup.classList.remove("success");
+  const small = formGroup.querySelector(".visit__error-message");
+  small.innerText = message;
+}
 
-    formGroups.forEach((group) => {
-      const input = group.querySelector("input, textarea");
-      if (input.hasAttribute("required") && !input.value.trim()) {
-        formIsValid = false;
-        group.classList.add("visit-us__form-group--error");
-      } else {
-        group.classList.remove("visit-us__form-group--error");
-      }
-    });
+function showSuccess(input) {
+  const formGroup = input.parentElement;
+  formGroup.classList.remove("error");
+  formGroup.classList.add("success");
+  const small = formGroup.querySelector(".error-message");
+  small.innerText = "";
+}
 
-    if (formIsValid) {
-      const formData = new FormData(form);
-      fetch("submit.php", {
-        method: "POST",
-        body: formData,
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.success) {
-            showSuccessMessage();
-            form.reset();
-          } else {
-            showErrorMessage();
-          }
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-          showErrorMessage();
-        });
-    }
-  });
-
-  function showSuccessMessage() {
-    const successMessage = document.createElement("p");
-    successMessage.classList.add("visit-us__message", "visit-us__message--success");
-    successMessage.textContent = "Form submitted successfully!";
-    form.appendChild(successMessage);
-    setTimeout(() => {
-      successMessage.remove();
-    }, 3000);
+function checkFullNameLength() {
+  const inputValue = fullName.value.trim();
+  if (inputValue.length < 3 || inputValue.length > 30) {
+    showError(fullName, "Full name must be between 3 and 30 characters");
+    return false;
+  } else {
+    showSuccess(fullName);
+    return true;
   }
+}
 
-  function showErrorMessage() {
-    const errorMessage = document.createElement("p");
-    errorMessage.classList.add("visit-us__message", "visit-us__message--error");
-    errorMessage.textContent = "An error occurred. Please try again.";
-    form.appendChild(errorMessage);
-    setTimeout(() => {
-      errorMessage.remove();
-    }, 3000);
+function checkPhoneNumberFormat() {
+  const inputValue = phoneNumber.value.trim();
+  const phoneRegex = /^\d{10}$/;
+  if (!phoneRegex.test(inputValue)) {
+    showError(phoneNumber, "Phone number must be 10 digits");
+    return false;
+  } else {
+    showSuccess(phoneNumber);
+    return true;
+  }
+}
+
+function checkEmailFormat() {
+  const inputValue = email.value.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(inputValue)) {
+    showError(email, "Invalid email format");
+    return false;
+  } else {
+    showSuccess(email);
+    return true;
+  }
+}
+
+fullName.addEventListener("input", function () {
+  validateForm();
+});
+
+phoneNumber.addEventListener("input", function () {
+  validateForm();
+});
+
+email.addEventListener("input", function () {
+  validateForm();
+});
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  if (checkFullNameLength() && checkPhoneNumberFormat() && checkEmailFormat()) {
+    form.submit();
   }
 });
+
+function validateForm() {
+  if (checkFullNameLength() && checkPhoneNumberFormat() && checkEmailFormat()) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+}
