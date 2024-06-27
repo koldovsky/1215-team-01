@@ -63,42 +63,36 @@
   margin-right: 10px;
   margin-bottom: 30px;
 }
-.additional-text-header {
-  font-family: "Spectral", serif;
-  font-size: 19px;
-  font-weight: 500;
-  line-height: 28.5px;
-  margin-bottom: 20px;
-  color: var(--color-additional-text);
-}
+
+
+
 /* випадаюче меню */
 
-.toggle-label {
-  cursor: pointer;
-  font-size: 24px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  display: flex;
-  margin-right: auto; /* Відстань між плюсом і текстом */
-  font-size: 24px; /*Розмір символу */
+.accordion-item {
+  border-bottom: none;
+  height: 80px;
 }
 
-.additional-text {
-  display: none;
-  margin-top: 10px;
+.accordion-header {
+  font-family: 'Spectral', serif;
+  font-size: 19px;
+  color: #544E4C;
   padding: 10px;
-}
-.question-container {
-  display: flex;
-  align-items: center;
+  cursor: pointer;
+  position: relative;
 }
 
-/* Приховування чекбоксу*/
-.toggle-checkbox {
+.toggle-label {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.accordion-content {
+  font-family: 'Spectral', serif;
+  font-size: 17px;
+  color: #837D71;
   display: none;
-  justify-content: space-between;
-}
-
-.toggle-checkbox:checked + .additional-text {
-  display: block;
+  padding: 10px;
 }
