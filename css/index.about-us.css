@@ -10,7 +10,7 @@
 .index-about-us__content {
   flex: 1 1 100%;
   padding: 20px;
-  text-align: justify; 
+  text-align: justify;
 }
 
 .index-about-us {
@@ -35,12 +35,11 @@
   font-family: "Cormorant Infant", serif;
   font-size: 45px;
   font-weight: 100;
-  font-stretch: 100%;
-  line-height: 41.8px;
+  line-height: 1.2;
   color: var(--contacts-title-color);
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
-  text-align: justify; 
+  text-align: justify;
 }
 
 .index-about-us-description__text {
@@ -49,16 +48,14 @@
   font-weight: 400;
   margin-bottom: 20px;
   color: var(--contacts-description-text);
-  text-align: justify; 
+  text-align: justify;
 }
 
 .line {
   width: 100px;
   height: 2px;
-  background-color: rgba(84, 78, 76, 0.18);
-  margin-left: 0; 
-  background-color: var(--about-us-line);
-  margin: 5px auto; 
+  background-color: var(--about-us-line); /* Corrected */
+  margin: 5px auto;
 }
 
 .index-about-us-info-guide {
@@ -74,54 +71,61 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    gap: 10px; 
+    gap: 10px;
   }
-  .line{
-    align-self: flex-start;
-    margin-left: 0;
+
+  .line {
+    margin-left: 0; /* Corrected */
+    align-self: flex-start; /* Added */
   }
 }
-
 
 .index-about-us-info-item {
   text-align: left;
   padding: 10px;
   color: var(--contacts-paragraph-color);
-  flex: 0 0 auto; 
-  max-width: calc(
-    20% - 20px
-  ); 
-  margin: 0px 50px; 
-  white-space: normal; 
+  flex: 0 0 auto;
+  max-width: calc(50% - 20px); /* Adjusted */
+  margin: 0px 10px; /* Adjusted */
+  white-space: normal;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .index-about-us-info-item {
-    max-width: calc(
-      50% - 20px
-    ); 
+    max-width: calc(20% - 20px); /* Adjusted */
+    margin: 0px 50px; /* Adjusted */
   }
 }
 
 .index-about-us-winegarden {
   width: 100%;
-  max-width: 1200px; 
+  max-width: 1200px;
   height: auto;
   margin: 0 auto 20px;
 }
 
 .index-about-us-gourman-choise {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 30% 70%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+@media (max-width: 900px) {
+  .index-about-us-gourman-choise {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 320px) {
+  .index-about-us-gourman-choise {
+    margin-left: -15px;
+  }
+}
+
 .index-about-us-gourman-choise-item {
-  flex: 1 1 45%; 
   padding: 20px;
-  text-align: center; 
+  text-align: center;
 }
 
 .index-about-us-gourman-choise__paragraph {
@@ -136,12 +140,11 @@
   font-family: "Cormorant Infant", serif;
   font-size: 45px;
   font-weight: 100;
-  font-stretch: 100%;
-  line-height: 41.8px;
+  line-height: 1.2;
   color: var(--contacts-title-color);
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
-  text-align: justify; 
+  text-align: justify;
 }
 
 .index-about-us-gourman-choise__title {
@@ -151,7 +154,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   color: var(--contacts-description-title);
-  text-align: justify; 
+  text-align: justify;
 }
 
 .index-about-us-gourman-choise__text {
@@ -160,7 +163,7 @@
   font-weight: 400;
   margin-bottom: 20px;
   color: var(--contacts-description-text);
-  text-align: justify; 
+  text-align: justify;
 }
 
 .info-number {
@@ -218,12 +221,54 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
-  .index-about-us__content {
-    flex: 1 1 45%; 
-  }
+.animated-carousel {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+}
 
-  .index-about-us-gourman-choise-item {
-    flex: 1 1 45%; 
+.animated-carousel__inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.animated-carousel .product-card {
+  flex: 0 0 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.product-card img {
+  width: 80%;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .animated-carousel .product-card {
+    flex: 1fr;
   }
+}
+@media (min-width: 1200px) {
+  .animated-carousel .product-card {
+    flex: 0 0 33%;
+  }
+}
+
+.animated-carousel .carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.animated-carousel .carousel__button--prev {
+  left: 10px;
+}
+
+.animated-carousel .carousel__button--next {
+  right: 10px;
 }
