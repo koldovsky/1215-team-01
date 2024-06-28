@@ -54,7 +54,7 @@
 .line {
   width: 100px;
   height: 2px;
-  background-color: var(--about-us-line); /* Corrected */
+  background-color: var(--about-us-line);
   margin: 5px auto;
 }
 
@@ -75,8 +75,8 @@
   }
 
   .line {
-    margin-left: 0; /* Corrected */
-    align-self: flex-start; /* Added */
+    margin-left: 0;
+    align-self: flex-start;
   }
 }
 
@@ -85,15 +85,15 @@
   padding: 10px;
   color: var(--contacts-paragraph-color);
   flex: 0 0 auto;
-  max-width: calc(50% - 20px); /* Adjusted */
-  margin: 0px 10px; /* Adjusted */
+  max-width: calc(50% - 20px);
+  margin: 0px 10px;
   white-space: normal;
 }
 
 @media (min-width: 768px) {
   .index-about-us-info-item {
-    max-width: calc(20% - 20px); /* Adjusted */
-    margin: 0px 50px; /* Adjusted */
+    max-width: calc(20% - 20px);
+    margin: 0px 50px;
   }
 }
 
