@@ -1,16 +1,36 @@
-.guided-tour__container {
+.guided-tour-background {
   background-image: url("../img/guided-tour/background-guided-tour.png");
+  background-size: cover; 
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; 
 }
 
-@media (min-width: 1200px) {
-  .guided-tour__container {
-    max-width: 100%;
-    padding-left: calc((100% - 1200px) / 2 + 12px);
-    padding-right: calc((100% - 1200px) / 2 + 12px);
+.guided-tour-container {
+  max-width: 1200px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  padding: 20px; 
+}
+
+.guided-tour-column {
+  flex: 0 0 calc(50% - 20px); 
+  padding: 20px; 
+  box-sizing: border-box;
+}
+
+.guided-tour-column:first-child {
+  margin-right: 20px; 
+}
+
+@media (max-width: 768px) {
+  .guided-tour-column {
+    flex: 0 0 100%; 
+    margin-right: 0; 
   }
+}
+.wine-experience img {
+  width: 50px;
 }
 .guided-tour__paragraph {
   font-family: "Cormorant Infant", serif;
@@ -40,45 +60,35 @@
 }
 
 .wine-experience-header img {
-  margin-right: 10px; /* Відстань між зображенням та заголовком */
+  margin-right: 10px;
   margin-bottom: 30px;
 }
-.additional-text-header {
-  font-family: "Spectral", serif;
-  font-size: 19px;
-  font-weight: 500;
-  line-height: 28.5px;
-  margin-bottom: 20px;
-  color: var(--color-additional-text);
+
+.accordion-item {
+  border-bottom: none;
 }
-/* випадаюче меню */
+
+.accordion-header {
+  font-family: 'Spectral', serif;
+  font-size: 19px;
+  color: #544E4C;
+  padding: 25px 10px;
+  cursor: pointer;
+  position: relative;
+}
 
 .toggle-label {
-  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
   font-size: 24px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  display: flex;
-  margin-right: auto; /* Відстань між плюсом і текстом */
-  font-size: 24px; /*Розмір символу */
 }
 
-.additional-text {
+.accordion-content {
+  font-family: 'Spectral', serif;
+  font-size: 17px;
+  color: #837D71;
   display: none;
-  margin-top: 10px;
   padding: 10px;
-}
-.question-container {
-  display: flex;
-  align-items: center;
-}
-
-/* Приховування чекбоксу*/
-.toggle-checkbox {
-  display: none;
-  justify-content: space-between;
-}
-
-.toggle-checkbox:checked + .additional-text {
-  display: block;
 }

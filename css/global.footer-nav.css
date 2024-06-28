@@ -1,6 +1,9 @@
+.full-width-background {
+  background: var(--header-footer-bg-top-color);
+  width: 100%;
+}
+
 .footer {
-  background: var(--footer-bg-color);
-  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +19,7 @@
 }
 
 .footer__content {
+  padding: 20px;
   margin: 20px;
   max-width: 100%;
   display: flex;
@@ -55,7 +59,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 25px;
+  padding-top: 80px;
 }
 
 @media (min-width: 830px) {
@@ -222,4 +226,10 @@
   width: auto;
   height: auto;
   color: var(--footer-text-color);
+}
+
+@media (min-width: 830px) {
+  .footer__text {
+    margin-top: 0px;
+  }
 }

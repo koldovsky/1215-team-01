@@ -1,10 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.distributors {
+.distribution {
   background-image: url("../img/distribution/background.svg");
   background-size: cover;
   background-position: center;
@@ -20,169 +14,232 @@
   background-repeat: no-repeat;
   border-image-repeat: stretch;
   border-image-slice: 100%;
-  margin: 0 auto;
   min-width: 320px;
   max-width: 1200px;
-  padding-left: 24px;
-  padding-right: 24px;
   font-weight: 400;
   line-height: 1.594rem;
   padding-top: 5.625rem;
   padding-bottom: 5.625rem;
   z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.distribution__header {
-  font-size: 1.063rem;
-  font-weight: 400;
-  line-height: 1.594rem;
-  text-align: center;
-  padding-left: 0.939rem;
-  padding-right: 0.938rem;
-}
+.distribution__container {
+  max-width: 75rem;
 
-.distribution__subtitle {
-  color: rgb(188, 110, 68);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
+  .distribution__header {
+    font-size: 1.063rem;
+    font-weight: 400;
+    line-height: 1.594rem;
+    text-align: center;
+    padding-left: 0.938rem;
+    padding-right: 0.0938rem;
+  }
+
+  .distribution__subtitle {
+    font-family: var(--section-text-font-family);
+    color: var(--distribution-subtitle-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 .distribution__title {
-  color: rgb(42, 40, 36);
-  font-family: "Cormorant Infant", serif;
+  font-family: var(--paragraph-text-font-family);
+  color: var(--distribution-title-color);
   font-size: 2.375rem;
   font-weight: 500;
   line-height: 2.615rem;
+  text-align: center;
 }
 
 .distribution__description {
-  color: rgb(131, 125, 113);
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-description-color);
   font-size: 1.188rem;
   font-weight: 500;
   line-height: 1.781rem;
+  text-align: center;
 }
 
 .distribution__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.25rem;
+  grid-gap: 30px;
   width: 100%;
   line-height: 1.594rem;
   text-align: center;
-  padding-left: 0.938rem;
-  padding-right: 0.938rem;
   margin-top: 3.125rem;
 }
 
 .distribution__item {
-  border: 1px solid #ccc;
-  padding: 40px 20px;
+  border: 0.1rem solid var(--distribution-border-item-color);
+  padding: 20px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: center;
 }
 
 .distribution__item-title {
-  color: rgb(84, 78, 76);
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-item-title-color);
   font-style: normal;
   font-size: 1.188rem;
   font-weight: 500;
   line-height: 1.781rem;
+  text-align: center;
+}
+
+.distribution__item-link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.distribution__item-link a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .distribution__item-location {
-  color: rgb(188, 110, 68);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.distribution__item-location {
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-item-location-color);
   font-size: 1.063rem;
   font-style: italic;
   font-weight: 400;
   line-height: 1.594rem;
   margin-bottom: 1.25rem;
+  text-align: center;
 }
 
 .distribution__item-link {
-  color: rgb(131, 125, 113);
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-item-link-color);
   font-size: 1.063rem;
   font-weight: 400;
   line-height: 1.594rem;
   cursor: pointer;
   text-decoration: none !important;
+  text-align: center;
+  text-decoration-color: var(--distribution-text-decoration-color);
+  text-decoration-line: none;
+  text-decoration-thickness: auto;
+  text-transform: none;
 }
 
 .distribution__item-link:hover,
 .distribution__item-link:focus {
   text-decoration: underline;
 }
+
 .distribution__note {
   font-size: 1.063rem;
   line-height: 1.594rem;
   padding-left: 0.938rem;
-  padding-right: 0.935rem;
+  padding-right: 0.938rem;
+  padding-top: 3.125rem;
 }
 
 .distribution__note-text {
-  color: rgb(131, 125, 113);
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-note-text-color);
   font-size: 1.063rem;
   font-weight: 400;
   line-height: 1.594rem;
   text-align: left;
-  width: 100%;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
+
 .distribution__note-warning {
-  color: rgb(131, 125, 113);
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-note-text-color);
   font-size: 0.875rem;
   font-style: italic;
   font-weight: 400;
   line-height: 1.594rem;
   text-align: left;
-  width: 100%;
+  padding-top: 0.625rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
+
 .specific-symbol {
-  color: rgb(188, 110, 68);
+  color: var(--distribution-specific-symbol);
+  font-family: var(--paragraph-text-font-family);
   font-size: 3.375rem;
-  font-family: "Cormorant Infant", serif;
+  line-height: 2.613rem;
+  text-align: center;
 }
+
 .warning-symbol {
-  color: rgb(188, 110, 68);
-  font-size: 0.938rem;
-  font-style: italic;
+  color: var(--distribution-specific-symbol);
+  font-family: var(--section-text-font-family);
+  font-size: 0.875rem;
+  font-style: var(--distribution-font-style);
+  line-height: 1.25rem;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
+  .distribution__item {
+    margin-left: 6.25rem;
+    margin-right: 6.25rem;
+  }
+
   .distribution__list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 992px) {
+  .distribution__item {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .distribution__note-text {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .distribution__note-warning {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .distribution__list {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (min-width: 1200px) {
-  .distributors {
+  .distribution {
     max-width: 100%;
-    padding-left: calc((100% - 1200px) / 2 + 24px);
-    padding-right: calc((100% - 1200px) / 2 + 24px);
   }
 }
+
 @media (max-width: 1200px) {
-  .distributors {
-    padding-left: 24px;
-    padding-right: 24px;
+  .distribution {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
-}
-
-/* додаємо карту */
-
-.distribution__map {
-  width: 100%;
 }
 
 .map__container {
+  display: grid;
   position: relative;
   width: 100%;
-  height: 500px; /* Встановлюємо висоту карти */
+  height: 53.611rem;
+  z-index: 3;
 }
 
 .map__iframe {
@@ -193,61 +250,152 @@
 
 .map__address-box {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 10px;
-  border-radius: 5px;
-  padding: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 1; /* Виводить адресний блок над iframe */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  background-color: var(--map-background-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: max-content;
+  max-width: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
-.map__close-button {
-  background: none;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
+.map__address-box::after {
+  content: "";
   position: absolute;
-  top: 5px;
-  right: 5px;
+  bottom: -0.625rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0.625rem 0.625rem 0;
+  border-style: solid;
+  border-color: rgb(255, 255, 255) transparent transparent transparent;
+}
+
+.map__address-box h3 {
+  font-family: var(--paragraph-text-font-family);
+  font-size: 0.938rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.map__address-box p {
+  font-family: var(--section-text-font-family);
+  color: var(--map-address-box-text-color);
+  font-size: 0.813rem;
+  font-weight: 400;
+  margin: 0.313rem 0 0;
 }
 
 .map__working-hours {
   position: absolute;
-  top: 50%; /* Позиціювання по вертикалі на 50% */
-  left: 70%; /* Позиціювання по горизонталі на 50% */
-  transform: translate(-100%, -50%); /* Зміщення блоку вліво і вверх */
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 10px;
-  width: auto;
-  height: 222px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-  z-index: 1; /* Виводить блок з робочими годинами над iframe */
+  bottom: 30%;
+  right: 20%;
+  background-color: rgb(255, 255, 255);
+  padding: 2.5rem 1.25rem;
+  z-index: 1;
+  width: 18.75rem;
+  max-width: 18.75rem;
+  height: auto;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.map__working-hours h2 {
-  margin-top: 0;
+.map__working-hours h3 {
+  font-family: var(--paragraph-text-font-family);
+  font-size: 1.875rem;
+  margin: 0;
+  font-weight: 500;
+  padding-bottom: 1rem;
 }
 
-/* Додаткові стилі для адаптивності */
-@media (max-width: 320px) {
-  .map__container {
-    flex-direction: column; /* Вертикальне розташування елементів на малих екранах */
-    align-items: center; /* Вирівнювання елементів по центру */
+.map__working-hours h3::after {
+  content: "";
+  display: block;
+  width: 3.125rem;
+  height: 0.125rem;
+  background-color: rgb(188, 110, 68);
+  margin: 1rem auto 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.map__working-hours p {
+  font-family: var(--section-text-font-family);
+  color: var(--map--box-text-color);
+  font-size: 1.063rem;
+  margin: 0.313rem 0 0;
+  font-weight: 400;
+  line-height: 1.594rem;
+  pointer-events: auto;
+  text-align: center;
+  font-style: var(--distribution-font-style);
+  padding-top: 1rem;
+}
+
+@media (max-width: 990px) {
+  .map__address-box {
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -10%);
   }
 
   .map__working-hours {
-    position: static; /* Статичне позиціонування для адаптивності */
-    width: auto;
-    margin: 10px 0;
-    align-items: center;
+    bottom: 0.625rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 18.75rem;
+    padding: 3.125rem;
   }
+}
 
-  .map__address-box {
-    position: static; /* Статичне позиціонування для адаптивності */
-    margin: 10px 0;
+@media (min-width: 990px) {
+  .map__working-hours {
+    bottom: 0.625rem;
+    right: 10%; 
+    transform: none;
+    width: auto;
+    max-width: 18.75rem;
+    padding: 3.125rem;
   }
+}
+
+.map__close-button {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.map__close-button::before {
+  content: "✖";
+  font-size: 1.2rem;
+  color: var(--map-button-color);
+}
+
+#working-hours__info {
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-working-hours-info-color);
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0.313rem 0 0;
+}
+
+#working-hours__countdown-info {
+  font-family: var(--section-text-font-family);
+  color: var(--distribution-countdown-info-color);
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0.313rem 0 0;
 }

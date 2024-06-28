@@ -1,23 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
-    />
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <section class="guided-tour__container">
-      <div class="column">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+</head>
+<body>
+  <div class="guided-tour-background">
+    <section class="guided-tour-container">
+      <div class="guided-tour-column">
         <h2 class="h-text-content">Guided Tours</h2>
         <p class="guided-tour__paragraph">
           Book a guided tour at a winery and discover the wonderful world of
@@ -26,8 +18,8 @@
         </p>
         <p class="guided-tour__paragraph">
           Our knowledgeable guides will lead you through the vineyards,
-          explaining how grapes are grown, harvested and made into wine. Sample
-          delicious wines while taking in the scenery of the beautiful
+          explaining how grapes are grown, harvested and made into wine.
+          Sample delicious wines while taking in the scenery of the beautiful
           vineyards.
         </p>
         <div class="wine-experience">
@@ -38,6 +30,7 @@
                   width="50"
                   src="img/guided-tour/wineandcheese.svg"
                   alt="wine and cheese"
+                  class="guided-tour-img"
                 />
                 <div>
                   <h2 class="guided-tour_title">Delicious wine</h2>
@@ -53,6 +46,7 @@
                   width="50"
                   src="img/guided-tour/wineandgrape.svg"
                   alt="wine and grape"
+                  class="guided-tour-img"
                 />
                 <div>
                   <h2 class="guided-tour_title">History of winemaking</h2>
@@ -65,133 +59,82 @@
           </ul>
         </div>
       </div>
-      <div class="column">
-        <ul>
-          <li class="border-line">
-            <div class="question-container">
-              <h2 class="additional-text-header">
-                What should I wear to a winery visit?
-              </h2>
-              <label for="toggle-checkbox-1" class="toggle-label">+</label>
+      <div class="guided-tour-column">
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">What should I wear to a winery visit?
+              <label for="toggle-checkbox-1" class="toggle-label"></label>
             </div>
-            <input
-              type="checkbox"
-              id="toggle-checkbox-1"
-              class="toggle-checkbox"
-            />
-            <div class="additional-text">
-              <p class="guided-tour__paragraph">
-                Generally speaking, it is best to dress in smart casual attire.
-                You should avoid wearing open-toed shoes or flip-flops. It is
-                also recommended that you wear layers in case the temperature
-                inside the winery is different than outside.
+            <div class="accordion-content">
+              <p>Generally speaking, it is best to dress in smart casual attire. You 
+                should avoid wearing open-toed shoes or flip-flops. It is also 
+                recommended that you wear layers in case the temperature inside the 
+                winery is different than outside.
               </p>
             </div>
-          </li>
-          <hr />
-          <li class="border-line">
-            <div class="question-container">
-              <h2 class="additional-text-header">
-                What payment options do you provide?
-              </h2>
-              <label for="toggle-checkbox-2" class="toggle-label">+</label>
+          </div>
+          <hr>
+          <div class="accordion-item">
+            <div class="accordion-header">What payment options do you provide?
+              <label for="toggle-checkbox-2" class="toggle-label"></label>
             </div>
-            <input
-              type="checkbox"
-              id="toggle-checkbox-2"
-              class="toggle-checkbox"
-            />
-            <div class="additional-text">
-              <p class="guided-tour__paragraph">
-                We offer a variety of payment methods. We accept cash, checks,
-                and the majority of credit cards such as Visa, MasterCard, and
-                American Express.
+            <div class="accordion-content">
+              <p>We offer a variety of payment methods. We accept cash, checks, 
+                and the majority of credit cards such as Visa, MasterCard, 
+                and American Express.
               </p>
             </div>
-          </li>
-          <hr />
-          <li class="border-line">
-            <div class="question-container">
-              <h2 class="additional-text-header">
-                Can I bring my own food and drinks?
-              </h2>
-              <label for="toggle-checkbox-3" class="toggle-label">+</label>
+          </div>
+          <hr>
+          <div class="accordion-item">
+            <div class="accordion-header">Can I bring my own food and drinks?
+              <label for="toggle-checkbox-3" class="toggle-label"></label>
             </div>
-            <input
-              type="checkbox"
-              id="toggle-checkbox-3"
-              class="toggle-checkbox"
-            />
-            <div class="additional-text">
-              <p class="guided-tour__paragraph">
-                Sorry, we do not allow outside food or beverages, but we assure
+            <div class="accordion-content">
+              <p>Sorry, we do not allow outside food or beverages, but we assure 
                 you that we provide many food options during our tastings.
               </p>
             </div>
-          </li>
-          <hr />
-          <li class="border-line">
-            <div class="question-container">
-              <h2 class="additional-text-header">
-                Do I need to make a reservation?
-              </h2>
-              <label for="toggle-checkbox-4" class="toggle-label">+</label>
+          </div>
+          <hr>
+          <div class="accordion-item">
+            <div class="accordion-header">Do I need to make a reservation?
+              <label for="toggle-checkbox-4" class="toggle-label"></label>
             </div>
-            <input
-              type="checkbox"
-              id="toggle-checkbox-4"
-              class="toggle-checkbox"
-            />
-            <div class="additional-text">
-              <p class="guided-tour__paragraph">
-                Yes, it's better to make a reservation if you want to join our
-                guided tour or wine tasting. Some of the events are available
+            <div class="accordion-content">
+              <p>Yes, it's better to make a reservation if you want to join our 
+                guided tour or wine tasting. Some of the events are available 
                 for club members only.
               </p>
             </div>
-          </li>
-          <hr />
-          <li class="border-line">
-            <div class="question-container">
-              <h2 class="additional-text-header">What does membership mean?</h2>
-              <label for="toggle-checkbox-5" class="toggle-label">+</label>
+          </div>
+          <hr>
+          <div class="accordion-item">
+            <div class="accordion-header">What does membership mean?
+              <label for="toggle-checkbox-5" class="toggle-label"></label>
             </div>
-            <input
-              type="checkbox"
-              id="toggle-checkbox-5"
-              class="toggle-checkbox"
-            />
-            <div class="additional-text">
-              <p class="guided-tour__paragraph">
-                Membership in our club provides the complimentary delivery of
-                our wines to your doorstep, participation in private events,
-                tastings and so on.
+            <div class="accordion-content">
+              <p>Membership in our club provides the complimentary delivery
+                of our wines to your doorstep, participation in private 
+                events, tastings and so on.
               </p>
             </div>
-          </li>
-          <hr />
-          <li class="border-line">
-            <div class="question-container">
-              <h2 class="additional-text-header">
-                Can I buy wine right at your winery?
-              </h2>
-              <label for="toggle-checkbox-6" class="toggle-label">+</label>
+          </div>
+          <hr>
+          <div class="accordion-item">
+            <div class="accordion-header">Can I buy wine right at your winery?
+              <label for="toggle-checkbox-6" class="toggle-label"></label>
             </div>
-            <input
-              type="checkbox"
-              id="toggle-checkbox-6"
-              class="toggle-checkbox"
-            />
-            <div class="additional-text">
-              <p class="guided-tour__paragraph">
-                Of course, we have a shop at the tasting room. You can buy any
+            <div class="accordion-content">
+              <p>Of course, we have a shop at the tasting room. You can buy any 
                 wines you like or visit one of the authorized stores in the USA.
               </p>
             </div>
-          </li>
-          <hr />
-        </ul>
+          </div>
+          <hr>
+        </div>
       </div>
     </section>
-  </body>
+  </div>
+</body>
 </html>

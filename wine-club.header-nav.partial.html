@@ -2,16 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/wine-club.header.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <h2>Wine Club</h2>
-        <p>
-          <a href="index.html">Home</a> > <a href="wine-club.html">Wine club</a>
-        </p>
-      </nav>
+      <section class="wine-club__header container">
+        <div class="wine-club__bottom">
+          <nav class="wine-club__header__title container">
+            <h1 class="wine-club__subtitle">Wine Club</h1>
+            <hr class="header__separator" />
+            <p class="wine-club__subtitle-paragraph">
+              <a class="wine-club__subtitle-link" href="index.html">Home</a> >
+              <a class="wine-club__subtitle-link" href="wine-club.html"
+                >Wine Club</a
+              >
+            </p>
+          </nav>
+        </div>
+      </section>
     </header>
   </body>
 </html>

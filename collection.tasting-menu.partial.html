@@ -4,14 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
+  <link rel="stylesheet" href="css/collection.tasting-menu.css" />
   <body>
-    <section id="menu">
-      <h2>Testing...</h2>
-      <img
-        src="img/about-us-part/pinotnoir.JPG"
-        alt="this is not a necessary picture"
-      />
-      <!-- Here you will do "testing". Delete everything that is in the section, I did the navigation and checked -->
+    <section class="nearest-tasting">
+      <div class="container">
+      <div class="nearest-tasting__container">
+        <div class="nearest-tasting__header">
+          <h2 class="nearest-tasting_title">~ NEAREST TASTING ~</h2>
+          <p class="nearest-tasting_subtitle">
+            Violet
+            <span class="nearest__special"
+              >Crown Merlot<span class="nearest__special-point">.</span></span
+            >
+          </p>
+          <p class="nearest-tasting__description">
+            11 September, 2023 | club members only
+          </p>
+        </div>
+        <div class="nearest-tasting__item-list">
+          <div class="nearest-tasting__item-information">
+            <article class="nearest-tasting__item">
+              <p class="nearest-tasting__item-title">Description</p>
+              <ul class="nearest-tasting__item-description">
+                <li>94% Merlot,</li>
+                <li>3% Cabernet Sauvignon,</li>
+                <li>2% Malbec,</li>
+                <li>1% Cabernet Franc, Columbia.</li>
+              </ul>
+            </article>
+            <article class="nearest-tasting__item">
+              <p class="nearest-tasting__item-title">Food Pairings</p>
+              <p class="nearest-tasting__item-description">
+                Grilled steaks, roasted pork, chicken, and red meat.
+              </p>
+            </article>
+          </div>
+          <div class="nearest-tasting__item-information">
+            <article class="nearest-tasting__item">
+              <p class="nearest-tasting__item-title">Tasting Notes</p>
+              <p class="nearest-tasting__item-description">
+                Full with destiny and bursting with flavor. Dark fruit, cherry,
+                blackberry, brimming with cedar, pipe tobacco, and earth.
+              </p>
+            </article>
+            <article class="nearest-tasting__item">
+              <p class="nearest-tasting__item-title">Vineyards</p>
+              <p class="nearest-tasting__item-description">
+                Sundance, Art Den Hoed, Goose Ridge, Weyns.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
+  </div>
+    <section class="tasting-menu">
+      <div class="tasting-menu__container">
+        <div class="tasting-menu__header">
+          <h2 class="tasting-menu__title">~ TASTING MENU ~</h2>
+          <p class="tasting-menu__subtitle">Current Tasting Menu.</p>
+          <p class="tasting-menu__description">
+            Here's a list of the wines we usually taste during visits.
+          </p>
+        </div>
+        <div class="tasting-menu__item-list">
+          <article class="tasting-menu__item">
+            <p class="tasting-menu__item-title">2016 Hommage Blanc</p>
+            <p class="tasting-menu__item-description">
+              Blend: 75% Roussanne, 25% Viognier
+            </p>
+          </article>
+          <article class="tasting-menu__item">
+            <p class="tasting-menu__item-title">2016 La Rose</p>
+            <p class="tasting-menu__item-description">
+              Blend: 56% Grenache, 30% Mourvedre & 14% Syrah
+            </p>
+          </article>
+          <article class="tasting-menu__item">
+            <p class="tasting-menu__item-title">2015 Fleur de Solene</p>
+            <p class="tasting-menu__item-description">
+              Blend: 50% Syrah, 30% Cabernet Sauvignon & 20% Grenache
+            </p>
+          </article>
+          <article class="tasting-menu__item">
+            <p class="tasting-menu__item-title">2015 Harmonie</p>
+            <p class="tasting-menu__item-description">
+              Blend: 60% Grenache, 26% Mourvedre & 14% Syrah
+            </p>
+          </article>
+          <article class="tasting-menu__item">
+            <p class="tasting-menu__item-title">2014 Hommage a Nos Pairs</p>
+            <p class="tasting-menu__item-description">
+              Blend: 95% Syrah, 3% Grenache & 2% Viognier
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="tasting-menu__schedule">
+      <section class="tasting-menu__schedule-text">
+        <h3 class="tasting-menu__schedule-title">~ SCHEDULE ~</h3>
+        <p class="tasting-menu__schedule-subtitle">
+          Schedule Your <span class="schedule__special">Tasting.</span>
+        </p>
+        <p class="tasting-menu__schedule-description">
+          Our Tasting Room is located on the top of the hilly vineyard and
+          offers guided tastings of all our great wine selections. Come visit us
+          to enjoy our wines and relax sipping a divine drink while we take care
+          of the rest.
+        </p>
+      </section>
+      <section class="tasting-menu__schedule-form">
+        <div class="schedule__container">
+          <div class="tasting__form">
+            <form action="https://formspree.io/f/xldrrvdj" method="POST">
+              <div class="schedule__form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="schedule__input"
+                  placeholder=" "
+                />
+                <label for="name" class="schedule__label">Name</label>
+                <small class="error-message"></small>
+              </div>
+              <div class="schedule__form-group">
+                <input
+                  type="text"
+                  id="phone-number"
+                  name="phone-number"
+                  class="schedule__input"
+                  placeholder=" "
+                />
+                <label for="phone-number" class="schedule__label">Phone number</label>
+                <small class="error-message"></small>
+              </div>
+              <button type="submit" class="schedule__submit">Send a Request</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="js/collection.form.js"></script>
   </body>
 </html>

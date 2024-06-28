@@ -10,7 +10,7 @@
       href="https://placekitten.com/96/139"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/collection.css" />
     <link rel="icon" href="img/icon-title.png" type="image/png" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
@@ -19,7 +19,7 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header class="collection__header-background">
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -31,27 +31,26 @@
         data-hx-get="collection.header-nav.partial.html"
       ></nav>
     </header>
-    <main>
-      <section
-        class="collection-wine__list"
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="collection.list-wine.partial.html"
-      ></section>
-      <section
-        class="collection-wine__menu"
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="collection.menu.partial.html"
-      ></section>
-      <section
-        class="collection-tasting-menu"
-        id="menu"
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="collection.tasting-menu.partial.html"
-      ></section>
-    </main>
+
+    <section
+      class="collection-wine__list"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="collection.list-wine.partial.html"
+    ></section>
+    <section
+      class="collection-wine__menu"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="collection.menu.partial.html"
+    ></section>
+    <section
+      class="collection-tasting-menu"
+      id="menu"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="collection.tasting-menu.partial.html"
+    ></section>
     <footer>
       <nav
         data-hx-trigger="load"

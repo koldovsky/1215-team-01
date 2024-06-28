@@ -1,0 +1,68 @@
+/* Debug line */
+/* * {
+  outline: solid red;
+} */
+
+.vineyards-container {
+  display: flex;
+  flex-direction: column;
+
+  .vineyards__intro-title {
+    padding: 90px 0 0;
+    color: var(--background-color-signup);
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .vineyards__main-title {
+    color: var(--paragraph-section-text-color);
+    font-size: 38px;
+  }
+
+  .vineyards__text {
+    color: var(--paragraph-content-text-color);
+    font-size: 19px;
+  }
+
+  .vineyards__text-info {
+    color: var(--paragraph-content-text-color);
+    font-size: 17px;
+  }
+}
+
+.visit-vineyard {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  .visit-vineyard__icon {
+    width: 50px;
+  }
+  .vineyard__logo-text {
+    padding: 0 15px 30px;
+    .visit-vineyard__title {
+      color: var(--paragraph-section-text-color);
+      font-size: 24px;
+    }
+    .visit-vineyard__address {
+      color: var(--paragraph-content-text-color);
+      font-size: 17px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .vineyards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    .vineyards__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

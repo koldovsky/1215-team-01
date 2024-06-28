@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us | Winery</title>
     <link rel="icon" href="img/icon-title.png" type="image/png" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/about-us.css" />
     <link
       rel="shortcut icon"
       href="https://placekitten.com/96/139"
@@ -20,16 +20,18 @@
   </head>
   <body>
     <header>
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
-      ></nav>
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="about-us.header-nav.partial.html"
-      ></nav>
+      <div class="about-us__header-background">
+        <nav
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="global.header-nav.partial.html"
+        ></nav>
+        <nav
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="about-us.header-nav.partial.html"
+        ></nav>
+      </div>
     </header>
     <main class="main">
       <section
@@ -40,6 +42,8 @@
         data-hx-get="about-us.history.partial.html"
       ></section>
       <section
+        class="about-us__partners"
+        id="partners"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="about-us.partners.partial.html"
@@ -48,7 +52,7 @@
         class="our-team"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="about-us.wine-and-our-team.partial.html"
+        data-hx-get="about-us_wine-and-our-team.partial.html"
       ></section>
     </main>
     <footer class="footer">
@@ -58,5 +62,6 @@
         data-hx-get="global.footer-nav.partial.html"
       ></nav>
     </footer>
+    <script src="js/about-us.js"></script>
   </body>
 </html>

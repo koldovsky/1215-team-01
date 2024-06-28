@@ -1,0 +1,224 @@
+.private-events-background {
+  background: url(../img/wine-club-private-events/private-event-background.svg);
+  background-size: cover; /* Забезпечує розміщення фонового зображення на всій площині */
+  justify-content: center;
+  display: block;
+}
+
+.private-events {
+  width: auto; /* Задаємо фіксовану ширину блоку */
+  margin-bottom: 0;
+  text-align: center; /* Вирівнюємо текст по центру */
+  padding: 20px; /* Додамо відступи всередині блоку */
+}
+
+.private-events__title {
+  font-family: "Spectral", serif;
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #bc6e44;
+}
+
+.private-events__subtitle {
+  font-family: "Cormorant Infant", serif;
+  font-size: 52px;
+  font-weight: 100;
+  color: #2a2824;
+}
+
+.italic__word {
+  font-style: italic;
+}
+
+.special__point {
+  color: var(--special-point-color);
+}
+
+.private-events__description {
+  font-size: 19px;
+  font-family: "Spectral", serif;
+  font-weight: 100;
+  color: #837d71;
+}
+
+.events-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Грід з двома колонками */
+  gap: 20px; /* Відстань між елементами */
+  max-width: 1200px; /* Максимальна ширина контейнера */
+  margin: 0 auto; /* Центрування контейнера на сторінці */
+  margin-top: 10px;
+  padding: 0; /* Відступи всередині контейнера */
+}
+
+.event-item {
+  display: flex;
+  align-items: center; /* Вирівнювання елементів по вертикалі */
+  background-color: white; /* Колір фону для кожної події */
+  padding: 0; /* Внутрішні відступи для кожної події */
+  border-radius: 8px; /* Закруглені кути */
+  margin-bottom: 20px;
+  border: 2px solid #faf8f2;
+}
+
+.event-item img {
+  margin-right: 10px; /* Відстань між зображенням і текстом */
+  border-radius: 8px; /* Закруглені кути для круглих зображень */
+  position: relative; /* Забезпечення контексту для позиціонування псевдоелемента */
+  width: 100%; /* Фіксована ширина для зображень, щоб вони були однаковими */
+  max-width: 318px; /* Максимальна ширина зображення */
+  height: auto; /* Автоматична висота для збереження пропорцій */
+  max-height: 270px; /* Максимальна висота зображення */
+  object-fit: cover; /* Масштабує зображення, щоб воно повністю заповнювало контейнер, зберігаючи пропорції */
+}
+
+.event-item img::after {
+  content: "";
+  position: absolute; /* Абсолютне позиціонування відносно зображення */
+  width: 100%; /* Ширина псевдоелемента відповідно до ширини зображення */
+  height: 100%; /* Висота псевдоелемента відповідно до висоти зображення */
+  top: 0; /* Розміщення зверху відносно зображення */
+  right: 0; /* Розміщення справа відносно зображення */
+  bottom: 0; /* Розміщення знизу відносно зображення */
+  left: 0; /* Розміщення зліва відносно зображення */
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.3
+  ); /* Приклад кольору фону для псевдоелемента */
+  border-radius: 8px; /* Закруглені кути для псевдоелемента */
+}
+
+.event-item-content {
+  flex: 1; /* Займати доступний простір у флекс-контейнері */
+}
+
+.event-item__date {
+  font-family: "Spectral", serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 100;
+  color: #bc6e44;
+  margin-bottom: 10px;
+}
+
+.event-item__title {
+  font-family: "Cormorant Infant", serif;
+  font-size: 28px;
+  font-weight: 100;
+  color: #2a2824;
+  margin-bottom: 20px;
+}
+
+.event-item__description {
+  font-family: "Spectral", serif;
+  font-size: 17px;
+  font-weight: 100;
+  color: #837d71;
+}
+
+/* movable backgraund*/
+.became-a-member__background {
+  background-image: url(../img/wine-club-private-events/vineyards.jpeg);
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
+.became-a-member-container {
+  padding: 110px 0;
+}
+
+.became-a-member-information {
+  width: 270px;
+  height: 580px;
+  margin: auto;
+  background-color: var(--background-color-container);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.became-a-member-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 30px 20px;
+  letter-spacing: 2px;
+  color: var(--heading-section-text-color);
+}
+
+.became-a-member-text {
+  font-family: "Cormorant infant", serif;
+  font-size: 48px;
+  padding: 0 20px;
+  margin-top: -20px;
+  color: var(--paragraph-section-text-color);
+}
+
+.became-a-member-text-info {
+  font-family: "Spectral", serif;
+  font-size: 19px;
+  padding: 0 20px;
+  color: var(--paragraph-content-text-color);
+  text-align: center;
+}
+
+.button-container {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-ref {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px; /* Зменшено відстань між кнопками */
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff; /* Колір тексту */
+  background-color: #bc6e44; /* Колір фону */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button-ref-2 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px; /* Зменшено відстань між кнопками */
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: black; /* Колір тексту */
+  background-color: white; /* Колір фону */
+  border: 2px solid #bc6e44; /* Рамка */
+  border-radius: 5px;
+}
+
+.button-ref-2:hover {
+  background-color: #bc6e44; /* Колір фону при наведенні */
+  color: white;
+}
+
+.button-ref:hover {
+  background-color: #2a2824; /* Колір фону при наведенні */
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .became-a-member-information {
+    width: 470px;
+    height: 360px;
+    margin: 60px 120px;
+  }
+  .became-a-member__background {
+    background-position: 50% 35%;
+  }
+}

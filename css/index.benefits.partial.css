@@ -1,26 +1,33 @@
-div.benefits__image img {
+/* Debug line */
+/* * {
+  outline: solid red;
+} */
+
+.benefits__image-container {
   background-image: url(../img/benefits/man-working.jpg);
+  width: 100%;
+  height: auto;
 }
-/* .container {
+
+.benefits__background__image {
+  background-image: url(../img/benefits/benefits-background-image.png);
+  background-repeat: repeat;
+}
+
+.benefits {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
 }
 
-img {
-  max-width: 100%;
-}
-
-li {
+.benefits__item {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-/* div.benefits__text {
-  background-image: url(../img/benefits/benefits-background-image.png);
-  background-size: cover;
-  background-repeat: repeat;
+.benefits__text {
+  /* background-image: url(../img/benefits/benefits-background-image.png); */
   padding: 90px 30px 70px;
 
   .benefits__title {
@@ -32,16 +39,42 @@ li {
   .benefits__intro {
     color: var(--paragraph-section-text-color);
     font-size: 38px;
+    padding: 20px 5px;
   }
   .benefits__paragraph {
+    padding: 20px 15px;
     color: var(--paragraph-content-text-color);
     font-size: 19px;
   }
+  .benefits__image-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .benefits__image-logo {
+    width: 50px;
+  }
 }
 
-@media (min-width: 768px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+@media (min-width: 830px) {
+  .benefits-container {
+    display: flex;
+    flex: 1;
+    .benefits__image-container {
+      width: 100%;
+      object-fit: cover;
+      background-position: 27% 6%;
+      .benefits__image {
+        visibility: hidden;
+      }
+    }
+    .benefits__item {
+      justify-content: flex-start;
+    }
+    .benefits__image-block {
+      padding: 15px;
+      .benefits__item-description {
+        margin: 0;
+      }
+    }
   }
 }

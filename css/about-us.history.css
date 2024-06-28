@@ -1,0 +1,372 @@
+.about-us {
+  background-image: url("../img/about-us/history-part/back-ground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 0 40px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 1;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin-top: 110px;
+}
+
+.about-us__content {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-us__title {
+  font-family: var(--section-text-font-family);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  line-height: 20.4px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--header-text-third-color);
+}
+
+.about-us__subtitle {
+  text-align: center;
+  font-family: var(--paragraph-text-font-family);
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 57.2px;
+  word-break: break-word;
+  margin-bottom: 20px;
+  color: var(--primary-dark-color);
+}
+
+.about-us__point,
+.winemaking-process__point {
+  color: var(--special-point-color);
+  font-family: var(--paragraph-text-font-family);
+  font-size: 52px;
+  line-height: 57.2px;
+  text-align: center;
+}
+
+.about-us__description {
+  font-family: var(--section-text-font-family);
+  text-align: center;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 28.5px;
+  margin-bottom: 20px;
+  color: var(--header-contact-text-second-color);
+}
+
+.about-us__image {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about-us__image img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.about-us__text-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: start;
+  font-family: var(--section-text-font-family);
+  font-size: 17px;
+  line-height: 25.5px;
+  font-weight: 400;
+  color: var(--primary-light-grey-color);
+  margin-bottom: 70px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    padding: 0 40px;
+  }
+
+  .about-us__image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 30%;
+  }
+
+  .about-us__text-container {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+}
+
+.timeline-wrapper {
+  width: 100%;
+  padding: 0 20px 50px; 
+  box-sizing: border-box;
+}
+
+.timeline {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  justify-items: center;
+  width: 100%;
+}
+
+.timeline__item {
+  text-align: left; 
+  box-sizing: border-box; 
+  width: 100%;
+}
+
+.timeline__date {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: var(--paragraph-text-font-family);
+  position: relative;
+  line-height: 39.6px;
+  color: var(--primary-dark-color);
+}
+
+.timeline__date::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 34px;
+  height: 2.5px;
+  background-color: var(--header-text-third-color);
+}
+
+.timeline__description {
+  margin-top: 30px;
+  font-family: var(--section-text-font-family);
+  font-size: 17px;
+  line-height: 25.5px;
+  font-weight: 400;
+  color: var(--primary-light-grey-color);
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0 20px;
+  }
+
+  .timeline__date {
+    text-align: left;
+  }
+
+  .timeline__date::before {
+    width: 15%;
+  }
+}
+.winemaking-process {
+  background-color: var(--header-contact-text-color);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carousel {
+  max-width: 1200px;
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  word-break: break-word;
+}
+
+.winemaking-process__title {
+  font-family: var(--section-text-font-family);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  line-height: 20.4px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: var(--header-text-third-color);
+}
+
+.winemaking-process__subtitle {
+  text-align: center;
+  font-family: var(--paragraph-text-font-family);
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 57.2px;
+  margin-bottom: 20px;
+  color: var(--wine-club-how-works-subtitle);
+}
+
+.winemaking-process__description {
+  font-family: var(--section-text-font-family);
+  text-align: center;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 28.5px;
+  margin-bottom: 50px;
+  color: var(--header-contact-text-second-color);
+}
+
+.winemaking-process__carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.winemaking-process__carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+ 
+}
+
+.winemaking-process__slide {
+  flex: 0 0 calc(33.33% - 20px);
+  box-sizing: border-box;
+  margin-right: 23px;
+}
+
+
+.winemaking-process__image {
+  width: 100%;
+  height: 206.5px; 
+  object-fit: cover;
+}
+
+.winemaking-process__info {
+  text-align: left;
+  margin-top: 30px;
+  position: relative;
+}
+
+.winemaking-process__step {
+  font-size: 26px;
+  font-family: var(--paragraph-text-font-family);
+  color: var(--header-contact-text-second-color);
+}
+
+.winemaking-process__special-text {
+  color: var(--primary-dark-color);
+}
+
+.winemaking-process__button {
+  background: none;
+  border: none;
+  color: var(--color-additional-text);
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.winemaking-process__details {
+  display: none;
+  gap: 25px;
+  align-items: start;
+  font-family: var(--section-text-font-family);
+  font-size: 17px;
+  line-height: 25.5px;
+  font-weight: 400;
+  color: var(--primary-light-grey-color);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.winemaking-process__detail {
+  margin-bottom: 15px;
+}
+
+.winemaking-process__carousel-control {
+  display: flex;
+  background: none;
+  border: none;
+  color: var(--color-additional-text);
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  z-index: 1;
+}
+
+.winemaking-process__carousel-control--left {
+  left: -35px; 
+}
+
+.winemaking-process__carousel-control--right {
+  right: -25px;
+}
+
+@media (max-width: 1305px) {
+
+  .winemaking-process{
+    padding: 0 40px;
+  }
+
+  .winemaking-process__slide {
+  flex: 0 0 calc(50% - 20px);
+  box-sizing: border-box;
+  margin-right: 23px;
+  }
+
+
+  .winemaking-process__carousel-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    cursor: pointer;
+    position: absolute; 
+    top: 80%; 
+    transform: translateY(-50%); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .winemaking-process__carousel-control--left {
+    font-size: 20px;
+    left: -30px; 
+  }
+
+  .winemaking-process__carousel-control--right {
+    right: -19px;
+    font-size: 20px;
+  }
+
+  .winemaking-process__carousel-control--left:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+@media (max-width: 812px) {
+  .winemaking-process__slide {
+    flex: 0 0 calc(100% - 20px); 
+  }
+}
+

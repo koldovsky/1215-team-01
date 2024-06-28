@@ -1,0 +1,174 @@
+{
+    "collections": [
+      {
+        "title": "WHITE",
+        "subtitle": "White Wine.",
+        "items": [
+          {
+            "title": "2016 Jezebel PN",
+            "price": "$50",
+            "description": "Light fruity wine with hints of freshly-cut grass."
+          },
+          {
+            "title": "2014 Sand & Stone",
+            "price": "$48",
+            "description": "Intense wine with a deep aftertaste, reminiscent of a carefree holiday."
+          },
+          {
+            "title": "2013 Wild Card White",
+            "price": "$60",
+            "description": "Fortified wine, perfect for pairing with desserts."
+          },
+          {
+            "title": "2016 Texas High Plains White",
+            "price": "$50",
+            "description": "A fresh and light wine, great for enjoying a Texas sunset."
+          },
+          {
+            "title": "2017 Euphoria",
+            "price": "$40",
+            "description": "Delight in one glass! Light and aromatic wine with a deep aftertaste."
+          },
+          {
+            "title": "2019 Texas Chenin Blanc",
+            "price": "$47",
+            "description": "A versatile white wine that pleases all our guests."
+          }
+        ]
+      },
+      {
+        "title": "RED",
+        "subtitle": "Red Wine.",
+        "items": [
+          {
+            "title": "2016 Cabernet Sauvignon",
+            "price": "$75",
+            "description": "Rich and robust with intense flavors of dark fruit, black pepper, and oak."
+          },
+          {
+            "title": "2013 Wild Card Red",
+            "price": "$62",
+            "description": "Bold and velvety, boasting aromas of ripe cherries, plums, and vanilla."
+          },
+          {
+            "title": "2015 Ultimate Pinot Noir",
+            "price": "$70",
+            "description": "Medium-bodied with notes of blackberry, cedar, and spice."
+          },
+          {
+            "title": "2015 Texas High Plains Red",
+            "price": "$55",
+            "description": "Lively and elegant with flavors of ripe currants, tobacco, and chocolate."
+          },
+          {
+            "title": "2013 The Aussie Red",
+            "price": "$67",
+            "description": "Rich and powerful, with aromas of black currants, figs, and herbs."
+          },
+          {
+            "title": "2014 Grenache Syrah",
+            "price": "$75",
+            "description": "Deep and earthy, with hints of blackberry, oak, and licorice."
+          }
+        ]
+      },
+      {
+        "title": "ROSE",
+        "subtitle": "Rose Wine.",
+        "items": [
+          {
+            "title": "2018 Texas High Plains Rose",
+            "price": "$43",
+            "description": "Aromatic and floral with a splash of fruity sweetness."
+          },
+          {
+            "title": "2017 Chef Rudy Rose",
+            "price": "$52",
+            "description": "Soft and supple, with notes of strawberries and cream."
+          },
+          {
+            "title": "2015 Vitiano Rosato",
+            "price": "$60",
+            "description": "Balanced and smooth, with delicate aromas of ripe raspberries."
+          },
+          {
+            "title": "2012 Winters's Hill Estate Dry Rose",
+            "price": "$55",
+            "description": "A light and refreshing rose with hints of citrus and peach."
+          },
+          {
+            "title": "2014 Wolffer Estate Rose",
+            "price": "$59",
+            "description": "Rich and dry, with a bouquet of ripe strawberry and cranberry."
+          },
+          {
+            "title": "2015 Ehlers Estate Sylviane Rose",
+            "price": "$67",
+            "description": "Crisp and fruity, with a hint of watermelon and wildflowers."
+          }
+        ]
+      },
+      {
+        "title": "SPARKLING",
+        "subtitle": "Sparkling Wine.",
+        "items": [
+          {
+            "title": "Roederer Estate Brut",
+            "price": "$83",
+            "description": "Enjoy a light and crisp sip of bubbly with this effervescent sparkling brut."
+          },
+          {
+            "title": "Brundlmayer Extra Brut",
+            "price": "$75",
+            "description": "Indulge in a luxurious sip of bubbly with this decadent sparkling brut."
+          },
+          {
+            "title": "Mumm Napa Blanc de Blancs",
+            "price": "$69",
+            "description": "Savor a creamy sip of bubbly with this inviting sparkling brut."
+          },
+          {
+            "title": "Domaine Chandon Etoile Brut",
+            "price": "$72",
+            "description": "Treat yourself to a fruity sip of bubbly with this delightful sparkling brut."
+          }
+        ]
+      },
+      {
+        "title": "CANNED",
+        "subtitle": "Canned Wine.",
+        "items": [
+          {
+            "title": "Prettiest Can",
+            "price": "$13",
+            "description": "A light and crisp blend of white grapes, perfect for a summer picnic."
+          },
+          {
+            "title": "PN Frico By Scarpetta",
+            "price": "$18",
+            "description": "A sweet and fruity blend of rosé grapes, perfect for a night out."
+          },
+          {
+            "title": "Ready-to-drink Malbec",
+            "price": "$15",
+            "description": "A robust and flavorful Argentinian red, perfect for a night in."
+          },
+          {
+            "title": "Ferdinand California Albariño",
+            "price": "$15",
+            "description": "Refreshing and bubbly, perfect for any celebration."
+          },
+          {
+            "title": "Sweet Peach Sangria",
+            "price": "$17",
+            "description": "An exotic blend of white wine and sweet peach flavors."
+          },
+          {
+            "title": "Pinot Noir Special",
+            "price": "$20",
+            "description": "A zesty and refreshing blend of red grapes and citrus flavors."
+          }
+        ]
+      }
+    ]
+  }

@@ -20,16 +20,19 @@
   </head>
   <body>
     <header>
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
-      ></nav>
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="contacts.header-nav.partial.html"
-      ></nav>
+      <div class="contacts__header-background">
+        <nav
+          class="contacts-header__global"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="global.header-nav.partial.html"
+        ></nav>
+        <nav
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="contacts.header-hero.html"
+        ></nav>
+      </div>
     </header>
     <main>
       <section
@@ -59,5 +62,6 @@
         data-hx-get="global.footer-nav.partial.html"
       ></nav>
     </footer>
+    <script src="js/contacts.js"></script>
   </body>
 </html>

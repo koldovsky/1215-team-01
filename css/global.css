@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&family=Spectral:wght@400;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,16 @@
 }
 
 :root {
+  --header-footer-bg-top-color: rgba(42, 40, 36, 0.82);
+  --header-contact-text-color: #fff;
+  --header-contact-text-second-color: #837d71;
+  --header-text-third-color: #bc6e44;
+  --header-menu-link-color: #ffffffb0;
+  --header-menu-link-hover-color: #fff;
+  --primary-dark-color: #2a2824;
+  --primary-orang-color: #bc6e44;
+  --primary-white-color: #ffffff;
+  --primary-light-grey-color: #837d71;
   --footer-bg-color: #2a2824;
   --footer-logo-width: 85px;
   --footer-logo-height: 68.7px;
@@ -27,26 +38,79 @@
   --background-color-signup: #bc6e44;
   --text-color-signup: #fff;
   --text-color-content-signup: #eddcd2;
+  --text-color-background-link-categories: #000;
+  --background-color-container: #fff;
+  --special-point-color: #bc6e44;
   --section-text-font-family: "Spectral", serif;
   --paragraph-text-font-family: "Cormorant Infant", serif;
   scroll-behavior: smooth;
-  --wine-club-how-works-title-color: #bc6e44;
-  --wine-club-how-works-subtitle: #28242A;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  --wine-club-become-member-text: #ffffffcc;
+  --wine-club-membership-benefits-list-text: #544e4c;
+  --contacts-paragraph-color: #bc6e44;
+  --contacts-color: #2a2824;
+  --contacts-description-title: #837d71;
+  --contacts-description-text: #837d71;
+  --contacts-visit-us__list-item: #544e4c;
+  --contacts-tasting-conditions-icon: #bc6f44;
+  --contacts-visit-us-form-border: #faf8f2;
+  --contacts-visit-us-form-background-color: #ffffff;
+  --contacts-visit-us-links-hover: #007bff;
+  --contacts-visit-us-links-a: #333;
+  --contacts-visit-us-label: #999;
+  --contacts-visit-us-submit: #faf8f2;
+  --contacts-visit-us-submit-background: #bc6e44;
+  --contacts-visit-us-submit-hover: #a55a34;
+  --contacts-visit-us-input-input-border: #faf8f2;
+  --contacts-visit-us-input-input-background: #faf8f2;
+  --distribution-subtitle-color: #bc6e44;
+  --distribution-title-color: #2a2824;
+  --distribution-description-color: #837d71;
+  --distribution-border-item-color: #faf8f2;
+  --distribution-item-title-color: #544e4c;
+  --distribution-item-location-color: #bc6e44;
+  --distribution-item-link-color: #837d71;
+  --distribution-text-decoration-color: #837d71;
+  --distribution-note-text-color: #837d71;
+  --distribution-specific-symbol: #bc6e44;
+  --distribution-font-style: italic;
+  --distribution-working-hours-info-color: #cc640e;
+  --distribution-countdown-info-color: #489617;
+  --map-background-color: #ffffff;
+  --map--box-text-color: #837d71;
+  --map-button-color: #837d71;
+  --about-us-button: #bc6e44;
+  --about-us-button-text: #ffffff;
+  --about-us-line: #837d71;
+  --about-us-title: #2a2824;
+  --collection-tasting-menu-color: #ffffff;
+  --collection-tasting-menu-discription: #faf8f2;
+  --collection-tasting-menu-special: #bc6e44;
+  --collection-tasting-menu-border: #000000;
+  --collection-tasting-menu-subtitle: #2a2824;
+  --collection-tasting-menu-item: #837d71;
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 img {
-  display: 100%;
+  width: 100%;
+  display: block;
+}
+
+/*  визначає гнучкий елемент, що має рівний розподіл простору
+     *по людськи то розбивання на колонки */
+/* .column {
+  flex: 1;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px;
+} */
+
+.column:first-child {
+  margin-right: 20px;
 }
 
 ul {
@@ -54,21 +118,6 @@ ul {
   padding: 0; /* Прибираємо відступи списку */
   margin: 0; /* Прибираємо відступи списку */
 }
-
-/*  визначає гнучкий елемент, що має рівний розподіл простору
-     *по людськи то розбивання на колонки */
-.column {
-  flex: 1;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 20px;
-}
-
-.column:first-child {
-  margin-right: 20px;
-}
-
-
 
 /*Щрифт для заголовків в мому випадку Guided Tours*/
 .h-text-content {
@@ -78,4 +127,10 @@ ul {
   line-height: 43.2px;
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
+}
+
+.special-point {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--special-point-color);
 }

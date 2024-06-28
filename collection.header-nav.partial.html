@@ -2,17 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/collection.header.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <h2>Our collection</h2>
-        <p>
-          <a href="index.html">Home</a> >
-          <a href="collection.html">Our collection</a>
-        </p>
-      </nav>
+      <section class="collection__header container">
+        <div class="collection__bottom">
+          <nav class="collection__header__title container">
+            <h1 class="collection__subtitle">Our collection</h1>
+            <hr class="header__separator" />
+            <p class="collection__subtitle-paragraph">
+              <a class="collection__subtitle-link" href="index.html">Home</a> >
+              <a class="collection__subtitle-link" href="collection.html"
+                >Our collection</a
+              >
+            </p>
+          </nav>
+        </div>
+      </section>
     </header>
   </body>
 </html>

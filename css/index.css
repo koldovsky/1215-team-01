@@ -1,7 +1,20 @@
 @import "global.css";
 @import "global.header-nav.css";
+@import "index.header.css";
 @import "index.benefits.partial.css";
 @import "index.benefits.signup.partial.css";
+@import "index.categories.partial.css";
+@import "index.our-vineyards.partial.css";
 @import "global.footer-nav.css";
 @import "contacts.css";
+@import "index.about-us.css";
+@import "index.testimonials.css";
+@import "index.wine-tastings.partial.css";
+@import "about-us_wine-and-our-team";
+@import "about-us.our-team";
+@import "about-us.partners";
+@import "about-us.our-events";
+@import "index.gallery.css";
+@import "confirm-age.css";
+@import "collection.css";
 
