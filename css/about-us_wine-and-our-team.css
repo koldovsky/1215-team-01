@@ -1,48 +1,85 @@
-.professional-team img {
-  width: 200px;
-  height: 200px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.meet-our-professional-team__title-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.header__title {
+  font-size: 2em;
+  margin: 0;
+}
+
+.header__title--highlight {
+  color: #b5651d;
+  font-style: italic;
+}
+
+.header__subtitle {
+  font-size: 1em;
+  color: #666;
+  margin: 0;
+}
+
+.main {
+  padding: 20px;
 }
 
 .professional-team {
-  background-image: url("../img/about-us/history-part/back-ground.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-.professional-team {
-  padding: 100px 0 1px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
-.meet-our-professional-team__title-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+
+.team__member {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  width: calc(33% - 40px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
-.meet-our-professional-team__title-container {
+
+.team__member--highlighted {
+  width: calc(66% - 40px);
+}
+
+.team__member-photo {
+  width: 100%;
+  height: auto;
+}
+
+.team__member-info {
+  padding: 20px;
   text-align: center;
-  margin-bottom: 30px;
 }
-.header {
-  font: var(--section-text-font-family);
-  text-align: center;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2.4px;
-  line-height: 20.4px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  color: var(--wine-club-how-works-header-title-color);
+
+.profession {
+  font-size: 1.2em;
+  color: #b5651d;
+  margin: 10px 0;
 }
-.main-title {
-  text-align: center;
-  font: var(--paragraph-text-font-family);
-  font-size: 52px;
-  font-weight: 500;
-  line-height: 57.2px;
-  overflow: break-word;
-  margin-bottom: 20px;
-  color: var(--wine-club-how-works-subtitle);
+
+.team__member-role--highlighted {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.info {
+  font-size: 1em;
+  color: #666;
 }
