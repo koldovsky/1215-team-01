@@ -63,31 +63,31 @@
 
 @media (max-width: 1000px) {
   .events-container {
-    grid-template-columns: 1fr; /* Зміна на одну колонку при ширині менше 1000px */
+    grid-template-columns: 1fr; 
     align-items: center;
     margin: 0 50px;
   }
 
   .event-item {
-    flex-direction: column; /* Зміна напрямку у flex-контейнері на колонку */
-    align-items: center; /* Вирівнювання по лівому краю */
+    flex-direction: column; 
+    align-items: center;
     text-align: center;
   }
   .event-item img {
-    margin-bottom: 10px; /* Додатковий відступ між зображенням і текстом */
+    margin-bottom: 10px; 
   }
 
   .event-item-content {
-    padding: 20px; /* Додатковий відступ для контенту */
+    padding: 20px; 
   }
 
   .event-item__title {
-    font-size: 24px; /* Зменшення розміру заголовка */
-    margin-bottom: 10px; /* Зменшення відступу між елементами */
+    font-size: 24px; 
+    margin-bottom: 10px; 
   }
 
   .event-item__description {
-    font-size: 15px; /* Зменшення розміру опису */
+    font-size: 15px;
   }
 }
 
