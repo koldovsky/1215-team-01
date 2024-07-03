@@ -1,5 +1,5 @@
 function init() {
-    import('');
+    import('./index.benefits.partial.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;

@@ -59,22 +59,45 @@
   .benefits-container {
     display: flex;
     flex: 1;
-    .benefits__image-container {
-      width: 100%;
-      object-fit: cover;
-      background-position: 27% 6%;
-      .benefits__image {
-        visibility: hidden;
-      }
-    }
-    .benefits__item {
-      justify-content: flex-start;
-    }
-    .benefits__image-block {
-      padding: 15px;
-      .benefits__item-description {
-        margin: 0;
-      }
-    }
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+  }
+
+  .benefits__image-container {
+    width: 100%;
+    object-fit: cover;
+    background-position: 27% 6%;
+  }
+
+  .benefits__image {
+    visibility: hidden;
+  }
+
+  .benefits__item {
+    justify-content: flex-start;
+  }
+
+  .benefits__image-block {
+    padding: 15px;
+  }
+
+  .benefits__item-description {
+    margin: 0;
   }
 }
+
+.open {
+  position: absolute;
+  background-image: url(../img/benefits/man-working.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 1;
+  .benefits-container {
+    z-index: 0;
+  }
+}
+
