@@ -1,4 +1,4 @@
-let benefitsImage = document.querySelector(".benefits__image-container");
+const benefitsImage = document.querySelector(".benefits-container");
 function toggleOpen() {
   this.classList.toggle("open");
 }
