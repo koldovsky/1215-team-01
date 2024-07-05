@@ -6,7 +6,7 @@
 .benefits__image-container {
   background-image: url(../img/benefits/man-working.jpg);
   width: 100%;
-  height: auto;
+  height: 800px;
 }
 
 .benefits__background__image {
@@ -59,22 +59,52 @@
   .benefits-container {
     display: flex;
     flex: 1;
-    .benefits__image-container {
-      width: 100%;
-      object-fit: cover;
-      background-position: 27% 6%;
-      .benefits__image {
-        visibility: hidden;
-      }
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .benefits__image-container {
+    width: 100%;
+    object-fit: cover;
+    background-position: 27% 6%;
+  }
+
+  .benefits__image {
+    visibility: hidden;
+  }
+
+  .benefits__item {
+    justify-content: flex-start;
+  }
+
+  .benefits__image-block {
+    padding: 15px;
+  }
+
+  .benefits__item-description {
+    margin: 0;
+  }
+
+  .open {
+    cursor: pointer;
+    background-image: url(../img/benefits/man-working.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    z-index: 1;
+    .benefits__image-container, .benefits__text > * {
+      display: none;
     }
-    .benefits__item {
-      justify-content: flex-start;
-    }
-    .benefits__image-block {
-      padding: 15px;
-      .benefits__item-description {
-        margin: 0;
-      }
-    }
+    
+  }
+  .benefits {
+    height: 800px;
+  }
+  .benefits__image-container {
+    cursor: pointer;
   }
 }
+
+
+
