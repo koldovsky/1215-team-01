@@ -63,7 +63,7 @@
 }
 
 .categories__link:hover {
-  cursor: grab;
+  cursor: pointer;
 }
 
 .special-arrow {

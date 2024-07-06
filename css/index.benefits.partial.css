@@ -6,7 +6,7 @@
 .benefits__image-container {
   background-image: url(../img/benefits/man-working.jpg);
   width: 100%;
-  height: 800px;
+  /* height: 800px; */
 }
 
 .benefits__background__image {
@@ -93,12 +93,23 @@
     background-size: cover;
     object-fit: cover;
     z-index: 1;
+    animation: slideIn 1s forwards;
     .benefits__image-container, .benefits__text > * {
       display: none;
     }
     
   }
-  .benefits {
+  @keyframes slideIn {
+    from {
+      transform: translateX(-50%);
+      opacity: 0.1;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .benefits, .benefits__image-container {
     height: 800px;
   }
   .benefits__image-container {
