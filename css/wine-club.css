@@ -1,6 +1,6 @@
 @import "global.header-nav.css";
 @import "wine-club.header.css";
 @import "wine-club.how-it-works.css";
+@import "wine-club.private-events.partial.css";
 @import "global.footer-nav.css";
 @import "global.css";
-@import "wine-club.private-events.partial.css";

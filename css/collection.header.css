@@ -2,13 +2,13 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
     url("../img/header-hero/collection.header.jpg");
   background-size: cover;
-  background-position: 1% 38%;
+  background-position: center;
   position: relative;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.collection__bottom {
+.collection__header__bottom {
   padding-bottom: 110px;
   padding-top: 70px;
   max-width: 1200px;
@@ -29,7 +29,7 @@
   text-align: center;
   -webkit-font-smoothing: antialiased;
 }
-.collection__subtitle p {
+.collection__header__subtitle p {
   color: rgb(255, 255, 255);
   display: inline;
   font-family: "Spectral", serif;

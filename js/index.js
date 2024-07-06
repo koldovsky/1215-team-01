@@ -1,5 +1,8 @@
 function init() {
-    import('');
+    import('./global.header.js');
+    import('./index.header.js');
+    import('./global.footer.js');
+    import('./index.benefits.partial.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
