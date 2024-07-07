@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.about-us.css" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&display=swap"
       rel="stylesheet"
@@ -15,13 +14,12 @@
     />
     <title>Wine Website</title>
   </head>
-
-  <body class="body__about-us">
+  <body class="body__about-us container">
     <main class="main__about-us">
       <div class="aboutus">
         <h1>~ ABOUT US ~</h1>
       </div>
-      <section id="about-us">
+      <section class="about-info">
         <div>
           <h2>Wine is Poetry in a Bottle</h2>
           <h3>Discover Our <span class="italic">Wines</span></h3>
@@ -35,7 +33,7 @@
         </p>
       </section>
 
-      <section id="stats">
+      <section class="stats">
         <div class="numbers-container">
           <div class="number-item">
             <h2>15,000</h2>
@@ -65,15 +63,14 @@
         </div>
       </section>
 
-      <section id="vineyard">
+      <section class="vineyard">
         <img
           src="img/about-us.partial/winery-garden.jpeg"
           alt="Beautiful vineyard with lush green vines"
-          height="320"
         />
       </section>
 
-      <section id="gourmand-choice">
+      <section class="gourmand-choice">
         <div class="text-container">
           <h3>~ GOURMAND CHOICE ~</h3>
           <h2>
@@ -100,7 +97,7 @@
               />
               <h3>PINOT NOIR</h3>
               <p>Vintage wine (1999)</p>
-              <button>Tasting</button>
+              <button onclick="location.href='page1.html'">Tasting</button>
             </div>
             <div class="wine">
               <img
@@ -109,7 +106,7 @@
               />
               <h3>PORT WINE</h3>
               <p>Fortified wine</p>
-              <button>Tasting</button>
+              <button onclick="location.href='page2.html'">Tasting</button>
             </div>
             <div class="wine">
               <img
@@ -118,7 +115,7 @@
               />
               <h3>EISWINE</h3>
               <p>Dessert wine</p>
-              <button>Tasting</button>
+              <button onclick="location.href='page3.html'">Tasting</button>
             </div>
             <div class="wine">
               <img
@@ -127,12 +124,13 @@
               />
               <h3>GRANACHE ROSE</h3>
               <p>Vintage wine (2000)</p>
-              <button>Tasting</button>
+              <button onclick="location.href='page4.html'">Tasting</button>
             </div>
           </div>
           <button class="next">❯</button>
         </div>
       </section>
     </main>
+    <script src="js/about-us.partial.js"></script>
   </body>
 </html>
