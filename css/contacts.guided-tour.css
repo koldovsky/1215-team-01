@@ -1,32 +1,32 @@
 .guided-tour-background {
   background-image: url("../img/guided-tour/background-guided-tour.png");
-  background-size: cover; 
+  background-size: cover;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .guided-tour-container {
-  max-width: 1200px; 
+  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
-  padding: 20px; 
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .guided-tour-column {
-  flex: 0 0 calc(50% - 20px); 
-  padding: 20px; 
+  flex: 0 0 calc(50% - 20px);
+  padding: 20px;
   box-sizing: border-box;
 }
 
 .guided-tour-column:first-child {
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 @media (max-width: 768px) {
   .guided-tour-column {
-    flex: 0 0 100%; 
-    margin-right: 0; 
+    flex: 0 0 100%;
+    margin-right: 0;
   }
 }
 .wine-experience img {
@@ -69,9 +69,9 @@
 }
 
 .accordion-header {
-  font-family: 'Spectral', serif;
+  font-family: "Spectral", serif;
   font-size: 19px;
-  color: #544E4C;
+  color: #544e4c;
   padding: 25px 10px;
   cursor: pointer;
   position: relative;
@@ -86,9 +86,9 @@
 }
 
 .accordion-content {
-  font-family: 'Spectral', serif;
+  font-family: "Spectral", serif;
   font-size: 17px;
-  color: #837D71;
+  color: #837d71;
   display: none;
   padding: 10px;
 }

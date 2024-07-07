@@ -39,7 +39,7 @@ const gallery = [
     id: "1",
     title: "Signature Club",
     subtitle: "March & October.",
-    subtitleSpecialSymbol: "Shipments:",
+    subtitleSpecialSymbol: "Shipments",
     description:
       "Priority access to limited winery only artisan wines. Limited production wines only available to Luxury and Vintage Club members.",
     image: "../img/wine-club/wine-club_gallery-1.jpg",
@@ -49,7 +49,7 @@ const gallery = [
     id: "2",
     title: "Tasting Club",
     subtitle: " February, April, June, August.",
-    subtitleSpecialSymbol: "Shipments:",
+    subtitleSpecialSymbol: "Shipments",
     description:
       "Six complimentary wine tastings per year for our guests and their friends. Preferred pricing on all winery events and any experiences.",
     image: "../img/wine-club/wine-club_gallery-2.jpg",
@@ -59,7 +59,7 @@ const gallery = [
     id: "3",
     title: "Vintage Club",
     subtitle: " March & October.",
-    subtitleSpecialSymbol: "Shipments:",
+    subtitleSpecialSymbol: "Shipments",
     description:
       "Two complimentary wine & food pairings annually. Two complimentary vineyard tours annually (offered seasonally).",
     image: "../img/wine-club/wine-club_gallery-3.jpg",
