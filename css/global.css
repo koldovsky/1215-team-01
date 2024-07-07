@@ -134,3 +134,9 @@ ul {
   font-weight: bold;
   color: var(--special-point-color);
 }
+
+
+.index__about-us_partial {
+  display: flex;
+  justify-content: center;
+}
