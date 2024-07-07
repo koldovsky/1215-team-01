@@ -360,7 +360,7 @@
 @media (min-width: 990px) {
   .map__working-hours {
     bottom: 0.625rem;
-    right: 10%; 
+    right: 10%;
     transform: none;
     width: auto;
     max-width: 18.75rem;

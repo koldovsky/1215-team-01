@@ -3,4 +3,4 @@ function toggleOpen() {
   this.classList.toggle("open");
 }
 
-benefitsImage.addEventListener('click', toggleOpen);
+benefitsImage.addEventListener("click", toggleOpen);

@@ -144,7 +144,6 @@
     padding: 10px 15px;
     background-color: transparent;
     z-index: 1001;
-
   }
 
   .navbar__logo-link {
@@ -200,7 +199,7 @@
   .navbar__contact-item {
     font-size: 18px;
     font-weight: 400;
-    color:var(--header-contact-text-color);
+    color: var(--header-contact-text-color);
     margin: 0 0 5px;
   }
 

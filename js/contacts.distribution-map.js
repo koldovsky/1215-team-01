@@ -12,7 +12,7 @@ function getCurrentTime() {
 const workingHours = {
   TueFri: { open: 16, close: 22 },
   Sat: { open: 11, close: 21 },
-  Sun: { open: 12, close: 19 }
+  Sun: { open: 12, close: 19 },
 };
 
 function formatTime(time) {
@@ -30,12 +30,16 @@ function updateWorkingHours() {
   let isOpen = false;
 
   if (
-    (currentDay >= 2 && currentDay <= 5 &&
-      currentHour >= workingHours.TueFri.open && currentHour < workingHours.TueFri.close) ||
+    (currentDay >= 2 &&
+      currentDay <= 5 &&
+      currentHour >= workingHours.TueFri.open &&
+      currentHour < workingHours.TueFri.close) ||
     (currentDay === 6 &&
-      currentHour >= workingHours.Sat.open && currentHour < workingHours.Sat.close) ||
+      currentHour >= workingHours.Sat.open &&
+      currentHour < workingHours.Sat.close) ||
     (currentDay === 0 &&
-      currentHour >= workingHours.Sun.open && currentHour < workingHours.Sun.close)
+      currentHour >= workingHours.Sun.open &&
+      currentHour < workingHours.Sun.close)
   ) {
     isOpen = true;
     nextCloseTime = new Date(currentTime);
@@ -51,12 +55,16 @@ function updateWorkingHours() {
   } else {
     nextOpenTime = new Date(currentTime);
     if (currentDay === 0 && currentHour >= workingHours.Sun.close) {
-      nextOpenTime.setDate(currentTime.getDate() + (2 - currentDay + 7) % 7);
+      nextOpenTime.setDate(currentTime.getDate() + ((2 - currentDay + 7) % 7));
       nextOpenTime.setHours(workingHours.TueFri.open);
     } else if (currentDay === 6 && currentHour >= workingHours.Sat.close) {
       nextOpenTime.setDate(currentTime.getDate() + 2);
       nextOpenTime.setHours(workingHours.TueFri.open);
-    } else if (currentDay >= 1 && currentDay <= 5 && currentHour >= workingHours.TueFri.close) {
+    } else if (
+      currentDay >= 1 &&
+      currentDay <= 5 &&
+      currentHour >= workingHours.TueFri.close
+    ) {
       nextOpenTime.setDate(currentTime.getDate() + 1);
       nextOpenTime.setHours(workingHours.TueFri.open);
     } else if (currentDay >= 2 && currentDay <= 5) {
@@ -70,8 +78,10 @@ function updateWorkingHours() {
     nextOpenTime.setSeconds(0);
   }
 
-  const infoElement = document.getElementById('working-hours__info');
-  const countdownElement = document.getElementById('working-hours__countdown-info');
+  const infoElement = document.getElementById("working-hours__info");
+  const countdownElement = document.getElementById(
+    "working-hours__countdown-info"
+  );
 
   if (isOpen) {
     const diffInMinutes = Math.ceil((nextCloseTime - currentTime) / 60000);

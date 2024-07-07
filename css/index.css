@@ -10,11 +10,10 @@
 @import "index.about-us.css";
 @import "index.testimonials.css";
 @import "index.wine-tastings.partial.css";
-@import "about-us_wine-and-our-team";
-@import "about-us.our-team";
-@import "about-us.partners";
-@import "about-us.our-events";
+@import "about-us_wine-and-our-team.css";
+@import "about-us.our-team.css";
+@import "about-us.partners.css";
+@import "about-us.our-events.css";
 @import "index.gallery.css";
 @import "confirm-age.css";
 @import "collection.css";
-

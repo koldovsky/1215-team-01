@@ -5,8 +5,8 @@ accordions.forEach(function (accordion) {
   const content = accordion.querySelector(".accordion-content");
   const toggleLabel = header.querySelector(".toggle-label");
 
-  content.style.display = "none"; 
-  toggleLabel.textContent = "+"; 
+  content.style.display = "none";
+  toggleLabel.textContent = "+";
 
   header.addEventListener("click", function () {
     accordions.forEach(function (acc) {
@@ -21,10 +21,10 @@ accordions.forEach(function (accordion) {
 
     if (content.style.display === "none") {
       content.style.display = "block";
-      toggleLabel.textContent = "-"; 
+      toggleLabel.textContent = "-";
     } else {
       content.style.display = "none";
-      toggleLabel.textContent = "+"; 
+      toggleLabel.textContent = "+";
     }
   });
 });

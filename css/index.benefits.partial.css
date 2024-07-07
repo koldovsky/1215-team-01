@@ -94,10 +94,10 @@
     object-fit: cover;
     z-index: 1;
     animation: slideIn 1s forwards;
-    .benefits__image-container, .benefits__text > * {
+    .benefits__image-container,
+    .benefits__text > * {
       display: none;
     }
-    
   }
   @keyframes slideIn {
     from {
@@ -109,13 +109,11 @@
       opacity: 1;
     }
   }
-  .benefits, .benefits__image-container {
+  .benefits,
+  .benefits__image-container {
     height: 800px;
   }
   .benefits__image-container {
     cursor: pointer;
   }
 }
-
-
-
