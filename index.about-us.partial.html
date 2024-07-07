@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet"  href="./css/index.about-us.partial.css" />
+    <link rel="stylesheet" href="/css/index.about-us.partial.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Wine Website</title>
   </head>
 
   <body>
-    <header>
-      <h1>Wine is Poetry in a Bottle</h1>
-    </header>
     <main>
+      <div class="aboutus">
+      <h1>~ ABOUT US ~</h1>
+      </div>
       <section id="about-us">
-        <h2>~ ABOUT US ~</h2>
-        <h1>Discover Our Wines</h1>
+        <div>
+          <h2>Wine is Poetry in a Bottle</h2>
+          <h3>Discover Our <span class="italic">Wines</span></h3>
+        </div>
         <p>
           Our artisan winery located in Austin, Texas is committed to producing
           delicious, interesting, well-balanced wines with the complexity of
@@ -25,90 +30,86 @@
       </section>
 
       <section id="stats">
-        <div class="stat">
-          <h2>15,000</h2>
-          <p>Hectares of land</p>
-        </div>
-        <div class="stat">
-          <h2>897+</h2>
-          <p>Employees</p>
-        </div>
-        <div class="stat">
-          <h2>1,500K</h2>
-          <p>Bottles produced</p>
-        </div>
-        <div class="stat">
-          <h2>345</h2>
-          <p>Tours per year</p>
-        </div>
-        <div class="stat">
-          <h2>9,000K</h2>
-          <p>Visitors per year</p>
+        <div class="numbers-container">
+          <div class="number-item">
+            <h2>15,000</h2>
+            <hr>
+            <p>Hectares of land;</p>
+          </div>
+          <div class="number-item">
+            <h2>897+</h2>
+            <hr>
+            <p>Employees;</p>
+          </div>
+          <div class="number-item">
+            <h2>1,500K</h2>
+            <hr>
+            <p>Bottles produced;</p>
+          </div>
+          <div class="number-item">
+            <h2>345</h2>
+            <hr>
+            <p>Tours per year;</p>
+          </div>
+          <div class="number-item">
+            <h2>9,000K</h2>
+            <hr>
+            <p>Visitors per year.</p>
+          </div>
         </div>
       </section>
 
       <section id="vineyard">
-        <img
-          src="img/about-us.partial/winery-garden.jpeg"
-          alt="Beautiful vineyard with lush green vines"
-          width="500"
-          height="320"
-        />
+        <img src="img/about-us.partial/winery-garden.jpeg" alt="Beautiful vineyard with lush green vines" height="320"/>
       </section>
 
       <section id="gourmand-choice">
-        <h2>~ GOURMAND CHOICE ~</h2>
-        <h2>Experience the Luxury of Wines Aged Since 1999</h2>
-        <p>
-          Have a sip of our vintage wines. Sign up for a tasting or order
-          delivery. From the dry and mineral whites to the robust and complex
-          reds, the winery's range of wines showcases the best of the region.
-          Each bottle is crafted with passion and care.
-        </p>
-      </section>
-      <section id="wines">
-        <div class="wine">
-          <img
-            src="img/about-us.partial/pinot-noir.png"
-            alt="Bottle of 1999 Pinot Noir"
-            width="120"
-            height="280"
-          />
-          <h3>Pinot Noir</h3>
-          <p>Vintage wine (1999)</p>
-          <button>Tasting</button>
+        <div class="text-container">
+          <h3>~ GOURMAND CHOICE ~</h3>
+          <h2>Experience the Luxury of <span class="italic">Wines</span> Aged Since <span class="italic">1999</span></h2>
+          <p class="article1">
+            Have a sip of our vintage wines. Sign up for a tasting or order delivery.
+          </p>
+          <p class="article2">
+            From the dry and mineral whites to the robust and complex reds, the winery's range of wines showcases the best of the region. Each bottle is crafted with passion and care.
+          </p>
         </div>
-        <div class="wine">
-          <img
-            src="img/about-us.partial/port-wine.png"
-            alt="Bottle of Port Wine"
-            width="120"
-          />
-          <h3>Port Wine</h3>
-          <p>Fortified wine</p>
-          <button>Tasting</button>
-        </div>
-        <div class="wine">
-          <img
-            src="img/about-us.partial/eis-wine.png"
-            alt="Bottle of Eiswein"
-            width="120"
-          />
-          <h3>Eiswein</h3>
-          <p>Dessert wine</p>
-          <button>Tasting</button>
-        </div>
-        <div class="wine">
-          <img
-            src="img/about-us.partial/granache-rose.png"
-            alt="Bottle of Granache Rose"
-            width="120"
-          />
-          <h3>Granache Rose</h3>
-          <p>Vintage wine (2000)</p>
-          <button>Tasting</button>
+        <div class="carousel-container">
+          <button class="prev">❮</button>
+          <div class="carousel">
+            <div class="wine">
+              <img src="img/about-us.partial/pinot-noir.png" alt="Bottle of 1999 Pinot Noir"/>
+              <h3>PINOT NOIR</h3>
+              <p>Vintage wine (1999)</p>
+              <button>Tasting</button>
+            </div>
+            <div class="wine">
+              <img src="img/about-us.partial/port-wine.png" alt="Bottle of Port Wine"/>
+              <h3>PORT WINE</h3>
+              <p>Fortified wine</p>
+              <button>Tasting</button>
+            </div>
+            <div class="wine">
+              <img src="img/about-us.partial/eis-wine.png" alt="Bottle of Eiswein"/>
+              <h3>EISWINE</h3>
+              <p>Dessert wine</p>
+              <button>Tasting</button>
+            </div>
+            <div class="wine">
+              <img src="img/about-us.partial/granache-rose.png" alt="Bottle of Granache Rose"/>
+              <h3>GRANACHE ROSE</h3>
+              <p>Vintage wine (2000)</p>
+              <button>Tasting</button>
+            </div>
+          </div>
+          <button class="next">❯</button>
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
+
+
+
+
