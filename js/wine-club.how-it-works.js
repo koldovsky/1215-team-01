@@ -72,8 +72,8 @@ function renderGallery(gallery) {
   for (const item of gallery) {
     galleryHtml += `<div class="how-works__gallery-item">
             <img
-              src=${item.image}
-              alt=${item.alt}
+              src="${item.image}"
+              alt="${item.alt}"
               class="how-works__gallery__item-icon"
             />
             <p class="how-works__gallery__item-title">${item.title}</p>
@@ -132,8 +132,8 @@ function renderBenefitList(benefitList) {
     benefitListHtml += `<li class="membership-benefits__item__list-item">
             <img
               class="membership-benefits__item__list__item-icon"
-              src=${item.img}
-              alt=${item.alt}
+              src="${item.img}"
+              alt="${item.alt}"
             />
             <span class="membership-benefits__item__list__item-text">
             ${item.text}
