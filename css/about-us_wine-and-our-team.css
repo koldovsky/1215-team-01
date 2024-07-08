@@ -50,6 +50,10 @@ body {
   margin-top: 15px;
 }
 
+.events__block {
+  text-align: center;
+}
+
 .header__title {
   text-align: center;
   font-family: var(--paragraph-text-font-family);
@@ -95,8 +99,12 @@ body {
   opacity: 1;
 }
 
-.phone {
-  width: 90px;
+.phone_logo {
+  width: 70px;
+}
+
+.email_logo {
+  width: 70px;
 }
 
 .team__member {
@@ -281,6 +289,7 @@ body {
   background-color: var(--distribution-border-item-color);
   padding: 10px;
   border-radius: 10px;
+  margin-left: 0;
 }
 
 .events__item-title {
@@ -340,16 +349,20 @@ body {
   object-fit: cover;
   object-position:  50% 30%;
   margin-bottom: 50px;
-  width: 320px;
+  /* width: 320px; */
   margin: auto auto;
   padding: 0px;
   align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
 
 @media (min-width: 768px) {
   .member_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 2.1fr 2.1fr;
+   
     }
     
     .phone {
@@ -364,6 +377,8 @@ body {
      width: 100px;
     } */
 
+    
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -377,6 +392,7 @@ body {
       padding: 20px;
       background-color: #fff;
       width: 100%;
+      margin-top: 0;
     }
     
     .header__title {
@@ -388,7 +404,7 @@ body {
     word-break: break-word;
     margin-bottom: 20px;
     color: var(--primary-dark-color);
-}
+
     }
     
     .header__title--highlight {
@@ -404,7 +420,7 @@ body {
     line-height: 28.5px;
     margin-bottom: 20px;
     color: var(--header-contact-text-second-color);
-    width: 760px;
+    width: auto;
     margin: 0 auto;
     padding: 10px;
     margin-right: 0;
@@ -417,7 +433,7 @@ body {
     
     .professional-team {
       display: flex;
-      width: 768px;
+      width: 100%;
       margin: 0 auto;
       flex-wrap: wrap;
       justify-content: center;
@@ -438,7 +454,7 @@ body {
     .team__member-photo {
       max-width: 100%;
       height: auto;
-      margin-bottom: 15px;
+      margin-bottom: 5px;
       width: 100%;
     }
     
@@ -501,8 +517,6 @@ body {
       color: #666;
     }
     
-    
-    
     body {
       font-family: "Cormorant Infant", serif;
       margin: 0;
@@ -524,8 +538,8 @@ body {
       justify-content: center;
       box-sizing: border-box;
       word-break: break-word;
-  overflow-wrap: break-word;
-  margin-top: 20px;
+      overflow-wrap: break-word;
+      margin-top: 20px;
     }
     
     .events__header {
@@ -533,8 +547,14 @@ body {
     }
     
     .events__title {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+      text-align: center;
+      font-family: var(--paragraph-text-font-family);
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 57.2px;
+    word-break: break-word;
+    margin-bottom: 20px;
+    color: var(--primary-dark-color);
     }
     
     .events__subtitle {
@@ -586,9 +606,9 @@ body {
       margin-bottom: 0.5rem;
     }
     
-    /* .photo-with-wine {
-      max-width: 678px;
-      max-height: 600px;
+     .photo-with-wine {
+      max-width: 80%;
+      /* max-height: 600px; */
       height: auto;
       object-fit: cover;
       object-position:  50% 30%;
@@ -597,7 +617,7 @@ body {
       margin: auto auto;
       padding: 0px;
       align-items: center;
-    } */
+    } 
     .events__contact-icon {
       margin-right: 0.5rem;
     }
@@ -611,3 +631,5 @@ body {
       border-bottom-left-radius: 1rem;
       border-bottom-right-radius: 1rem;
     }
+
+}
