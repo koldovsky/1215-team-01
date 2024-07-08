@@ -42,7 +42,7 @@ const gallery = [
     subtitleSpecialSymbol: "Shipments",
     description:
       "Priority access to limited winery only artisan wines. Limited production wines only available to Luxury and Vintage Club members.",
-    image: "../img/wine-club/wine-club_gallery-1.jpg",
+    image: "img/wine-club/wine-club_gallery-1.jpg",
     alt: "Group of people tasting wine in a vineyard",
   },
   {
@@ -52,7 +52,7 @@ const gallery = [
     subtitleSpecialSymbol: "Shipments",
     description:
       "Six complimentary wine tastings per year for our guests and their friends. Preferred pricing on all winery events and any experiences.",
-    image: "../img/wine-club/wine-club_gallery-2.jpg",
+    image: "img/wine-club/wine-club_gallery-2.jpg",
     alt: "Red wine being poured into a glass with wine barrels in the background",
   },
   {
@@ -62,7 +62,7 @@ const gallery = [
     subtitleSpecialSymbol: "Shipments",
     description:
       "Two complimentary wine & food pairings annually. Two complimentary vineyard tours annually (offered seasonally).",
-    image: "../img/wine-club/wine-club_gallery-3.jpg",
+    image: "img/wine-club/wine-club_gallery-3.jpg",
     alt: "Two men tasting wine in a wine cellar",
   },
 ];
@@ -96,31 +96,31 @@ renderGallery(gallery);
 const benefitList = [
   {
     id: "1",
-    img: "../img/wine-club/wine-club-member_benefits__icon.png",
+    img: "img/wine-club/wine-club-member_benefits__icon.png",
     alt: "Orange circle with a white check mark inside",
     text: "20% - 25% off on all wine purchases, including new releases;",
   },
   {
     id: "2",
-    img: "../img/wine-club/wine-club-member_benefits__icon.png",
+    img: "img/wine-club/wine-club-member_benefits__icon.png",
     alt: "Orange circle with a white check mark inside",
     text: "Access to limited production wines;",
   },
   {
     id: "3",
-    img: "../img/wine-club/wine-club-member_benefits__icon.png",
+    img: "img/wine-club/wine-club-member_benefits__icon.png",
     alt: "Orange circle with a white check mark inside",
     text: "Free Pinot Noir winery events participation;",
   },
   {
     id: "4",
-    img: "../img/wine-club/wine-club-member_benefits__icon.png",
+    img: "img/wine-club/wine-club-member_benefits__icon.png",
     alt: "Orange circle with a white check mark inside",
     text: "Six complimentary individual wine tastings per year;",
   },
   {
     id: "5",
-    img: "../img/wine-club/wine-club-member_benefits__icon.png",
+    img: "img/wine-club/wine-club-member_benefits__icon.png",
     alt: "Orange circle with a white check mark inside",
     text: "Up to 50% off anniversary discount.",
   },
