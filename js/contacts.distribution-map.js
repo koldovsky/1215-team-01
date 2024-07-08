@@ -1,14 +1,11 @@
 const closeButton = document.querySelector(".map__close-button");
 const addressBox = document.querySelector(".map__address-box");
-
 closeButton.addEventListener("click", function () {
   addressBox.style.display = "none";
 });
-
 function getCurrentTime() {
   return new Date();
 }
-
 const workingHours = {
   TueFri: { open: 16, close: 22 },
   Sat: { open: 11, close: 21 },
@@ -18,13 +15,11 @@ const workingHours = {
 function formatTime(time) {
   return time < 10 ? `0${time}` : `${time}`;
 }
-
 function updateWorkingHours() {
   const currentTime = getCurrentTime();
   const currentDay = currentTime.getDay();
   const currentHour = currentTime.getHours();
   const currentMinute = currentTime.getMinutes();
-
   let nextOpenTime = null;
   let nextCloseTime = null;
   let isOpen = false;
