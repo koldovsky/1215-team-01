@@ -362,7 +362,7 @@ body {
   .member_grid {
     display: grid;
     grid-template-columns: 3fr 2.1fr 2.1fr;
-   
+   width: 100%;
     }
     
     .phone {
@@ -377,7 +377,9 @@ body {
      width: 100px;
     } */
 
-    
+    .header {
+      margin-bottom: 10px;
+    }
 
     body {
       font-family: Arial, sans-serif;
@@ -398,12 +400,12 @@ body {
     .header__title {
       text-align: center;
       font-family: var(--paragraph-text-font-family);
-    font-size: 38px;
-    font-weight: 500;
-    line-height: 57.2px;
-    word-break: break-word;
-    margin-bottom: 20px;
-    color: var(--primary-dark-color);
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 57.2px;
+      word-break: break-word;
+      margin-bottom: 10px;
+      color: var(--primary-dark-color);
 
     }
     
@@ -434,10 +436,15 @@ body {
     .professional-team {
       display: flex;
       width: 100%;
-      margin: 0 auto;
+      height: 100%;
+      /* margin: 0 auto; */
       flex-wrap: wrap;
       justify-content: center;
-    }
+      justify-content: justify;
+      margin: 0;
+      padding: 0;
+       width: 100%;
+      }
     
     .team__member {
       background-color: #fff;
@@ -445,6 +452,7 @@ body {
       margin: 10px;
       /* width: calc(33% - 40px); */
       overflow: hidden;
+      
     }
     
     .team__member--highlighted {
@@ -475,7 +483,7 @@ body {
     
     .team__member-info {
       padding: 20px;
-      text-align: center;
+      text-align: left;
     }
     
     .profession {
@@ -494,6 +502,7 @@ body {
       display: flex;
       justify-content: space-between;
       margin-right: 0.5em;
+      font-size: 15px;
     }
     
     /* Create a new custom triangle on the right side */
@@ -509,11 +518,12 @@ body {
     
     .name {
       font-size: 1.5em;
-      margin: 5px;
+      margin: auto;
+      margin-bottom: 15px;
     }
     
     .info {
-      font-size: 1em;
+      font-size: 17px;
       color: #666;
     }
     
@@ -567,6 +577,7 @@ body {
       grid-template-columns: 1fr 1fr 2fr;
       gap: 1.5rem;
       margin-bottom: 2rem;
+      width: 100%;
     }
     
     .events__item {
@@ -623,7 +634,7 @@ body {
     }
     
     .events__image img{
-      max-width: 600px;
+      max-width: auto;
       height: auto;
       object-fit: cover;
       border-top-left-radius: 1rem;
