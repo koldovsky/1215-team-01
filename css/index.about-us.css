@@ -1,7 +1,5 @@
-@import "global.css";
-
 .body__about-us {
-  font-family: 'Spectral', serif;
+  font-family: "Spectral", serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -64,7 +62,7 @@
 }
 
 .about-info p {
-  color: #837D71;
+  color: #837d71;
   font-size: 18px;
   text-align: left;
   display: flex;
@@ -86,7 +84,7 @@
 }
 
 .stats .number-item h2 {
-  color: #BC6E44;
+  color: #bc6e44;
   font-size: 36px;
   font-weight: 500;
   font-family: "Cormorant Infant", serif;
@@ -94,7 +92,7 @@
 }
 
 .stats .number-item p {
-  color: #837D71;
+  color: #837d71;
   font-family: Spectral, serif;
   font-size: 18px;
 }
@@ -126,13 +124,13 @@
 }
 
 .gourmand-choice h3 {
-  color: #BC6E44;
+  color: #bc6e44;
   font-family: Spectral, serif;
   font-size: 12px;
 }
 
 .gourmand-choice h2 {
-  color: #2A2824;
+  color: #2a2824;
   font-size: 52px;
   font-family: "Cormorant Infant", serif;
   font-weight: 500;
@@ -145,7 +143,7 @@
 }
 
 .gourmand-choice p {
-  color: #837D71;
+  color: #837d71;
   font-size: 18px;
   display: flex;
   max-width: 500px;
@@ -194,7 +192,7 @@
 }
 
 .wine p {
-  color: #BC6E44;
+  color: #bc6e44;
   font-family: Spectral, serif;
   font-style: italic;
   font-size: 15px;
@@ -202,7 +200,7 @@
 }
 
 .wine h3 {
-  color: #2A2824;
+  color: #2a2824;
   font-family: Spectral, serif;
   font-size: 12px;
 }
@@ -216,14 +214,14 @@
   margin-top: 10px;
   color: white;
   font-family: Spectral, serif;
-  background-color: #BC6E44;
+  background-color: #bc6e44;
   border: none;
   font-weight: 400;
   cursor: pointer;
 }
 
 .wine button:hover {
-  background-color: #837D71;
+  background-color: #837d71;
 }
 
 .prev,
@@ -328,347 +326,6 @@
 
   .about-info p,
   .gourmand-choice p {
-    font-size: 14px;
-  }
-
-  .numbers-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .wine img {
-    width: 50px;
-  }
-
-  .about-info h3 {
-    margin-top: 45px;
-  }
-
-  .wine {
-    flex: 0 0 100%;
-  }
-@import "global.css";
-
-.body__about-us {
-  font-family: 'Spectral', serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.main__about-us {
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.main__about-us h1 {
-  font: inherit;
-  color: #bc6e44;
-  margin-top: 80px;
-  text-align: center; /* Центруємо заголовок */
-}
-
-.about-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1600px;
-  margin: 0;
-  padding: 0 20px; /* Додаємо відступи з боків */
-}
-
-.about-info h2, .about-info h3 {
-  font-family: "Cormorant Infant", serif;
-  text-align: left;
-  font-stretch: 100%;
-  font-weight: 500;
-  -webkit-font-smoothing: antialiased;
-  width: auto;
-}
-
-.about-info h2 {
-  font-size: 52px;
-  margin-top: 1px;
-}
-
-.about-info h3 {
-  font-size: 52px;
-}
-
-.about-info h3::after {
-  content: ".";
-  color: #bc6e44;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.about-info p {
-  color: #837D71;
-  font-size: 18px;
-  text-align: left;
-  display: flex;
-  max-width: 500px;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 50px;
-}
-
-.vineyard {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.vineyard img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-}
-
-.stats .number-item h2 {
-  color: #BC6E44;
-  font-size: 36px;
-  font-weight: 500;
-  font-family: "Cormorant Infant", serif;
-  font-style: italic;
-}
-
-.stats .number-item p {
-  color: #837D71;
-  font-family: Spectral, serif;
-  font-size: 18px;
-}
-
-.numbers-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-
-.number-item {
-  text-align: left;
-  flex: 1;
-}
-
-.number-item hr {
-  width: 10%;
-  color: #2a2824;
-  opacity: 0.2;
-  text-align: left;
-  margin-left: 0;
-  line-height: 25.5px;
-}
-
-.gourmand-choice {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 20px; /* Додаємо відступи з боків */
-}
-
-.gourmand-choice h3 {
-  color: #BC6E44;
-  font-family: Spectral, serif;
-  font-size: 12px;
-}
-
-.gourmand-choice h2 {
-  color: #2A2824;
-  font-size: 52px;
-  font-family: "Cormorant Infant", serif;
-  font-weight: 500;
-  max-width: 450px;
-}
-
-.gourmand-choice h2::after {
-  content: ".";
-  color: #bc6e44;
-}
-
-.gourmand-choice p {
-  color: #837D71;
-  font-size: 18px;
-  display: flex;
-  max-width: 500px;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 50px;
-}
-
-.text-container {
-  flex: 1;
-}
-
-.carousel-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.wine {
-  flex: 0 0 33.3333%;
-  box-sizing: border-box;
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.wine img {
-  width: 60px;
-  height: auto;
-}
-
-.wine h3, .wine p {
-  margin: 10px 0;
-}
-
-.wine p {
-  color: #BC6E44;
-  font-family: Spectral, serif;
-  font-style: italic;
-  font-size: 15px;
-  text-align: center;
-}
-
-.wine h3 {
-  color: #2A2824;
-  font-family: Spectral, serif;
-  font-size: 12px;
-}
-
-.wine .description {
-  margin: 5px 0 15px 0;
-}
-
-.wine button {
-  padding: 10px 20px;
-  margin-top: 10px;
-  color: white;
-  font-family: Spectral, serif;
-  background-color: #BC6E44;
-  border: none;
-  font-weight: 400;
-  cursor: pointer;
-}
-
-.wine button:hover {
-  background-color: #837D71;
-}
-
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 2em;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-/* Media Queries */
-@media (max-width: 1024px) {
-  .about-info, .gourmand-choice {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    padding: 0 20px; /* Додаємо відступи з боків */
-  }
-
-  .about-info div, .gourmand-choice .text-container {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .about-info p, .gourmand-choice p {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-info, .gourmand-choice {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    padding: 0 20px; /* Додаємо відступи з боків */
-  }
-
-  .stats {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .numbers-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .number-item {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .about-info div, .gourmand-choice .text-container {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .about-info p, .gourmand-choice p {
-    max-width: 100%;
-  }
-
-  .wine {
-    flex: 0 0 50%;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-info h2, .gourmand-choice h2 {
-    font-size: 28px;
-  }
-
-  .stats {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    padding: 0 20px; /* Додаємо відступи з боків */
-  }
-
-  .about-info h3, .gourmand-choice h3 {
-    font-size: 20px;
-  }
-
-  .about-info p, .gourmand-choice p {
     font-size: 14px;
   }
 

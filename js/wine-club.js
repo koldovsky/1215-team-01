@@ -1,5 +1,5 @@
 function init() {
-  import("./wine-club.how-it-works");
+  import("./wine-club.how-it-works.js");
 }
 
 const totalPartials = document.querySelectorAll(
